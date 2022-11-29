@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+
+	<title>Datos Personales | Theme 1 Paris</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+
+	<!-- FAVICON -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+
+	<!-- BOOTSTRAP -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<!-- ICONS -->
+	<link rel="stylesheet" href="css/icons/fontawesome/css/style.css">
+	<link rel="stylesheet" href="css/icons/themify/style.css">
+	<link rel="stylesheet" href="css/icons/ionicons/css/style.css">
+	<link rel="stylesheet" href="css/icons/icomoon/style.css">
+
+	<!-- THEME / PLUGIN CSS -->
+	<link rel="stylesheet" href="js/vendors/flexslider/flexslider.css">
+	<link rel="stylesheet" href="js/vendors/slick/slick.css">
+	<link rel="stylesheet" href="js/vendors/swipebox/css/swipebox.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- SKIN -->
+	<link rel="stylesheet" title="blue" href="css/skins/skin-blue.css"/>
+
+    
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+
+
+	<!--  MODALES LOGIN -->
+	
+<div id="reservas" class="modal fade">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+           
+            <div class="modal-body">
+                <div class="row">
+				
+				 <div class="col-md-12">
+                        <div class="tabs-wrapper content-tabs">
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a href="#item-description" data-toggle="tab" class="trn">Mis Reservas</a></li>
+                                <li><a href="#reviews" data-toggle="tab" class="trn">Iniciar Sesión</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane fade in active" id="item-description">
+                                  <div class="form-group">
+								<label class="form-group trn" >Correo Electrónico</label>
+                                    <div class="form-group"><input class="form-control apiom_email" type="text" ></div>
+                                </div>
+                                <div class="form-group">
+								<label class="form-group trn" >Nº de confirmación</label>
+                                    <div class="form-group"><input id="apiom_ confirmation_number" class="form-control " type="text" ></div>
+                                </div>
+                                
+                                <div class="text-center-lg">
+                                    <a class="forgot-password trn" href="#" data-toggle="modal" data-target="#numero">¿No sabes cual es tu Nº de confirmación?</a>
+                                </div></br>
+                                <div class="form-group">
+                                    <a id="apiom_ submit_mis_reserva" class="btn btn-default trn  text-center" href="#">IR A LA RESERVA</a>
+                                </div>
+                                </div>
+                                <div class="tab-pane fade" id="reviews">
+                                  
+                               
+							  
+                                <div class="form-group">
+								<label class="form-group trn" >Correo Electrónico</label>
+                                    <div class="form-group"><input class="form-control apiom_ email" type="text" ></div>
+                                </div>
+                                <div class="form-group">
+								<label class="form-group trn" >Contraseña</label>
+                                    <div class="form-group"><input id="apiom_ password" class="form-control" type="password" ></div>
+                                </div>
+                                
+                                <div class=" text-center-lg">
+                                    <a class="forgot-password" href="#" data-toggle="modal" data-target="#contraseña">¿Olvidaste tu contraseña?</a>
+                                </div>
+								  <div class=" text-center-lg">
+                                    <a class="forgot-password trn" href="#" data-toggle="modal" data-target="#registrarse">¿Primera vez? <span style="text-decoration:underline;">REGISTRATE</span></a>
+                                </div></br>
+                                <div class="form-group">
+                                    <a id="apiom_ submit_login" class="btn btn-default trn  text-center" href="#">INICIAR SESIÓN</a>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+ <div id="numero" class="modal fade">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          
+            <div class="modal-body">
+                <button type="button" class="bootbox-close-button close" data-dismiss="modal" aria-hidden="true">×</button>
+              <div class="row">
+                    <div class="col-md-12">
+						<div class="media-body text-center-lg trn">
+                                   
+                                    Te eviaremos tu Nº de reserva al mail registrado en nuestro sistema.
+                                </div></br>
+						 <div class="form-group">
+								<label class="form-group trn" >Email</label>
+                                    <div class="form-group trn"><input class="form-control" type="text" ></div>
+                                </div>
+                               
+                                <div class="form-group">
+                                    <a class="btn btn-default  trn text-center" href="#">Enviar</a>
+                                </div>
+                    </div>
+					 </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div id="contraseña" class="modal fade">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          
+            <div class="modal-body">
+                <button type="button" class="bootbox-close-button close" data-dismiss="modal" aria-hidden="true">×</button>
+              <div class="row">
+                    <div class="col-md-12">
+						<div class="media-body text-center-lg trn">
+                                   
+                                    Te eviaremos tu contraseña al mail registrado en nuestro sistema.
+                                </div></br>
+						 <div class="form-group">
+								<label class="form-group trn" >Email</label>
+                                    <div class="form-group"><input class="form-control" type="text" ></div>
+                                </div>
+                               
+                                <div class="form-group">
+                                    <a class="btn btn-default trn  text-center" href="#">Enviar</a>
+                                </div>
+                    </div>
+					 </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	
+	<div id="registrarse" class="modal fade">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+          
+            <div class="modal-body">
+			 <button type="button" class="bootbox-close-button close" data-dismiss="modal" aria-hidden="true">×</button>
+			<div class="modal-header row form-group">
+                                   
+                                    <h3 class="trn">Registrate </h3>
+                                </div></br>
+               
+              <div class="row">
+                    <div class="col-md-12" style="margin-top: 0px;">
+						
+								<div class="row">
+								 <div class="col-md-6" style="margin-top: 0px;">
+								<div class="form-group">
+								<label class="form-group trn" >Nombre</label>
+                                    <div class="form-group"><input class="form-control" type="text" ></div>
+                                </div>
+								 </div>
+								  <div class="col-md-6" style="margin-top: 0px;">
+								<div class="form-group">
+								<label class="form-group trn" >Apellido</label>
+                                    <div class="form-group"><input class="form-control" type="text" ></div>
+                                </div>
+								 </div>
+								 <div class="col-md-12" style="margin-top: 0px;">
+						 <div class="form-group">
+								<label class="form-group trn" >Email</label>
+                                    <div class="form-group"><input class="form-control" type="text" ></div>
+                                </div>
+								 </div>
+                                 <div class="col-md-6"style="margin-top: 0px;">
+                               <div class="form-group">
+								<label class="form-group  trn" >Contraseña</label>
+                                    <div class="form-group"><input class="form-control" type="password" ></div>
+                                </div>
+								 </div>
+								 <div class="col-md-6" style="margin-top: 0px;">
+								<div class="form-group">
+								<label class="form-group trn" >Repetir Contraseña</label>
+                                    <div class="form-group"><input class="form-control" type="password" ></div>
+                                </div>
+								 </div>
+								  </div>
+								  <div class="col-md-12 text-center" style="margin-top: 0px;">
+                                <div class="form-group">
+                                    <a class="btn btn-default trn  text-center" href="#" style="margin-left: auto;margin-right: auto;">Enviar</a>
+                                </div>
+								  </div>
+                    </div>
+					 </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	
+	<!-- END MODALES LOGIN -->
+
+<div id="page-top"></div>
+    
+<div id="wrapper">
+<!-- HEADER -->
+	<header>
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header pull-left">
+					<!-- Logo -->
+					<a class="navbar-brand" href="index.html">	<img  src="images/LOGO-rentafacil.png" alt=""></a>
+				</div>
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+				<!-- <div class="top-contact pull-right editContent"> -->
+					<!-- <i class="icon-phone"></i> <span class="trn">Llámenos</span>0810 1234 5678 -->
+				<!-- </div> -->
+				<!-- Navmenu -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="empresa.html" class="trn" >Empresa</a></li>
+						<li><a href="oficinas.html" class="trn" >Oficinas</a></li>
+						<li><a href="flota.html" class="trn" >Flota</a></li>
+						<li><a  href="#" data-toggle="modal" data-target="#reservas" class="trn">Mis Reservas</a></li>
+							
+						<li class="dropdown"><a class="apiom_ul_monedas"  href="#"  >$ARS</a>
+						<ul id="apiom_ulMonedaUsuario" class="dropdown-menu" role="menu">
+								<li class="" data-to-currency="ARS" id="ARS"><a href="#">$ (ARS)</a></li>
+								<li class="" data-to-currency="USD" id="USD"><a href="#">US$ (USD)</a></li>
+								<li class="" data-to-currency="EUR" value="EUR" id="EUR"><a href="#">€ (EUR)</a></li>
+								<li class="" data-to-currency="BRL" value="BRL" id="BRL"><a href="#">R$ (BRL)</a></li>
+								<li class="" data-to-currency="UYU" value="UYU" id="UYU"><a href="#">$ (UYU)</a></li>
+								
+							</ul>
+						
+						</li>
+						<li class="dropdown"><a class="lang_selector" id="idiomaES" data-value="es"
+							onclick="setIdioma('ES', true);$('#idiomaSelector').html(getIdiomaCompleto())"><img class="bg-esp"  src="images/flag.png" alt=""></a>
+					<ul class="dropdown-menu" role="menu">
+					
+				
+												<li><a   class="lang_selector" id="idiomaEN" data-value="en" onclick="setIdioma('EN', true);$('#idiomaSelector').html(getIdiomaCompleto())"  ><img class="bg-bra" src="images/flag-uk.png" alt="">&nbsp; <span  class="trn">Inglés</span></a></li>
+												<li><a   class="lang_selector" id="idiomaPT" data-value="pt" onclick="setIdioma('PT', true);$('#idiomaSelector').html(getIdiomaCompleto())"><img class="bg-ing trn" src="images/flag-br.png" alt="">&nbsp; <span  class="trn">Portugués</span></a></li>
+						</ul>
+						
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- HEADER -->
+	<!-- PAGE HEADER -->
+	<div class="page-head">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h1 class="page-header">Datos Personales</h1>
+					
+				</div>
+			</div>
+        </div>	
+	</div>
+	<!-- PAGE HEADER -->
+
+	
+	
+	
+	
+	
+	<div class="blog-content blog-classic-side">
+		<div class="container">
+			
+	<div class="row">
+		 <article class="col-md-8" style="margin-bottom:10px;">
+	<h2 class="bg-auto trn"> <i class="fa fa-user"></i> &nbsp;	DATOS PERSONALES	</h2>	  
+	<div class="col-md-12 col-sm-12">		
+    <div class="row">
+	<div class="col-sm-12 col-carro" style="margin-top:0px;">
+	<form name="sentMessage" id="contactForm" action="" method="post">
+			<div class="col-sm-6" style="margin-top:0px;">
+             
+			<div class="form-group col-md-12">
+												  
+												  <input type="text" class="form-control" id="apiom_nombre"  placeholder="Nombre">
+												</div>
+												<div class="form-group col-md-12">
+												  
+												  <input type="Nombreyapellido" class="form-control" id="apiom_nombre"  placeholder="Apellido">
+												</div>
+												<div class="col-md-12">
+												
+												
+												<div class="col-md-4" style="padding-left: 0px; padding-right:0px; ">
+												<div class="form-group ">
+												  <select id="apiom_tipo_documento" name="" required="" class="form-control trn" style="height:50px; border-radius:0px;border: 1px solid #e5e5e5;">
+                                                         <option value="1">DU</option>
+                                                        <option value="2">DNI</option>
+                                                        <option value="3">Pas</option>
+                                                        
+                                                        </select>
+														
+														 </div>
+														  </div>
+														<div class="col-md-8" style="padding-left: 0px; padding-right:0px; ">
+												<div class="form-group ">
+												<input type="text" class="form-control trn" id="apiom_numero_documento"  name="documento" value="" placeholder="Nº de Documento">
+											  </div>
+											   </div>
+											    </div>
+											   
+											   
+												<div class="form-group col-md-12">
+												 
+												  <input type="text" class="form-control trn"  id="apiom_telefono" name="telefono" value="" placeholder="Teléfono">
+												</div>
+												<div class="form-group col-md-12">
+												  
+												  <input type="email" class="form-control trn" id="apiom_email" name="mail" value="" placeholder="Email">
+												</div>
+												<div class="form-group col-md-12">
+												 
+												  <select id="apiom_tipo_cliente" name="ubicacion" required="" class="form-control trn" style="height:50px; border-radius:0px;border: 1px solid #e5e5e5;">
+                                                         <option value="1">Tipo de Cliente</option>
+														  <option value="1">Consumidor Final</option>
+                                                        <option value="2">Responsable Inscripto</option>
+                                                        <option value="3">Monoitributista</option>
+                                                        
+                                                        </select>
+												</div>
+											 
+											 <div class="form-group col-md-12">
+											<div class="custom-file">
+												
+												  <label class="form-group trn " for="customFileLang">Constancia de AFIP</label>
+												    <input type="file"  id="apiom_constancia_afip"  class="form-control trn">
+												</div>
+											  </div>
+											 
+			
+						
+
+			</div>
+			
+			<div class="col-sm-6" style="margin-top:0px;">
+            
+			
+												<div class="form-group col-md-12">
+												 
+												  <input type="text" class="form-control trn" placeholder="Domicilio" id="apiom_domicilio" name="" value="" required="">
+												</div>
+												<div class=" col-md-12">
+												
+												
+												<div class="col-md-6" style="padding-left: 0px; padding-right:5px; margin-bottom:0px; margin-top:0px;">
+												<div class="form-group">
+												
+												   <input type="text" class="form-control trn" placeholder="Ciudad" id="apiom_ciudad" name="" value="" required="">
+														 </div>
+														 	 </div>
+														<div class="col-md-6" style="padding-left: 0px; padding-right:5px; margin-bottom:0px; margin-top:0px;">
+												<div class="form-group">
+												
+												   <input type="text" class="form-control trn" placeholder="Provincia" id="apiom_provincia" name="" value="" required="">
+														 </div>
+											   </div>
+											   </div>
+												<div class="form-group col-md-12">
+												 
+												   <select id="apiom_pais" name="apiom_pais" required="" class="form-control trn" style="height:50px; border-radius:0px;border: 1px solid #e5e5e5;">
+                                                         <option value="1">País</option>
+														 <option value="1">Argentina</option>
+                                                        <option value="2">Afganistán</option>
+                                                        <option value="3">Albania</option>
+                                                        
+                                                        </select>
+												</div>
+												<div class=" col-md-12">
+												
+												
+												<div class="col-md-6" style="padding-left: 0px; padding-right:5px; margin-bottom:0px; margin-top:0px;">
+												<div class="form-group">
+												
+												   <input type="text" class="form-control trn"  id="apiom_licencia" name="" value="" placeholder="Nº de Licencia">
+														 </div>
+														  </div>
+														<div class="col-md-6" style="padding-left: 0px; padding-right:5px; margin-bottom:0px; margin-top:0px;">
+												<div class="form-group">
+												
+												   <input type="text" class="form-control trn" placeholder="Categoría" id="apiom_categoria" name="" value="" required="">
+														
+														 </div> </div>
+											   </div>
+												<div class=" col-md-12">
+												<div class=" col-md-7" style="padding-left: 0px; padding-right:5px; margin-bottom:0px;margin-top:0px; ">
+												<div class="form-group">
+												
+												   <input type="date" class="form-control trn"  id="apiom_vencimiento_licencia" name="" placeholder="Vencimiento" required="">
+														 </div>
+														  </div>
+														<div class=" col-md-5" style="padding-left: 0px; padding-right:0px; margin-bottom:0px; margin-top:0px;">
+														<div class="form-group">
+												
+												    <select id="apiom_expedida" name="ubicacion" required="" class="form-control trn" style="height:50px; border-radius:0px;border: 1px solid #e5e5e5;">
+                                                         <option value="">Expedida</option>
+														  <option value="1">CABA</option>
+                                                        <option value="2">Prov. Bs As</option>
+                                                        <option value="3">Alemania</option>
+                                                        
+                                                        </select>
+														 </div>
+														  </div>
+											   </div>
+													<div class="form-group col-md-12">
+												  
+												  <input type="text" class="form-control trn" placeholder="Número de Tarjeta" id="apiom_numero_tarjeta" name="" value="" required="">
+												</div>
+												<div class="form-group col-md-12">
+												 
+												  <input type="text" class="form-control trn" placeholder="Nombre del Titular" id="apiom_nombre_titular" name="" value="" required="">
+												</div>
+												<div class=" col-md-12">
+												
+												
+												<div class="col-md-6" style="padding-left: 0px; padding-right:5px; margin-bottom:0px;margin-top:0px; ">
+												<div class="form-group">
+												
+												   <input type="text" class="form-control trn" placeholder="Vto 00/00" id="apiom_vencimiento_tarjeta" name="" value="" required="">
+														 </div>
+														  </div>
+														<div class="col-md-6" style="padding-left: 0px; padding-right:5px; margin-bottom:0px; margin-top:0px;">
+												<div class="form-group">
+												
+												   <input type="text" class="form-control trn" placeholder="Cod Seg" id="apiom_cod_seg" name="" value="" required="">
+														
+														 </div> </div>
+											   </div>
+												
+												<div class="form-group col-md-12">
+												 <button id="" type="submit" class="collapsed trn btn btn-secondary  btn-xs   text-center" style="margin-top: 10px;"  data-toggle="collapse" data-parent="#accordion" href="#collapse13" aria-expanded="false" aria-controls="collapse4">Conductor Adicional <i class="fa fa-plus"></i></button>
+												 
+												 
+												 <article class="  panel-collapse collapse" id="collapse13"  role="tabpanel" aria-labelledby="heading4" aria-expanded="false">
+												 
+												 <div class="form-group">
+												  
+												  <input type="text" class="form-control trn" placeholder="Nombre completo" id="apiom_nombre_conductor_adicional" name="" value="" required="">
+												</div>
+												<div class="row">
+												
+													<div class="col-md-12">
+												<div class="col-md-6" style="padding-left: 0px; padding-right:5px; margin-bottom:0px; margin-top:0px;">
+												<div class="form-group">
+												
+												   <input type="text" class="form-control trn"  id="apiom_licencia_adicional" name="" value="" placeholder="Nº de Licencia">
+														 </div>
+														  </div>
+														<div class="col-md-6" style="padding-left: 0px; padding-right:5px; margin-bottom:0px; margin-top:0px;">
+												<div class="form-group">
+												
+												   <input type="text" class="form-control trn" placeholder="Categoría" id="apiom_categoria_adicional" name="" value="" required="">
+														
+														 </div> </div>
+														 </div>
+											   </div>
+												<div class=" row">
+												<div class="col-md-12">
+												<div class=" col-md-7" style="padding-left: 0px; padding-right:5px; margin-bottom:0px;margin-top:0px; ">
+												<div class="form-group">
+												
+												   <input type="date" class="form-control trn"  id="apiom_vencimiento_licencia_adicional" name="" placeholder="Vencimiento" required="">
+														 </div>
+														  </div>
+														<div class=" col-md-5" style="padding-left: 0px; padding-right:0px; margin-bottom:0px; margin-top:0px;">
+														<div class="form-group">
+												
+												    <select id="apiom_expedida_adicional" name="ubicacion" required="" class="form-control trn" style="height:50px; border-radius:0px;border: 1px solid #e5e5e5;">
+                                                         <option value="">Expedida</option>
+														  <option value="1">CABA</option>
+                                                        <option value="2">Prov. Bs As</option>
+                                                        <option value="3">Alemania</option>
+                                                        
+                                                        </select>
+														 </div>
+														  </div>
+														  </div>
+											   </div>
+											   <div class="form-group ">
+												 <button id="apiom_conductor_adicional" type="submit" class="trn btn btn-default btn-xs   text-center" style="margin-top: 10px;"  >Agregar <i class="fa fa-plus"></i></button>
+												  </div>
+												 </article>
+												  </div>
+												  
+												  
+												  
+												<div class="form-group col-md-12">
+												 <button id="" type="submit" class="collapsed trn btn btn-secondary  btn-xs   text-center" style="margin-top: 10px;"  data-toggle="collapse" data-parent="#accordion" href="#collapse14" aria-expanded="false" aria-controls="collapse4">Tarjeta Adicional <i class="fa fa-plus"></i></button>
+												 
+												 
+												 <article class="  panel-collapse collapse" id="collapse14"  role="tabpanel" aria-labelledby="heading4" aria-expanded="false">
+												 
+												 <div class="form-group">
+												  
+												  <input type="text" class="form-control trn" placeholder="Número de Tarjeta" id="apiom_numero_tarjeta_adicional" name="" value="" required="">
+												</div>
+												<div class="form-group ">
+												 
+												  <input type="text" class="form-control trn" placeholder="Nombre del Titular" id="apiom_nombre_titular_adicional" name="" value="" required="">
+												</div>
+												<div class=" row">
+												<div class="col-md-12">
+												
+												<div class="col-md-6" style="padding-left: 0px; padding-right:5px; margin-bottom:0px;margin-top:0px; ">
+												<div class="form-group">
+												
+												   <input type="text" class="form-control trn" placeholder="Vto 00/00" id="apiom_vencimiento_tarjeta_adicional" name="" value="" required="">
+														 </div>
+														  </div>
+														<div class="col-md-6" style="padding-left: 0px; padding-right:5px; margin-bottom:0px; margin-top:0px;">
+												<div class="form-group">
+												
+												   <input type="text" class="form-control trn" placeholder="Cod Seg" id="apiom_cod_seg_adicional" name="" value="" required="">
+														
+														 </div> </div> </div>
+											   </div>
+											   <div class="form-group ">
+												 <button id="apiom_tarjeta_adicional" type="submit" class="trn btn btn-default btn-xs   text-center" style="margin-top: 10px;"  >Agregar <i class="fa fa-plus"></i></button>
+												  </div>
+												 </article>
+												  </div>
+			</div>
+			</form>
+	</div>
+    </div>
+	</div>
+	
+	
+    </article> <!-- CIERRA COLUMNA DERECHA GRANDE -->
+
+		 <div class="col-md-4 sticky">
+					<div class="side-widget">
+					<article>
+    
+<h2 class="bg-auto trn"> <i class="fa fa-image"></i> &nbsp;	DOCUMENTOS	</h2>	  
+    
+       
+		
+		<div class="">
+		
+				
+          
+			  <div class="row">	
+			   
+			<div class="col-md-6">
+						
+							<div class=" text-center">
+								<img src="images/user.jpg" alt="">
+								
+							</div>
+
+					    	<div class=" text-center">
+					    		
+					    		<button type="submit" class="btn btn-warning btn-xs btn-ico btn-block trn">Foto Documento </button>
+
+								
+					    	</div>
+				    	
+					</div>
+			
+										<div class="col-md-6" >
+						
+							<div class=" text-center">
+									<img src="images/user.jpg" alt="">
+								
+							</div>
+
+					    	<div class=" text-center" >
+					    		
+					    		<button type="submit" class="btn btn-warning btn-xs btn-ico btn-block trn">Foto Pasaporte </button>
+
+								
+					    	</div>
+				    	
+					</div>			
+												
+						<div class="col-md-6" >
+						
+							<div class=" text-center">
+								<img src="images/user.jpg" alt="">
+								
+							</div>
+
+					    	<div class=" text-center" >
+					    		
+					    		<button type="submit" class="btn btn-warning btn-xs btn-ico btn-block trn">Licencia Frente</button>
+
+								
+					    	</div>
+				    	
+					</div>		
+				<div class="col-md-6">
+						
+							<div class=" text-center">
+									<img src="images/user.jpg" alt="">
+								
+							</div>
+
+					    	<div class=" text-center" >
+					    		
+					    		<button type="submit" class="btn btn-warning btn-xs btn-ico btn-block trn">Licencia Reverso </button>
+
+								
+					    	</div>
+				    	
+					</div>	
+</div>	
+<div class="row" style="margin-top:10px;">
+						
+					<div class="col-xs-12 text-right" >			
+                <button class="btn btn-default btn-md trn" id="apiom_guardar" >&nbsp; Guardar &nbsp; <i class="fa fa-check" ></i></button>
+			</div>
+			</div>
+			</div>
+			
+			
+			
+            
+       
+		</article>
+		</div>
+		</div>
+		
+		
+		</div>
+		</div>
+	
+	</div>
+
+	<!-- FOOTER -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<h1 class="footer-logo"><a href="index.html">Renta Facil</a></h1>
+					<p class="trn">La rentadora número uno del mercado</p>
+					<ul class="footer-social">
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<h4 class="trn">Menú</h4>
+					<div class="row">
+						<div class="col-md-6">
+							<ul class="footer-list">
+								<li><a class="trn" href="empresa.html">Nuestra Empresa</a></li>
+								<li><a class="trn" href="oficinas.html">Otras Oficinas</a></li>
+								<li><a class="trn" href="flota.html">Nuestra Flota</a></li>
+								
+							</ul>
+						</div>
+						<div class="col-md-6">
+							<ul class="footer-list">
+							<li><a class="trn" href="preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
+								<li><a class="trn" href="resultado-de-busqueda.html">{{Pagina de Resultado}}</a></li>
+								<li><a class="trn" href="reserva.html"> {{Reserva}}</a></li>
+								<li><a class="trn" href="sucursal.html">{{Sucursal}}</a></li>
+								<li><a class="trn" href="mis-reservas.html">{{Mis Reservas}}</a></li>
+								<li><a class="trn" href="confirmacion.html">{{Confirmación}}</a></li>
+								<li><a class="trn" href="datos-personales.html">{{Datos Personales}}</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<h4 class="trn">Contactanos</h4>
+					<a class="text-color-skin-blue" href="#" style="font-size: 1.8em;"><i class="fa fa-whatsapp"></i> &nbsp;(+54)02568 456-7890</a>
+					<br><br>
+					<p class="trn">&copy; 2021. Rentafacil. Todos los derechos reservados.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- FOOTER -->
+</div>
+
+
+<!-- JAVASCRIPT =============================-->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/vendors/flexslider/flexslider.js"></script>
+<script src="js/vendors/slick/slick.min.js"></script>
+<script src="js/vendors/jquery.placeholder.js"></script>
+<script src="js/vendors/jquery.easing.min.js"></script>
+<script src="js/vendors/mc/jquery.ketchup.all.min.js"></script>
+<script src="js/vendors/mc/main.js"></script>
+<script src="js/vendors/jquery.countdown.min.js"></script>
+<script src="js/vendors/swipebox/js/jquery.swipebox.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

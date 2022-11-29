@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+
+	<title>Terminos & Condiciones | Theme 1 Paris</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+
+	<!-- FAVICON -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+
+	<!-- BOOTSTRAP -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<!-- ICONS -->
+	<link rel="stylesheet" href="css/icons/fontawesome/css/style.css">
+	<link rel="stylesheet" href="css/icons/themify/style.css">
+	<link rel="stylesheet" href="css/icons/ionicons/css/style.css">
+	<link rel="stylesheet" href="css/icons/icomoon/style.css">
+
+	<!-- THEME / PLUGIN CSS -->
+	<link rel="stylesheet" href="js/vendors/flexslider/flexslider.css">
+	<link rel="stylesheet" href="js/vendors/slick/slick.css">
+	<link rel="stylesheet" href="js/vendors/swipebox/css/swipebox.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- SKIN -->
+	<link rel="stylesheet" title="blue" href="css/skins/skin-blue.css"/>
+
+    
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+
+	<!--  MODALES LOGIN -->
+	
+<div id="reservas" class="modal fade">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+           
+            <div class="modal-body">
+                <div class="row">
+				
+				 <div class="col-md-12">
+                        <div class="tabs-wrapper content-tabs">
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a href="#item-description" data-toggle="tab" class="trn">Mis Reservas</a></li>
+                                <li><a href="#reviews" data-toggle="tab" class="trn">Iniciar Sesión</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane fade in active" id="item-description">
+                                  <div class="form-group">
+								<label class="form-group trn" >Correo Electrónico</label>
+                                    <div class="form-group"><input class="form-control apiom_email" type="text" ></div>
+                                </div>
+                                <div class="form-group">
+								<label class="form-group trn" >Nº de confirmación</label>
+                                    <div class="form-group"><input id="apiom_ confirmation_number" class="form-control " type="text" ></div>
+                                </div>
+                                
+                                <div class="text-center-lg">
+                                    <a class="forgot-password trn" href="#" data-toggle="modal" data-target="#numero">¿No sabes cual es tu Nº de confirmación?</a>
+                                </div></br>
+                                <div class="form-group">
+                                    <a id="apiom_ submit_mis_reserva" class="btn btn-default trn  text-center" href="#">IR A LA RESERVA</a>
+                                </div>
+                                </div>
+                                <div class="tab-pane fade" id="reviews">
+                                  
+                               
+							  
+                                <div class="form-group">
+								<label class="form-group trn" >Correo Electrónico</label>
+                                    <div class="form-group"><input class="form-control apiom_ email" type="text" ></div>
+                                </div>
+                                <div class="form-group">
+								<label class="form-group trn" >Contraseña</label>
+                                    <div class="form-group"><input id="apiom_ password" class="form-control" type="password" ></div>
+                                </div>
+                                
+                                <div class=" text-center-lg">
+                                    <a class="forgot-password" href="#" data-toggle="modal" data-target="#contraseña">¿Olvidaste tu contraseña?</a>
+                                </div>
+								  <div class=" text-center-lg">
+                                    <a class="forgot-password trn" href="#" data-toggle="modal" data-target="#registrarse">¿Primera vez? <span style="text-decoration:underline;">REGISTRATE</span></a>
+                                </div></br>
+                                <div class="form-group">
+                                    <a id="apiom_ submit_login" class="btn btn-default trn  text-center" href="#">INICIAR SESIÓN</a>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+ <div id="numero" class="modal fade">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          
+            <div class="modal-body">
+                <button type="button" class="bootbox-close-button close" data-dismiss="modal" aria-hidden="true">×</button>
+              <div class="row">
+                    <div class="col-md-12">
+						<div class="media-body text-center-lg trn">
+                                   
+                                    Te eviaremos tu Nº de reserva al mail registrado en nuestro sistema.
+                                </div></br>
+						 <div class="form-group">
+								<label class="form-group trn" >Email</label>
+                                    <div class="form-group trn"><input class="form-control" type="text" ></div>
+                                </div>
+                               
+                                <div class="form-group">
+                                    <a class="btn btn-default  trn text-center" href="#">Enviar</a>
+                                </div>
+                    </div>
+					 </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div id="contraseña" class="modal fade">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          
+            <div class="modal-body">
+                <button type="button" class="bootbox-close-button close" data-dismiss="modal" aria-hidden="true">×</button>
+              <div class="row">
+                    <div class="col-md-12">
+						<div class="media-body text-center-lg trn">
+                                   
+                                    Te eviaremos tu contraseña al mail registrado en nuestro sistema.
+                                </div></br>
+						 <div class="form-group">
+								<label class="form-group trn" >Email</label>
+                                    <div class="form-group"><input class="form-control" type="text" ></div>
+                                </div>
+                               
+                                <div class="form-group">
+                                    <a class="btn btn-default trn  text-center" href="#">Enviar</a>
+                                </div>
+                    </div>
+					 </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	
+	<div id="registrarse" class="modal fade">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+          
+            <div class="modal-body">
+			 <button type="button" class="bootbox-close-button close" data-dismiss="modal" aria-hidden="true">×</button>
+			<div class="modal-header row form-group">
+                                   
+                                    <h3 class="trn">Registrate </h3>
+                                </div></br>
+               
+              <div class="row">
+                    <div class="col-md-12" style="margin-top: 0px;">
+						
+								<div class="row">
+								 <div class="col-md-6" style="margin-top: 0px;">
+								<div class="form-group">
+								<label class="form-group trn" >Nombre</label>
+                                    <div class="form-group"><input class="form-control" type="text" ></div>
+                                </div>
+								 </div>
+								  <div class="col-md-6" style="margin-top: 0px;">
+								<div class="form-group">
+								<label class="form-group trn" >Apellido</label>
+                                    <div class="form-group"><input class="form-control" type="text" ></div>
+                                </div>
+								 </div>
+								 <div class="col-md-12" style="margin-top: 0px;">
+						 <div class="form-group">
+								<label class="form-group trn" >Email</label>
+                                    <div class="form-group"><input class="form-control" type="text" ></div>
+                                </div>
+								 </div>
+                                 <div class="col-md-6"style="margin-top: 0px;">
+                               <div class="form-group">
+								<label class="form-group  trn" >Contraseña</label>
+                                    <div class="form-group"><input class="form-control" type="password" ></div>
+                                </div>
+								 </div>
+								 <div class="col-md-6" style="margin-top: 0px;">
+								<div class="form-group">
+								<label class="form-group trn" >Repetir Contraseña</label>
+                                    <div class="form-group"><input class="form-control" type="password" ></div>
+                                </div>
+								 </div>
+								  </div>
+								  <div class="col-md-12 text-center" style="margin-top: 0px;">
+                                <div class="form-group">
+                                    <a class="btn btn-default trn  text-center" href="#" style="margin-left: auto;margin-right: auto;">Enviar</a>
+                                </div>
+								  </div>
+                    </div>
+					 </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	
+	<!-- END MODALES LOGIN -->
+
+<div id="page-top"></div>
+    
+<div id="wrapper">
+<!-- HEADER -->
+	<header>
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header pull-left">
+					<!-- Logo -->
+					<a class="navbar-brand" href="index.html">	<img  src="images/LOGO-rentafacil.png" alt=""></a>
+				</div>
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+				<!-- <div class="top-contact pull-right editContent"> -->
+					<!-- <i class="icon-phone"></i> <span class="trn">Llámenos</span>0810 1234 5678 -->
+				<!-- </div> -->
+				<!-- Navmenu -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="empresa.html" class="trn" >Empresa</a></li>
+						<li><a href="oficinas.html" class="trn" >Oficinas</a></li>
+						<li><a href="flota.html" class="trn" >Flota</a></li>
+						<li><a  href="#" data-toggle="modal" data-target="#reservas" class="trn">Mis Reservas</a></li>
+							
+						<li class="dropdown"><a class="apiom_ul_monedas"  href="#"  >$ARS</a>
+						<ul id="apiom_ulMonedaUsuario" class="dropdown-menu" role="menu">
+								<li class="" data-to-currency="ARS" id="ARS"><a href="#">$ (ARS)</a></li>
+								<li class="" data-to-currency="USD" id="USD"><a href="#">US$ (USD)</a></li>
+								<li class="" data-to-currency="EUR" value="EUR" id="EUR"><a href="#">€ (EUR)</a></li>
+								<li class="" data-to-currency="BRL" value="BRL" id="BRL"><a href="#">R$ (BRL)</a></li>
+								<li class="" data-to-currency="UYU" value="UYU" id="UYU"><a href="#">$ (UYU)</a></li>
+								
+							</ul>
+						
+						</li>
+						<li class="dropdown"><a class="lang_selector" id="idiomaES" data-value="es"
+							onclick="setIdioma('ES', true);$('#idiomaSelector').html(getIdiomaCompleto())"><img class="bg-esp"  src="images/flag.png" alt=""></a>
+					<ul class="dropdown-menu" role="menu">
+					
+				
+												<li><a   class="lang_selector" id="idiomaEN" data-value="en" onclick="setIdioma('EN', true);$('#idiomaSelector').html(getIdiomaCompleto())"  ><img class="bg-bra" src="images/flag-uk.png" alt="">&nbsp; <span  class="trn">Inglés</span></a></li>
+												<li><a   class="lang_selector" id="idiomaPT" data-value="pt" onclick="setIdioma('PT', true);$('#idiomaSelector').html(getIdiomaCompleto())"><img class="bg-ing trn" src="images/flag-br.png" alt="">&nbsp; <span  class="trn">Portugués</span></a></li>
+						</ul>
+						
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- HEADER -->
+	<!-- PAGE HEADER -->
+	<div class="page-head">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h1 class="page-header trn">Términos & Condiciones</h1>
+					
+				</div>
+			</div>
+        </div>	
+	</div>
+	<!-- PAGE HEADER -->
+
+	
+	<div class="blog-single-excerpt container">
+		<div class="row">
+			<div class="col-md-12  col-sm-12">
+			<div class="vce-text-block-wrapper vce" id="el-92355f79" data-vce-do-apply="all el-92355f79">
+
+<p class="trn">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus deleniti nulla, hic voluptatibus eum voluptatum libero suscipit nemo voluptates cupiditate, ipsum provident facere modi tempora ducimus enim dicta laborum esse aliquam rem assumenda dolores. Commodi, aperiam, blanditiis! Ipsum iure necessitatibus eaque, fuga. Excepturi facilis libero dicta soluta officiis, sint sit voluptatem, vero doloribus nesciunt suscipit dolores veritatis minus quam atque non autem quasi consequatur quae sequi ex, ipsa facere qui ut recusandae. Quod earum cupiditate quaerat assumenda.</p>
+<p class="trn">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus deleniti nulla, hic voluptatibus eum voluptatum libero suscipit nemo voluptates cupiditate, ipsum provident facere modi tempora ducimus enim dicta laborum esse aliquam rem assumenda dolores. Commodi, aperiam, blanditiis! Ipsum iure necessitatibus eaque, fuga. Excepturi facilis libero dicta soluta officiis, sint sit voluptatem, vero doloribus nesciunt suscipit dolores veritatis minus quam atque non autem quasi consequatur quae sequi ex, ipsa facere qui ut recusandae. Quod earum cupiditate quaerat assumenda.</p>
+<p class="trn">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus deleniti nulla, hic voluptatibus eum voluptatum libero suscipit nemo voluptates cupiditate, ipsum provident facere modi tempora ducimus enim dicta laborum esse aliquam rem assumenda dolores. Commodi, aperiam, blanditiis! Ipsum iure necessitatibus eaque, fuga. Excepturi facilis libero dicta soluta officiis, sint sit voluptatem, vero doloribus nesciunt suscipit dolores veritatis minus quam atque non autem quasi consequatur quae sequi ex, ipsa facere qui ut recusandae. Quod earum cupiditate quaerat assumenda.</p>
+<p class="trn">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus deleniti nulla, hic voluptatibus eum voluptatum libero suscipit nemo voluptates cupiditate, ipsum provident facere modi tempora ducimus enim dicta laborum esse aliquam rem assumenda dolores. Commodi, aperiam, blanditiis! Ipsum iure necessitatibus eaque, fuga. Excepturi facilis libero dicta soluta officiis, sint sit voluptatem, vero doloribus nesciunt suscipit dolores veritatis minus quam atque non autem quasi consequatur quae sequi ex, ipsa facere qui ut recusandae. Quod earum cupiditate quaerat assumenda.</p>
+<p class="trn">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus deleniti nulla, hic voluptatibus eum voluptatum libero suscipit nemo voluptates cupiditate, ipsum provident facere modi tempora ducimus enim dicta laborum esse aliquam rem assumenda dolores. Commodi, aperiam, blanditiis! Ipsum iure necessitatibus eaque, fuga. Excepturi facilis libero dicta soluta officiis, sint sit voluptatem, vero doloribus nesciunt suscipit dolores veritatis minus quam atque non autem quasi consequatur quae sequi ex, ipsa facere qui ut recusandae. Quod earum cupiditate quaerat assumenda.</p>
+<p class="trn">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus deleniti nulla, hic voluptatibus eum voluptatum libero suscipit nemo voluptates cupiditate, ipsum provident facere modi tempora ducimus enim dicta laborum esse aliquam rem assumenda dolores. Commodi, aperiam, blanditiis! Ipsum iure necessitatibus eaque, fuga. Excepturi facilis libero dicta soluta officiis, sint sit voluptatem, vero doloribus nesciunt suscipit dolores veritatis minus quam atque non autem quasi consequatur quae sequi ex, ipsa facere qui ut recusandae. Quod earum cupiditate quaerat assumenda.</p>
+<p class="trn">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus deleniti nulla, hic voluptatibus eum voluptatum libero suscipit nemo voluptates cupiditate, ipsum provident facere modi tempora ducimus enim dicta laborum esse aliquam rem assumenda dolores. Commodi, aperiam, blanditiis! Ipsum iure necessitatibus eaque, fuga. Excepturi facilis libero dicta soluta officiis, sint sit voluptatem, vero doloribus nesciunt suscipit dolores veritatis minus quam atque non autem quasi consequatur quae sequi ex, ipsa facere qui ut recusandae. Quod earum cupiditate quaerat assumenda.</p>
+<p class="trn">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus deleniti nulla, hic voluptatibus eum voluptatum libero suscipit nemo voluptates cupiditate, ipsum provident facere modi tempora ducimus enim dicta laborum esse aliquam rem assumenda dolores. Commodi, aperiam, blanditiis! Ipsum iure necessitatibus eaque, fuga. Excepturi facilis libero dicta soluta officiis, sint sit voluptatem, vero doloribus nesciunt suscipit dolores veritatis minus quam atque non autem quasi consequatur quae sequi ex, ipsa facere qui ut recusandae. Quod earum cupiditate quaerat assumenda.</p>
+<p class="trn">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus deleniti nulla, hic voluptatibus eum voluptatum libero suscipit nemo voluptates cupiditate, ipsum provident facere modi tempora ducimus enim dicta laborum esse aliquam rem assumenda dolores. Commodi, aperiam, blanditiis! Ipsum iure necessitatibus eaque, fuga. Excepturi facilis libero dicta soluta officiis, sint sit voluptatem, vero doloribus nesciunt suscipit dolores veritatis minus quam atque non autem quasi consequatur quae sequi ex, ipsa facere qui ut recusandae. Quod earum cupiditate quaerat assumenda.</p>
+
+</div>
+				
+		</div>
+		
+		
+		</div>
+	</div>
+	
+	
+
+	<!-- FOOTER -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<h1 class="footer-logo"><a href="index.html">Renta Facil</a></h1>
+					<p class="trn">La rentadora número uno del mercado</p>
+					<ul class="footer-social">
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<h4 class="trn">Menú</h4>
+					<div class="row">
+						<div class="col-md-6">
+							<ul class="footer-list">
+								<li><a class="trn" href="empresa.html">Nuestra Empresa</a></li>
+								<li><a class="trn" href="oficinas.html">Otras Oficinas</a></li>
+								<li><a class="trn" href="flota.html">Nuestra Flota</a></li>
+								
+							</ul>
+						</div>
+						<div class="col-md-6">
+							<ul class="footer-list">
+							<li><a class="trn" href="preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
+								<li><a class="trn" href="resultado-de-busqueda.html">{{Pagina de Resultado}}</a></li>
+								<li><a class="trn" href="reserva.html"> {{Reserva}}</a></li>
+								<li><a class="trn" href="sucursal.html">{{Sucursal}}</a></li>
+								<li><a class="trn" href="mis-reservas.html">{{Mis Reservas}}</a></li>
+								<li><a class="trn" href="confirmacion.html">{{Confirmación}}</a></li>
+								<li><a class="trn" href="datos-personales.html">{{Datos Personales}}</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<h4 class="trn">Contactanos</h4>
+					<a class="text-color-skin-blue" href="#" style="font-size: 1.8em;"><i class="fa fa-whatsapp"></i> &nbsp;(+54)02568 456-7890</a>
+					<br><br>
+					<p class="trn">&copy; 2021. Rentafacil. Todos los derechos reservados.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- FOOTER -->
+</div>
+
+
+<!-- JAVASCRIPT =============================-->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/vendors/flexslider/flexslider.js"></script>
+<script src="js/vendors/slick/slick.min.js"></script>
+<script src="js/vendors/jquery.placeholder.js"></script>
+<script src="js/vendors/jquery.easing.min.js"></script>
+<script src="js/vendors/mc/jquery.ketchup.all.min.js"></script>
+<script src="js/vendors/mc/main.js"></script>
+<script src="js/vendors/jquery.countdown.min.js"></script>
+<script src="js/vendors/swipebox/js/jquery.swipebox.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+   <title>Sucursal | Theme 2 Marsella</title>
+   
+    <meta name="robots" content="index follow">
+    <meta name="googlebot" content="index follow">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800|Poppins:300i,400,300,700,400i,500|Ubuntu:300i,400,300,700,400i,500|Raleway:400,500,600,700" rel="stylesheet">
+    <!-- CSS Files -->
+
+
+    <!-- Owl Carousel Assets -->
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/travlez-jquery-ui.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript" src="js/jquery.gomap-1.3.3.min.js"></script>
+	  <script type="text/javascript" src="js/sticky-sidebar.js"></script>
+
+</head>
+
+<body>
+      <!-- MODAL LOGINS -->
+	
+	<div id="mis-reservas" class="modal fade">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          
+            <div class="modal-body">
+			 <button type="button" class="bootbox-close-button close" data-dismiss="modal" aria-hidden="true">×</button>
+			<div class="modal-header row form-group">
+                                   
+                                    <h5 class="text-uppercase italic text-medium font-weight-600 trn">Mis Reservas </h5>
+                                </div>
+               
+              <div class="row justify-content-md-center">
+
+                <div class="col-lg-4">
+                    <div class="padding-30px background-white border-1 border-grey-1">
+                        <form>
+                            <div class="form-group">
+                                <label  class="col-form-label"><strong class=" trn">Correo Electrónico</strong></label>
+                                <input type="email" class="form-control rounded-0 apiom_email" id="" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPassword3" class="col-form-label"><strong class=" trn">Numero de Confirmación</strong></label>
+                                <input type="text" class="form-control rounded-0" id="apiom_confirmation_number" placeholder="">
+                            </div>
+                            
+                            <div class="form-group">
+                                <a href="#" id="apiom_submit_mis_reservas" class="btn btn-primary btn-block rounded-0 background-main-color trn">Ir a la reserva</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="margin-bottom-20px margin-top-20px">
+                        <i class="fa fa-ticket margin-right-10px" aria-hidden="true"></i> <strong class="text-uppercase trn">¿No sabes cual es tu Nº de confirmación?</strong>
+                        <span class="d-block text-grey-2 trn">Te enviaremos tu Nº de reserva al mail registrado en nuestro sistema</span>
+						<span class="d-block"><a  class="text-grey-2 collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse1" class=" trn">ENVIAR EMAIL</a></span>
+							<div class="  panel-collapse collapse" id="collapse3"  role="tabpanel" aria-labelledby="heading4" aria-expanded="false">
+						 <div class="form-group">
+                                
+                                <input type="text" class="form-control rounded-0" id="inputPassword3" placeholder="Email">
+                            </div>
+							 <div class="form-group">
+                                <a href="#" class="btn btn-primary btn-block rounded-0 background-main-color trn">Enviar</a>
+                            </div>
+                    </div>
+					 </div>
+
+                   
+                   
+                </div>
+				
+				
+
+            </div>
+            </div>
+        </div>
+    </div>
+	 </div>
+	 
+	 
+	 
+	 
+	 <div id="iniciar-sesion" class="modal fade">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          
+            <div class="modal-body">
+			 <button type="button" class="bootbox-close-button close" data-dismiss="modal" aria-hidden="true">×</button>
+			<div class="modal-header row form-group">
+                                   
+                                    <h5 class="text-uppercase italic text-medium font-weight-600 trn">Iniciar Sesión </h5>
+                                </div>
+               
+              <div class="row justify-content-md-center">
+
+                <div class="col-lg-4">
+                    <div class="padding-30px background-white border-1 border-grey-1">
+                        <form>
+                            <div class="form-group">
+                                <label for="inputEmail3" class="col-form-label"><strong class=" trn">Correo Electrónico</strong></label>
+                                <input type="email" class="form-control rounded-0 apiom_email" id="" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPassword3" class="col-form-label"><strong class=" trn">Contraseña</strong></label>
+                                <input type="password" class="form-control rounded-0" id="apiom_password" placeholder="Contraseña">
+                            </div>
+                            
+                            <div class="form-group">
+                                <a href="#" id="apiom_submit_login" class="btn btn-primary btn-block rounded-0 background-main-color trn">Ingresar</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="margin-bottom-20px margin-top-20px">
+                        <i class="fa fa-key margin-right-10px" aria-hidden="true"></i> <strong class="text-uppercase trn">¿Olvidó su contraseña?</strong>
+                        <span class="d-block text-grey-2 trn">Te enviaremos tu contraseña al mail registrado en nuestro sistema.</span>
+						<span class="d-block"><a  class="text-grey-2 collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="false" aria-controls="collapse1  trn">ENVIAR EMAIL</a></span>
+							<div class="  panel-collapse collapse" id="collapse1"  role="tabpanel" aria-labelledby="heading4" aria-expanded="false">
+						 <div class="form-group">
+                                
+                                <input type="text" class="form-control rounded-0" id="inputPassword3" placeholder="Email">
+                            </div>
+							 <div class="form-group">
+                                <a href="#" class="btn btn-primary btn-block rounded-0 background-main-color trn">Enviar</a>
+                            </div>
+                    </div>
+					 </div>
+
+                    <div class="margin-bottom-15px padding-bottom-15px border-bottom-1 border-grey-2">
+                        <i class="fa fa-user margin-right-10px" aria-hidden="true"></i> <strong class="text-uppercase collapsed trn" >¿Primera vez? </strong>
+                        <span class="d-block"><a data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse1" class="text-grey-2 trn">REGISTRATE</a></span>
+                    </div>
+                   
+                </div>
+				
+				 <div class="col-lg-6 col-md-6 panel-collapse collapse" id="collapse2"  role="tabpanel" aria-labelledby="heading4" aria-expanded="false">
+                     <div class="margin-top-20px padding-30px background-white border-1 border-grey-1">
+					<form>
+					<strong class="text-uppercase trn">REGISTRARSE</strong>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label   class=" trn">Nombre</label>
+                                <input type="text" class="form-control"   placeholder="Nombre">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label   class=" trn">Apellido</label>
+                                <input type="email" class="form-control"   placeholder="Apellido">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label  class=" trn">Email</label>
+                            <input type="text" class="form-control"   placeholder="Email">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label   class=" trn">Contraseña</label>
+                                <input type="password" class="form-control"   placeholder="Contraseña">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label   class=" trn">Repetir Contraseña</label>
+                                <input type="password" class="form-control"   placeholder="Contraseña">
+                            </div>
+                        </div>
+                        <a href="#" class="btn-sm btn-lg btn-block background-main-color text-white text-center font-weight-bold text-uppercase rounded-0 padding-15px trn">Enviar</a>
+                    </form>
+					 </div>
+                </div>
+
+            </div>
+            </div>
+        </div>
+    </div>
+	 </div>
+	 
+	 
+	 
+<!-- END MODAL LOGINS -->
+   
+   <!-- Header  -->
+    <header class="background-white box-shadow">
+        <div class="background-second-color padding-tb-5px">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3"></div>
+                    
+                    <div class="col-lg-9 position-inherit">
+                        <ul class="user-area list-inline float-right margin-0px text-white">
+                           
+                            <li class="list-inline-item "><a data-toggle="modal" data-target="#mis-reservas" href="#"><i class="fa fa-user-plus padding-right-5px"></i><span  class=" trn">Mis Reservas</span></a></li>
+							 <li class="list-inline-item  padding-right-10px trn"><a data-toggle="modal" data-target="#iniciar-sesion" href="#"><i class="fa fa-lock padding-right-5px"></i><span  class=" trn">Iniciar Sesión</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-output">
+            <div class="container header-in">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <a id="logo" href="index.html" class="d-inline-block margin-tb-10px"><img src="images/logo.png" alt=""></a>
+                        <a class="mobile-toggle" href="#"><i class="fa fa-navicon"></i></a>
+                    </div>
+                    <div class="col-lg-9 position-inherit">
+					<ul id="menu-main" class="nav-menu float-right link-padding-tb-20px dropdown-dark">
+						<li class="active "><a href="index.html"><span  class=" trn">Home</span></a></li>
+						<li><a href="empresa.html" class="trn" ><span  class=" trn">Empresa</span></a></li>
+						<li><a href="oficinas.html" class="trn" ><span  class=" trn">Oficinas</span></a></li>
+						<li><a href="flota.html" class="trn" ><span  class=" trn">Flota</span></a></li>
+						<li style="display: none;"><a   id="apiom_logout" ><span class="trn">Cerrar Sesión</span></a></li>
+							
+						<li class="has-dropdown"><a class="apiom_ul_monedas"   >$ARS</a>
+						<ul id="apiom_ulMonedaUsuario" class="sub-menu" role="menu">
+								<li class="convert" data-to-currency="ARS" id="ARS"><a>$ (ARS)</a></li>
+								<li class="convert" data-to-currency="USD" id="USD"><a>US$ (USD)</a></li>
+								<li class="convert" data-to-currency="EUR" value="EUR" id="EUR"><a>€ (EUR)</a></li>
+								<li class="convert" data-to-currency="BRL" value="BRL" id="BRL"><a>R$ (BRL)</a></li>
+								<li class="convert" data-to-currency="UYU" value="UYU" id="UYU"><a>$ (UYU)</a></li>
+								
+							</ul>
+						
+						</li>
+							<li class="has-dropdown"><a   id="idiomaSelector"><img class="bg-esp"  src="images/flag.png" alt=""></a>
+						<ul class="sub-menu" role="menu">
+								 <li><a class="lang_selector" id="idiomaES" data-value="es"
+                onclick="setIdioma('ES', true);$('#idiomaSelector').html(getIdiomaCompleto())"><img class="bg-ing"
+                    src="images/flag.png" alt=""><span  class=" trn"> Español</span></a></li>
+
+                    <li><a   class="lang_selector" id="idiomaEN" data-value="en" onclick="setIdioma('EN', true);$('#idiomaSelector').html(getIdiomaCompleto())"  ><img class="bg-bra" src="images/flag-uk.png" alt=""> <span  class=" trn">Inglés</span></a></li>
+                    <li><a   class="lang_selector" id="idiomaPT" data-value="pt" onclick="setIdioma('PT', true);$('#idiomaSelector').html(getIdiomaCompleto())"><img class="bg-ing trn" src="images/flag-br.png" alt=""> <span  class=" trn">Portugués</span></a></li>
+								
+							</ul>
+						
+						</li>
+					</ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- // Header  -->
+   <!-- Page title --->
+    <div id="page-title" class="text-grey  background-red" >
+        <div class="text-center">
+            <div class="container z-index-2 position-relative">
+                <h5 class="font-weight-700 italic text-uppercase padding-tb-40px margin-0px trn">Sucursal</h5>
+            </div>
+            
+        </div>
+    </div>
+    <!-- Page title --->
+
+
+   <!-- page output -->
+    <div class="padding-tb-40px background-light-grey">
+        <div class="container">
+            <div class="row">
+
+                <!-- sidebar -->
+               
+
+                   <!-- Sidebar MOBILE -->
+                <div  class="col-lg-4 sticky-sidebar content-mobile">
+                    <!--  Search -->
+                    <div class="widget">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-1" aria-expanded="false"  class="btn-sm btn-lg btn-block background-main-color text-white text-center text-uppercase font-weight-600  padding-7px trn"><span class="trn">Buscar Auto <i class="fa fa-search"></i></span></a>
+						
+                        <div class="search-filter panel-collapse collapse margin-top-10px" id="collapse-1" class=" " role="tabpanel" aria-expanded="false">
+                            <div class="form-group ">
+                                <label class="trn">Ciudad desde</label>
+                                <div class="destination"><select id="apiom_ciudad_desde"  type="text" class="input-text full-width" placeholder="Ciudad">
+								 <option class="trn">Ciudad</option>
+                                                                    <option>Bariloche</option>
+                                                                    <option>Salta</option>
+								
+								</select></div>
+                            </div>
+							<div class="form-group ">
+                                <label class="trn">Ciudad hasta</label>
+                                <div class="destination"><select id="apiom_ciudad_hasta"  type="text" class="input-text full-width" placeholder="Ciudad">
+								 <option class="trn">Ciudad</option>
+                                                                    <option>Bariloche</option>
+                                                                    <option>Salta</option>
+								
+								</select></div>
+                            </div>
+                            <div class="form-group ">
+                                <label class="trn">Fecha desde</label>
+                                <div class="date-input"><input id="apiom_fecha_desde" type="text" class="input-text datepicker full-width" value="15/5/2021"></div>
+                            </div>
+							 <div class="form-group ">
+                                <label class="trn">Hora desde</label>
+                               <div class="time-input2"><input id="apiom_hora_desde" type="time" class="input-text  full-width"  ></div>
+                            </div>
+                            <div class="form-group ">
+                                <label class="trn">Fecha hasta</label>
+                                <div class="date-input"><input id="apiom_fecha_hasta" type="text" class="input-text datepicker full-width" value="25/5/2021"></div>
+                            </div>
+							 <div class="form-group ">
+                                <label class="trn">Hora hasta</label>
+                               <div class="time-input3"><input id="apiom_hora_hasta"  type="time" class="input-text  full-width" ></div>
+                            </div>
+                            <a href="#" id="apiom_submit_search"  class="btn-sm btn-lg btn-block background-main-color text-white text-center text-uppercase font-weight-600 margin-top-30px padding-7px trn"> Buscar auto</a>
+                        </div>
+                    </div>
+                    <!-- //   Search -->
+
+
+                   
+
+                 
+
+                   
+
+
+                </div>
+				
+				 <div class="col-lg-4 sticky-sidebar content-desktop">
+                    <!--  Search Desktop-->
+                    <div class="widget">
+                        <h4 class="widget-title clearfix"><span class="trn">Buscar Auto</span></h4>
+                        <div class="search-filter">
+                             <div class="form-group ">
+                                <label class="trn">Ciudad desde</label>
+                                <div class="destination"><select id="apiom_ciudad_desde"  type="text" class="input-text full-width" placeholder="Ciudad">
+								 <option class="trn">Ciudad</option>
+                                                                    <option>Bariloche</option>
+                                                                    <option>Salta</option>
+								
+								</select></div>
+                            </div>
+							<div class="form-group ">
+                                <label class="trn">Ciudad hasta</label>
+                                <div class="destination"><select id="apiom_ciudad_hasta"  type="text" class="input-text full-width" placeholder="Ciudad">
+								 <option class="trn">Ciudad</option>
+                                                                    <option>Bariloche</option>
+                                                                    <option>Salta</option>
+								
+								</select></div>
+                            </div>
+                            <div class="form-group ">
+                                <label class="trn">Fecha desde</label>
+                                <div class="date-input"><input id="apiom_fecha_desde" type="text" class="input-text datepicker full-width" value="25/5/2021"></div>
+                            </div>
+							 <div class="form-group ">
+                                <label class="trn">Hora desde</label>
+                               <div class="time-input2"><input id="apiom_hora_desde" type="time" class="input-text  full-width"  ></div>
+                            </div>
+                            <div class="form-group ">
+                                <label class="trn">Fecha hasta</label>
+                                <div class="date-input"><input id="apiom_fecha_hasta" type="text" class="input-text datepicker full-width" value="25/5/2021"></div>
+                            </div>
+							 <div class="form-group ">
+                                <label class="trn">Hora hasta</label>
+                               <div class="time-input3"><input id="apiom_hora_hasta"  type="time" class="input-text  full-width" ></div>
+                            </div>
+                            <a href="#" id="apiom_submit_search"  class="btn-sm btn-lg btn-block background-main-color text-white text-center text-uppercase font-weight-600 margin-top-30px padding-7px trn"> Buscar auto</a>
+                        </div>
+                    </div>
+					</div>
+                    <!-- //   Search Desktop -->
+                <!-- // sidebar -->
+
+                <!--  content -->
+                <div class="col-lg-8 col-md-8 ">
+
+                    <!-- texto -->
+                    <div class="blog-entry background-white border-1 border-grey-1 margin-bottom-35px">
+                      
+                        <div class="padding-30px">
+                          
+                            <h4 class="d-block  text-capitalize  text-dark font-weight-700 margin-tb-10px  trn">Sucursal El Calafate </h4>
+							  <div class="meta">
+                                <span class="margin-right-20px text-medium trn">Dirección : <span class="text-red">Av San Martin 123, El Calafate</span></span></br>
+                                <span class="margin-right-20px text-medium trn">Teléfono : <span class="text-red">02354-215487</span></span></br>
+                                <span class="margin-right-20px text-medium trn">Email : <span class="text-red">info@carrental.com</span></span>
+                            </div>
+							
+							 <ul class="social_link list-inline">
+							 
+                            <li class="list-inline-item"><a class="facebook" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                           
+                            <li class="list-inline-item"><a class="linkedin" href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                            <li class="list-inline-item"><a class="google" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            <li class="list-inline-item"><a class="twitter" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                          
+                        </ul>
+                            <div class="post-entry">
+                                <div class="d-block text-up-small text-grey-4 margin-bottom-15px">
+                                    <p class="text-bold italic text-red trn">Mauris fermentum porta sem, non hendrerit enim bibendum consectetur. Fusce diam est, porttitor vehicula gravida at, accumsan bibendum tincidunt imperdiet. </p>
+                                    <h5 style="color:#333" class=" trn">Que hacer en Calafate</h5>
+                                    <p class=" trn">Mauris fermentum porta sem, non hendrerit enim bibendum consectetur. Fusce diam est, porttitor vehicula gravida at, accumsan bibendum tincidunt imperdiet. Maecenas quis magna faucibus, varius ante sit amet, varius augue. Praesent aliquam, augue ac pulvinar accumsan
+                                    </p>
+                                    <p class=" trn">
+                                        <img src="images/paisaje.jpg" width="50%" class="alignright">   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, eveniet, eligendi et nobis neque minus mollitia sit repudiandae ad repellendus recusandae blanditiis praesentium vitae ab sint earum voluptate velit beatae alias fugit accusantium laboriosam nisi reiciendis deleniti tenetur molestiae maxime id quaerat consequatur fugiat aliquam laborum nam aliquid. Consectetur, perferendis?
+										Mauris fermentum porta sem, non hendrerit enim bibendum consectetur. Fusce diam est, porttitor vehicula gravida at, accumsan bibendum tincidunt imperdiet. Maecenas quis magna faucibus, varius ante sit amet, varius augue. Praesent aliquam, augue ac pulvinar accumsan
+                                    </p>
+									
+									 <h5 style="color:#333" class=" trn">Glaciar perito Moreno</h5>
+                                    <p class=" trn">Mauris fermentum porta sem, non hendrerit enim bibendum consectetur. Fusce diam est, porttitor vehicula gravida at, accumsan bibendum tincidunt imperdiet. Maecenas quis magna faucibus, varius ante sit amet, varius augue. Praesent aliquam, augue ac pulvinar accumsan
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // texto -->
+					
+					 <!-- Related Posts -->
+                    <div class="background-white border-1 border-grey-1 margin-bottom-35px padding-30px">
+                        <h4 class="table-title margin-bottom-30px trn"><span class="trn">Promociones especiales</span></h4>
+
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="background-white">
+                                    <div class="post-img">
+                                        <a href="#"><img src="images/promo2.jpg" alt=""></a>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="background-white">
+                                    <div class="post-img">
+                                        <a href="#"><img src="images/promo2.jpg" alt=""></a>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <!-- // row -->
+                    </div>
+                    <!-- // Related Posts -->
+
+                    <!--  map  -->
+                    <div class="background-white border-1 border-grey-1 margin-tb-35px padding-30px">
+					  <h4 class="table-title margin-bottom-30px  trn"><span class="trn">Donde estamos</span></h4>
+                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.0487427729777!2d-65.40849468550958!3d-24.7937844141368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc3a2253a7cf7%3A0xb82dcde9b0765048!2sAv.%20San%20Mart%C3%ADn%20234%2C%20Salta!5e0!3m2!1ses!2sar!4v1623092044231!5m2!1ses!2sar" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    <!-- // map  -->
+
+
+                   
+
+                  
+
+
+                </div>
+                <!-- //  content -->
+
+            </div>
+        </div>
+    </div>
+    <!-- //  page output -->
+
+
+
+   
+    <!-- Footer -->
+    <footer class="text-center text-lg-left">
+        <div class="container">
+            <div class="row padding-tb-30px">
+                <div class="col-lg-6 sm-mb-35px">
+                    <div class="about">
+                        <div class="logo margin-bottom-20px"><a href="index.html"><img src="images/logo-blanco.png" alt=""></a></div>
+                        <p class="trn">
+                            Mauris fermentum porta sem, non hendrerit enim bibendum consectetur. Fusce diam est, porttitor vehicula gravida at, accumsan bibendum tincidunt imperdiet. Maecenas quis magna faucibus, varius ante sit amet, varius augue. Praesent aliquam, a imperdiet lacus libero ac tellus. Nunc fringilla ullamcorper quam at lacinia.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 sm-mb-35px">
+                    <ul class="footer-menu row margin-0px padding-0px list-unstyled">
+                        <li class="col-6  padding-tb-5px"><a href="empresa.html" class="text-white trn">Empresa</a></li>
+                        <li class="col-6  padding-tb-5px"><a href="oficinas.html" class="text-white trn">Oficinas</a></li>
+                        <li class="col-6  padding-tb-5px"><a href="flota.html" class="text-white trn">Flota</a></li>
+                        <li class="col-6  padding-tb-5px"><a href="preguntas-frecuentes.html" class="text-white trn">Preguntas Frecuentes</a></li>
+                        <li class="col-6  padding-tb-5px"><a href="resultado-de-busqueda.html" class="text-white trn">{{Pagina de Resultado}}</a></li>
+                        <li class="col-6  padding-tb-5px"><a href="reserva.html" class="text-white trn">{{Reserva}}</a></li>
+                        <li class="col-6  padding-tb-5px"><a href="sucursal.html" class="text-white trn">{{Sucursal}}</a></li>
+                        <li class="col-6  padding-tb-5px"><a href="mis-reservas-confirmacion.html" class="text-white trn">{{Mis Reservas}}</a></li>
+                        <li class="col-6  padding-tb-5px"><a href="confirmacion.html" class="text-white trn">{{Confirmación}}</a></li>
+						 <li class="col-6  padding-tb-5px"><a href="datos-personales.html" class="text-white trn">{{Datos Personales}}</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+
+            <div class="row padding-tb-10px border-top-11 ">
+                <div class="col-lg-4">
+                
+                </div>
+                <div class="col-lg-4 sm-mb-20px">
+                       <p class="text-lg-left trn"><span class="text-white">Car Rental</span> | @2021 <span class="trn">Todos los derechos reservados</span></p>
+                </div>
+                <div class="col-lg-4">
+                    <ul class="social_link list-inline text-sm-center text-lg-right">
+                        <li class="list-inline-item"><a class="facebook" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li class="list-inline-item"><a class="linkedin" href="#"><i class="fa fa-linkedin-play" aria-hidden="true"></i></a></li>
+                        
+                        <li class="list-inline-item"><a class="twitter" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                       
+                    </ul>
+                    <!-- // Social -->
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+    <!-- // Footer -->
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>

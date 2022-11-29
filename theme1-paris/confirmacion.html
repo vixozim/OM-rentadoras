@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+
+	<title>Confirmación | Theme 1 Paris</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+
+	<!-- FAVICON -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+
+	<!-- BOOTSTRAP -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<!-- ICONS -->
+	<link rel="stylesheet" href="css/icons/fontawesome/css/style.css">
+	<link rel="stylesheet" href="css/icons/themify/style.css">
+	<link rel="stylesheet" href="css/icons/ionicons/css/style.css">
+	<link rel="stylesheet" href="css/icons/icomoon/style.css">
+
+	<!-- THEME / PLUGIN CSS -->
+	<link rel="stylesheet" href="js/vendors/flexslider/flexslider.css">
+	<link rel="stylesheet" href="js/vendors/slick/slick.css">
+	<link rel="stylesheet" href="js/vendors/swipebox/css/swipebox.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- SKIN -->
+	<link rel="stylesheet" title="blue" href="css/skins/skin-blue.css"/>
+
+    
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+
+
+	<!--  MODALES LOGIN -->
+	
+<div id="reservas" class="modal fade">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+           
+            <div class="modal-body">
+                <div class="row">
+				
+				 <div class="col-md-12">
+                        <div class="tabs-wrapper content-tabs">
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a href="#item-description" data-toggle="tab" class="trn">Mis Reservas</a></li>
+                                <li><a href="#reviews" data-toggle="tab" class="trn">Iniciar Sesión</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane fade in active" id="item-description">
+                                  <div class="form-group">
+								<label class="form-group trn" >Correo Electrónico</label>
+                                    <div class="form-group"><input class="form-control apiom_email" type="text" ></div>
+                                </div>
+                                <div class="form-group">
+								<label class="form-group trn" >Nº de confirmación</label>
+                                    <div class="form-group"><input id="apiom_ confirmation_number" class="form-control " type="text" ></div>
+                                </div>
+                                
+                                <div class="text-center-lg">
+                                    <a class="forgot-password trn" href="#" data-toggle="modal" data-target="#numero">¿No sabes cual es tu Nº de confirmación?</a>
+                                </div></br>
+                                <div class="form-group">
+                                    <a id="apiom_ submit_mis_reserva" class="btn btn-default trn  text-center" href="#">IR A LA RESERVA</a>
+                                </div>
+                                </div>
+                                <div class="tab-pane fade" id="reviews">
+                                  
+                               
+							  
+                                <div class="form-group">
+								<label class="form-group trn" >Correo Electrónico</label>
+                                    <div class="form-group"><input class="form-control apiom_ email" type="text" ></div>
+                                </div>
+                                <div class="form-group">
+								<label class="form-group trn" >Contraseña</label>
+                                    <div class="form-group"><input id="apiom_ password" class="form-control" type="password" ></div>
+                                </div>
+                                
+                                <div class=" text-center-lg">
+                                    <a class="forgot-password" href="#" data-toggle="modal" data-target="#contraseña">¿Olvidaste tu contraseña?</a>
+                                </div>
+								  <div class=" text-center-lg">
+                                    <a class="forgot-password trn" href="#" data-toggle="modal" data-target="#registrarse">¿Primera vez? <span style="text-decoration:underline;">REGISTRATE</span></a>
+                                </div></br>
+                                <div class="form-group">
+                                    <a id="apiom_ submit_login" class="btn btn-default trn  text-center" href="#">INICIAR SESIÓN</a>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+ <div id="numero" class="modal fade">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          
+            <div class="modal-body">
+                <button type="button" class="bootbox-close-button close" data-dismiss="modal" aria-hidden="true">×</button>
+              <div class="row">
+                    <div class="col-md-12">
+						<div class="media-body text-center-lg trn">
+                                   
+                                    Te eviaremos tu Nº de reserva al mail registrado en nuestro sistema.
+                                </div></br>
+						 <div class="form-group">
+								<label class="form-group trn" >Email</label>
+                                    <div class="form-group trn"><input class="form-control" type="text" ></div>
+                                </div>
+                               
+                                <div class="form-group">
+                                    <a class="btn btn-default  trn text-center" href="#">Enviar</a>
+                                </div>
+                    </div>
+					 </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div id="contraseña" class="modal fade">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          
+            <div class="modal-body">
+                <button type="button" class="bootbox-close-button close" data-dismiss="modal" aria-hidden="true">×</button>
+              <div class="row">
+                    <div class="col-md-12">
+						<div class="media-body text-center-lg trn">
+                                   
+                                    Te eviaremos tu contraseña al mail registrado en nuestro sistema.
+                                </div></br>
+						 <div class="form-group">
+								<label class="form-group trn" >Email</label>
+                                    <div class="form-group"><input class="form-control" type="text" ></div>
+                                </div>
+                               
+                                <div class="form-group">
+                                    <a class="btn btn-default trn  text-center" href="#">Enviar</a>
+                                </div>
+                    </div>
+					 </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	
+	<div id="registrarse" class="modal fade">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+          
+            <div class="modal-body">
+			 <button type="button" class="bootbox-close-button close" data-dismiss="modal" aria-hidden="true">×</button>
+			<div class="modal-header row form-group">
+                                   
+                                    <h3 class="trn">Registrate </h3>
+                                </div></br>
+               
+              <div class="row">
+                    <div class="col-md-12" style="margin-top: 0px;">
+						
+								<div class="row">
+								 <div class="col-md-6" style="margin-top: 0px;">
+								<div class="form-group">
+								<label class="form-group trn" >Nombre</label>
+                                    <div class="form-group"><input class="form-control" type="text" ></div>
+                                </div>
+								 </div>
+								  <div class="col-md-6" style="margin-top: 0px;">
+								<div class="form-group">
+								<label class="form-group trn" >Apellido</label>
+                                    <div class="form-group"><input class="form-control" type="text" ></div>
+                                </div>
+								 </div>
+								 <div class="col-md-12" style="margin-top: 0px;">
+						 <div class="form-group">
+								<label class="form-group trn" >Email</label>
+                                    <div class="form-group"><input class="form-control" type="text" ></div>
+                                </div>
+								 </div>
+                                 <div class="col-md-6"style="margin-top: 0px;">
+                               <div class="form-group">
+								<label class="form-group  trn" >Contraseña</label>
+                                    <div class="form-group"><input class="form-control" type="password" ></div>
+                                </div>
+								 </div>
+								 <div class="col-md-6" style="margin-top: 0px;">
+								<div class="form-group">
+								<label class="form-group trn" >Repetir Contraseña</label>
+                                    <div class="form-group"><input class="form-control" type="password" ></div>
+                                </div>
+								 </div>
+								  </div>
+								  <div class="col-md-12 text-center" style="margin-top: 0px;">
+                                <div class="form-group">
+                                    <a class="btn btn-default trn  text-center" href="#" style="margin-left: auto;margin-right: auto;">Enviar</a>
+                                </div>
+								  </div>
+                    </div>
+					 </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	
+	<!-- END MODALES LOGIN -->
+	
+	
+	
+	
+
+<div id="page-top"></div>
+    
+<div id="wrapper">
+<!-- HEADER -->
+	<header>
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header pull-left">
+					<!-- Logo -->
+					<a class="navbar-brand" href="index.html">	<img  src="images/LOGO-rentafacil.png" alt=""></a>
+				</div>
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+				<!-- <div class="top-contact pull-right editContent"> -->
+					<!-- <i class="icon-phone"></i> <span class="trn">Llámenos</span>0810 1234 5678 -->
+				<!-- </div> -->
+				<!-- Navmenu -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="empresa.html" class="trn" >Empresa</a></li>
+						<li><a href="oficinas.html" class="trn" >Oficinas</a></li>
+						<li><a href="flota.html" class="trn" >Flota</a></li>
+						<li><a  href="#" data-toggle="modal" data-target="#reservas" class="trn">Mis Reservas</a></li>
+							
+						<li class="dropdown"><a class="apiom_ul_monedas"  href="#"  >$ARS</a>
+						<ul id="apiom_ulMonedaUsuario" class="dropdown-menu" role="menu">
+								<li class="" data-to-currency="ARS" id="ARS"><a href="#">$ (ARS)</a></li>
+								<li class="" data-to-currency="USD" id="USD"><a href="#">US$ (USD)</a></li>
+								<li class="" data-to-currency="EUR" value="EUR" id="EUR"><a href="#">€ (EUR)</a></li>
+								<li class="" data-to-currency="BRL" value="BRL" id="BRL"><a href="#">R$ (BRL)</a></li>
+								<li class="" data-to-currency="UYU" value="UYU" id="UYU"><a href="#">$ (UYU)</a></li>
+								
+							</ul>
+						
+						</li>
+						<li class="dropdown"><a class="lang_selector" id="idiomaES" data-value="es"
+							onclick="setIdioma('ES', true);$('#idiomaSelector').html(getIdiomaCompleto())"><img class="bg-esp"  src="images/flag.png" alt=""></a>
+					<ul class="dropdown-menu" role="menu">
+					
+				
+												<li><a   class="lang_selector" id="idiomaEN" data-value="en" onclick="setIdioma('EN', true);$('#idiomaSelector').html(getIdiomaCompleto())"  ><img class="bg-bra" src="images/flag-uk.png" alt="">&nbsp; <span  class="trn">Inglés</span></a></li>
+												<li><a   class="lang_selector" id="idiomaPT" data-value="pt" onclick="setIdioma('PT', true);$('#idiomaSelector').html(getIdiomaCompleto())"><img class="bg-ing trn" src="images/flag-br.png" alt="">&nbsp; <span  class="trn">Portugués</span></a></li>
+						</ul>
+						
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- HEADER -->
+
+	<!-- PAGE HEADER -->
+	<div class="page-head">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h1 class="page-header trn">Confirmación de Reserva</h1>
+					
+				</div>
+			</div>
+        </div>	
+	</div>
+	<!-- PAGE HEADER -->
+
+	<!-- BLOG CONTENT -->
+	<div class="blog-content blog-classic-side">
+		<div class="container">
+			<div class="row">
+			
+			
+				
+		
+				<div class="col-md-12">
+				
+					<h3 class="text-center trn" style="padding: 20px;">En instantes recibirás el voucher de confirmación a tu email...</h3>
+					
+					<div  id=""  class="col-md-12">
+					
+					<!-- AUTO -->
+					<article class="apiom_result_item mt-2">
+					<h2 class="bg-auto trn reserva-confirmada-mobile3"> <i class="fa fa-check-circle"></i> &nbsp;	RESERVA CONFIRMADA: <span id="apiom_confirmation_number" class=" font-bold">#123456789	</span></h2>
+						<div class="row ">
+						<div class="col-md-12 col-sm-12 " id="content-desktop">
+						
+						</div>		
+							<div class="col-md-3 col-sm-12">
+								<h2 id="apiom_confirmation_model" class="trn">Clio 5P o Similar</h2>
+								
+								<img id="apiom_confirmation_photo" src="images/flota/1.jpg" class="img-responsive img-hover apiom_result_photo" alt="">
+								
+									
+								
+							</div>
+							<div class="col-md-9 col-sm-12">
+							
+								
+								<div class="row">
+								<div class="col-md-12 col-xs-12" id="content-desktop">
+								&nbsp;</br>&nbsp;
+								</div>
+								<div class="col-md-12 col-xs-12">
+								 <div class="col-md-4">
+								<h4 class="apiom_result_name trn">CATEGORIA:  <span id="apiom_confirmation_category" class="text-color-skin-blue font-bold">Compacto</span></h4>
+								<div class="blog-meta"><i class="ti-user"></i><span id="apiom_confirmation_capacity" class="text-color-skin-blue"> 5</span><i class="ti-car"></i><span id="apiom_confirmation_tanktype" class="text-color-skin-blue trn"> Nafta</span> <i class="ti-panel"></i><span id="apiom_confirmation_transmission" class="text-color-skin-blue trn"> Manual </span><img src="images/puertas.png"><span id="apiom_confirmation_doors" class="text-color-skin-blue" > 5 </span></div>
+								<p id="apiom_confirmation_kmtype" style="font-size:1.2em; margin-bottom:0px;"><input type="checkbox" checked="checked" disabled="disabled" class="free-benefits-title2" style="width: 10px;">
+								  1400km  </p>
+								 
+								 <ul class="list-unstyled" style="margin-top:10px;margin-bottom:10px; ">
+                                           <li style="padding-bottom: 5px;" class="text-color-skin-blue trn">FRANQUICIA </li>  <div id="faq-collapse2"  role="tabpanel" aria-labelledby="faq-heading2">           
+										<li><p style="font-size:0.8em; margin-bottom:0px;"><input type="checkbox" checked="checked" disabled="disabled" class="free-benefits-title2 trn" style="width: 10px;">
+      Protección Total (LDW)  <i class="ti-info-alt text-color-skin-blue" title="Protección contra robo, hurto, incendio y perdida total del vehículo, daños y averías causados al vehículo por colisión o accidente, causando que el Locatario deba abonar el arreglo del vehículo hasta el valor de la franquicia establecida en el contrato." alt="Protección contra robo, hurto, incendio y perdida total del vehículo, daños y averías causados al vehículo por colisión o accidente, causando que el Locatario deba abonar el arreglo del vehículo hasta el valor de la franquicia establecida en el contrato." style="width: 15px;"></i> </p>
+									</li> 
+									<li>
+										<p style="font-size:0.8em; margin-bottom:0px;"><input type="checkbox" checked="checked" disabled="disabled" class="free-benefits-title2 trn" style="width: 10px;">
+     Protección a Tercer. (ALI)  <i class="ti-info-alt text-color-skin-blue" title="Prote&#231;&#227;o contra danos materiais e pessoais causados a terceiros em raz&#227;o de acidentes com o VE&#205;CULO locado com participa&#231;&#227;o do LOCAT&#193;RIO em franquia at&#233; os valores estabelecidos no CONTRATO DE LOCA&#199;&#195;O." alt="Prote&#231;&#227;o contra danos materiais e pessoais causados a terceiros em raz&#227;o de acidentes com o VE&#205;CULO locado com participa&#231;&#227;o do LOCAT&#193;RIO em franquia at&#233; os valores estabelecidos no CONTRATO DE LOCA&#199;&#195;O." style="width: 15px;"></i></p>
+									</li> 
+									<li>
+										<p style="font-size:0.8em; margin-bottom:0px;"><input type="checkbox" checked="checked" disabled="disabled" class="free-benefits-title2 trn" style="width: 10px;">
+   Franquicia por Accidente AR $13000.00<i class="ti-info-alt text-color-skin-blue" title="Al momento de retirar el vehículo se efectuará un bloqueo de su tarjeta de crédito por el monto de la &quot;Franquicia por Accidente&quot;, de ser necesario se le pedirá más de una tarjeta, el cual se retorna al momento de la devolución del vehículo " alt="Al momento de retirar el vehículo se efectuará un bloqueo de su tarjeta de crédito por el monto de la &quot;Franquicia por Accidente&quot;, de ser necesario se le pedirá más de una tarjeta, el cual se retorna al momento de la devolución del vehículo " style="width: 15px;"></i></p>
+   <p id="apiom_price_exceededkm" style="font-size:0.8em; margin-bottom:0px;"><input type="checkbox" checked="checked" disabled="disabled" class="free-benefits-title2" style="width: 10px;">
+   KM Adic. AR$ 6.00 </i></p>
+									</li> 
+                                       </div>             
+                                                </ul>
+								  </div>
+	  <div class="col-md-4">
+			
+					<div class="text-center">
+						<div class="">
+							<h2 class=" text-color-skin-blue trn">Pick Up</h2>
+						</div>
+						<h4><span class="text-color-skin-grey trn"><span id="apiom_confirmation_dia_desde"> 1 </span><span class="trn">de</span> <span id="apiom_confirmation_mes_desde"> Junio</span></span></h4>
+						<h4> <span id="apiom_confirmation_hora_desde" style="font-size: 0.8em; font-weight: 700;"> 10:00hs</span></h4></br>
+						<h4 class="text-color-skin-blue"><i  class="fa fa-plane text-color-skin-grey 	apiom_pickup_confirmation_place_icon">&nbsp;</i> <span id="apiom_confirmation_ciudad_desde"></span>  S.C de Bariloche</span></h4>
+					</div>
+					
+				</div>
+				<div class="col-md-4">
+					<div class="text-center">
+						<div class="">
+							<h2 class=" text-color-skin-blue trn">Drop Off</h2>
+						</div>
+						<h4><span class="text-color-skin-grey trn"><span id="apiom_confirmation_dia_hasta"> 6 </span><span class="trn">de</span>  <span id="apiom_confirmation_mes_hasta"> Junio</span></span></h4>
+						<h4> <span id="apiom_confirmation_hora_hasta" style="font-size: 0.8em; font-weight: 700;"> 11:00hs</span></h4></br>
+						<h4 class="text-color-skin-blue"><i class=" apiom_dropoff_confirmation_place_icon fa fa-plane text-color-skin-grey">&nbsp;</i>  <span id="apiom_confirmation_ciudad_hasta"></span> S.C de Bariloche</span></h4>
+					</div>
+				</div>
+							</div>
+							
+							
+							</div>
+						</div>
+						
+						<div class="col-md-12 confirmacion-mobile">
+						<div class="col-md-4 col-xs-12 text-center bg-auto confirmacion-mobile2">
+						<h3 class="text-color-skin-blue font-bold trn">Total Alquiler:   <span id="apiom_confirmation_total"><span class="currencies"> <span class="money_price">
+							<abbr class="unit">AR$</abbr>
+							<span class="amount Clase_del_espacio"> 1050,00</span>
+							<abbr class="currency" title="ARS"></abbr>
+							</span></span></span></h3>
+						</div>
+						<div class="col-md-4 col-xs-12 text-center bg-auto confirmacion-mobile2">
+						<h3 class="text-color-skin-green trn">Pagado: <span id="apiom_confirmation_paid" ><span class="currencies"> <span class="money_price">
+							<abbr class="unit">AR$</abbr>
+							<span class="amount Clase_del_espacio"> 550,00</span>
+							<abbr class="currency" title="ARS"></abbr>
+							</span></span></span></h3>
+							</div>
+							
+							<div class="col-md-4 col-xs-12 text-center bg-auto confirmacion-mobile2">
+						<h3 class="text-color-skin-red  trn">Total a Pagar: <span id="apiom_confirmation_topay"><span class="currencies"> <span class="money_price">
+							<abbr class="unit">AR$</abbr>
+							<span class="amount Clase_del_espacio"> 500,00</span>
+							<abbr class="currency" title="ARS"></abbr>
+							</span></span></span></h3>
+							</div>
+							</div>
+						
+						
+						
+						
+						</div>
+						
+					</article>
+					<!-- AUTO -->
+					
+					
+					
+				
+					
+					</div>
+					</div>
+					
+				
+				
+				
+				
+			</div>
+		</div>
+	</div>
+	<!-- BLOG CONTENT -->
+
+	
+
+	<!-- FOOTER -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<h1 class="footer-logo"><a href="index.html">Renta Facil</a></h1>
+					<p class="trn">La rentadora número uno del mercado</p>
+					<ul class="footer-social">
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<h4 class="trn">Menú</h4>
+					<div class="row">
+						<div class="col-md-6">
+							<ul class="footer-list">
+								<li><a class="trn" href="empresa.html">Nuestra Empresa</a></li>
+								<li><a class="trn" href="oficinas.html">Otras Oficinas</a></li>
+								<li><a class="trn" href="flota.html">Nuestra Flota</a></li>
+								
+							</ul>
+						</div>
+						<div class="col-md-6">
+							<ul class="footer-list">
+							<li><a class="trn" href="preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
+								<li><a class="trn" href="resultado-de-busqueda.html">{{Pagina de Resultado}}</a></li>
+								<li><a class="trn" href="reserva.html"> {{Reserva}}</a></li>
+								<li><a class="trn" href="sucursal.html">{{Sucursal}}</a></li>
+								<li><a class="trn" href="mis-reservas.html">{{Mis Reservas}}</a></li>
+								<li><a class="trn" href="confirmacion.html">{{Confirmación}}</a></li>
+								<li><a class="trn" href="datos-personales.html">{{Datos Personales}}</a></li>
+								
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<h4 class="trn">Contactanos</h4>
+					<a class="text-color-skin-blue" href="#" style="font-size: 1.8em;"><i class="fa fa-whatsapp"></i> &nbsp;(+54)02568 456-7890</a>
+					<br><br>
+					<p class="trn">&copy; 2021. Rentafacil. Todos los derechos reservados.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- FOOTER -->
+</div>
+
+
+<!-- JAVASCRIPT =============================-->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/vendors/flexslider/flexslider.js"></script>
+<script src="js/vendors/slick/slick.min.js"></script>
+<script src="js/vendors/jquery.placeholder.js"></script>
+<script src="js/vendors/jquery.easing.min.js"></script>
+<script src="js/vendors/mc/jquery.ketchup.all.min.js"></script>
+<script src="js/vendors/mc/main.js"></script>
+<script src="js/vendors/jquery.countdown.min.js"></script>
+<script src="js/vendors/swipebox/js/jquery.swipebox.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

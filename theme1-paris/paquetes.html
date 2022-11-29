@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+
+	<title>Paquetes | Theme 1 Paris</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+
+	<!-- FAVICON -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+
+	<!-- BOOTSTRAP -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<!-- ICONS -->
+	<link rel="stylesheet" href="css/icons/fontawesome/css/style.css">
+	<link rel="stylesheet" href="css/icons/themify/style.css">
+	<link rel="stylesheet" href="css/icons/ionicons/css/style.css">
+	<link rel="stylesheet" href="css/icons/icomoon/style.css">
+
+	<!-- THEME / PLUGIN CSS -->
+	<link rel="stylesheet" href="js/vendors/flexslider/flexslider.css">
+	<link rel="stylesheet" href="js/vendors/slick/slick.css">
+	<link rel="stylesheet" href="js/vendors/swipebox/css/swipebox.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- SKIN -->
+	<link rel="stylesheet" title="blue" href="css/skins/skin-blue.css"/>
+
+    
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+
+    <style>
+
+.green-text2{
+    color: green;
+}
+
+.danger-text2{
+    color: red;
+}
+
+.yellow-text2{
+    color: yellow;
+}
+
+    </style>
+
+
+
+</head>
+<body>
+
+
+	<!--  MODALES LOGIN -->
+	
+<div id="reservas" class="modal fade">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+           
+            <div class="modal-body">
+                <div class="row">
+				
+				 <div class="col-md-12">
+                        <div class="tabs-wrapper content-tabs">
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a href="#item-description" data-toggle="tab" class="trn">Mis Reservas</a></li>
+                                <li><a href="#reviews" data-toggle="tab" class="trn">Iniciar Sesión</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane fade in active" id="item-description">
+                                  <div class="form-group">
+								<label class="form-group trn" >Correo Electrónico</label>
+                                    <div class="form-group"><input class="form-control apiom_email" type="text" ></div>
+                                </div>
+                                <div class="form-group">
+								<label class="form-group trn" >Nº de confirmación</label>
+                                    <div class="form-group"><input id="apiom_ confirmation_number" class="form-control " type="text" ></div>
+                                </div>
+                                
+                                <div class="text-center-lg">
+                                    <a class="forgot-password trn" href="#" data-toggle="modal" data-target="#numero">¿No sabes cual es tu Nº de confirmación?</a>
+                                </div></br>
+                                <div class="form-group">
+                                    <a id="apiom_ submit_mis_reserva" class="btn btn-default trn  text-center" href="#">IR A LA RESERVA</a>
+                                </div>
+                                </div>
+                                <div class="tab-pane fade" id="reviews">
+                                  
+                               
+							  
+                                <div class="form-group">
+								<label class="form-group trn" >Correo Electrónico</label>
+                                    <div class="form-group"><input class="form-control apiom_ email" type="text" ></div>
+                                </div>
+                                <div class="form-group">
+								<label class="form-group trn" >Contraseña</label>
+                                    <div class="form-group"><input id="apiom_ password" class="form-control" type="password" ></div>
+                                </div>
+                                
+                                <div class=" text-center-lg">
+                                    <a class="forgot-password" href="#" data-toggle="modal" data-target="#contraseña">¿Olvidaste tu contraseña?</a>
+                                </div>
+								  <div class=" text-center-lg">
+                                    <a class="forgot-password trn" href="#" data-toggle="modal" data-target="#registrarse">¿Primera vez? <span style="text-decoration:underline;">REGISTRATE</span></a>
+                                </div></br>
+                                <div class="form-group">
+                                    <a id="apiom_ submit_login" class="btn btn-default trn  text-center" href="#">INICIAR SESIÓN</a>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+ <div id="numero" class="modal fade">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          
+            <div class="modal-body">
+                <button type="button" class="bootbox-close-button close" data-dismiss="modal" aria-hidden="true">×</button>
+              <div class="row">
+                    <div class="col-md-12">
+						<div class="media-body text-center-lg trn">
+                                   
+                                    Te eviaremos tu Nº de reserva al mail registrado en nuestro sistema.
+                                </div></br>
+						 <div class="form-group">
+								<label class="form-group trn" >Email</label>
+                                    <div class="form-group trn"><input class="form-control" type="text" ></div>
+                                </div>
+                               
+                                <div class="form-group">
+                                    <a class="btn btn-default  trn text-center" href="#">Enviar</a>
+                                </div>
+                    </div>
+					 </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div id="contraseña" class="modal fade">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          
+            <div class="modal-body">
+                <button type="button" class="bootbox-close-button close" data-dismiss="modal" aria-hidden="true">×</button>
+              <div class="row">
+                    <div class="col-md-12">
+						<div class="media-body text-center-lg trn">
+                                   
+                                    Te eviaremos tu contraseña al mail registrado en nuestro sistema.
+                                </div></br>
+						 <div class="form-group">
+								<label class="form-group trn" >Email</label>
+                                    <div class="form-group"><input class="form-control" type="text" ></div>
+                                </div>
+                               
+                                <div class="form-group">
+                                    <a class="btn btn-default trn  text-center" href="#">Enviar</a>
+                                </div>
+                    </div>
+					 </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	
+	<div id="registrarse" class="modal fade">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+          
+            <div class="modal-body">
+			 <button type="button" class="bootbox-close-button close" data-dismiss="modal" aria-hidden="true">×</button>
+			<div class="modal-header row form-group">
+                                   
+                                    <h3 class="trn">Registrate </h3>
+                                </div></br>
+               
+              <div class="row">
+                    <div class="col-md-12" style="margin-top: 0px;">
+						
+								<div class="row">
+								 <div class="col-md-6" style="margin-top: 0px;">
+								<div class="form-group">
+								<label class="form-group trn" >Nombre</label>
+                                    <div class="form-group"><input class="form-control" type="text" ></div>
+                                </div>
+								 </div>
+								  <div class="col-md-6" style="margin-top: 0px;">
+								<div class="form-group">
+								<label class="form-group trn" >Apellido</label>
+                                    <div class="form-group"><input class="form-control" type="text" ></div>
+                                </div>
+								 </div>
+								 <div class="col-md-12" style="margin-top: 0px;">
+						 <div class="form-group">
+								<label class="form-group trn" >Email</label>
+                                    <div class="form-group"><input class="form-control" type="text" ></div>
+                                </div>
+								 </div>
+                                 <div class="col-md-6"style="margin-top: 0px;">
+                               <div class="form-group">
+								<label class="form-group  trn" >Contraseña</label>
+                                    <div class="form-group"><input class="form-control" type="password" ></div>
+                                </div>
+								 </div>
+								 <div class="col-md-6" style="margin-top: 0px;">
+								<div class="form-group">
+								<label class="form-group trn" >Repetir Contraseña</label>
+                                    <div class="form-group"><input class="form-control" type="password" ></div>
+                                </div>
+								 </div>
+								  </div>
+								  <div class="col-md-12 text-center" style="margin-top: 0px;">
+                                <div class="form-group">
+                                    <a class="btn btn-default trn  text-center" href="#" style="margin-left: auto;margin-right: auto;">Enviar</a>
+                                </div>
+								  </div>
+                    </div>
+					 </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	
+	<!-- END MODALES LOGIN -->
+	
+	
+	
+	
+
+<div id="page-top"></div>
+    
+<div id="wrapper">
+<!-- HEADER -->
+	<header>
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header pull-left">
+					<!-- Logo -->
+					<a class="navbar-brand" href="index.html">	<img  src="images/LOGO-rentafacil.png" alt=""></a>
+				</div>
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+				<!-- <div class="top-contact pull-right editContent"> -->
+					<!-- <i class="icon-phone"></i> <span class="trn">Llámenos</span>0810 1234 5678 -->
+				<!-- </div> -->
+				<!-- Navmenu -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="empresa.html" class="trn" >Empresa</a></li>
+						<li><a href="oficinas.html" class="trn" >Oficinas</a></li>
+						<li><a href="flota.html" class="trn" >Flota</a></li>
+						<li><a  href="#" data-toggle="modal" data-target="#reservas" class="trn">Mis Reservas</a></li>
+							
+						<li class="dropdown"><a class="apiom_ul_monedas"  href="#"  >$ARS</a>
+						<ul id="apiom_ulMonedaUsuario" class="dropdown-menu" role="menu">
+								<li class="" data-to-currency="ARS" id="ARS"><a href="#">$ (ARS)</a></li>
+								<li class="" data-to-currency="USD" id="USD"><a href="#">US$ (USD)</a></li>
+								<li class="" data-to-currency="EUR" value="EUR" id="EUR"><a href="#">€ (EUR)</a></li>
+								<li class="" data-to-currency="BRL" value="BRL" id="BRL"><a href="#">R$ (BRL)</a></li>
+								<li class="" data-to-currency="UYU" value="UYU" id="UYU"><a href="#">$ (UYU)</a></li>
+								
+							</ul>
+						
+						</li>
+						<li class="dropdown"><a class="lang_selector" id="idiomaES" data-value="es"
+							onclick="setIdioma('ES', true);$('#idiomaSelector').html(getIdiomaCompleto())"><img class="bg-esp"  src="images/flag.png" alt=""></a>
+					<ul class="dropdown-menu" role="menu">
+					
+				
+												<li><a   class="lang_selector" id="idiomaEN" data-value="en" onclick="setIdioma('EN', true);$('#idiomaSelector').html(getIdiomaCompleto())"  ><img class="bg-bra" src="images/flag-uk.png" alt="">&nbsp; <span  class="trn">Inglés</span></a></li>
+												<li><a   class="lang_selector" id="idiomaPT" data-value="pt" onclick="setIdioma('PT', true);$('#idiomaSelector').html(getIdiomaCompleto())"><img class="bg-ing trn" src="images/flag-br.png" alt="">&nbsp; <span  class="trn">Portugués</span></a></li>
+						</ul>
+						
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- HEADER -->
+
+	<!-- PAGE HEADER -->
+	<div class="page-head">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h1 class="page-header trn">Reserva</h1>
+					
+				</div>
+			</div>
+        </div>	
+	</div>
+	<!-- PAGE HEADER -->
+
+	<!-- BLOG CONTENT -->
+	<div class="blog-content blog-classic-side">
+		<div class="container">
+			<div class="row">
+			
+			<div class="col-md-12">
+			<div class="col-md-2">
+			
+					<div class="panel panel-default text-center" >
+						<div class="panel-body">
+							<p id="content-desktop" class="panel-title price text-color-skin-blue">&nbsp;</p>
+						</div>
+						<h3><span class="text-color-skin-grey trn">Fechas & Destino</br> Confirmados</h3>
+						
+					</div>
+					
+				</div>
+				<div class="col-md-2">
+			
+					
+								<img id="content-desktop" src="images/chevron.jpg"  alt="">
+					
+				</div>
+			<div class="col-md-4">
+			
+					<div class="panel panel-default text-center">
+						<div class="panel-body">
+							<h4 class="panel-title price text-color-skin-blue trn">Pick Up</h4>
+						</div>
+						<h3><span class="text-color-skin-grey trn"><span id="apiom_dia_desde_seleccionada"> 1 </span>de <span id="apiom_mes_desde_seleccionada"> Junio</span></span></h3>
+						<h3> <span id="apiom_hora_desde_seleccionada" style="font-size: 0.7em; font-weight: 700;"> 10:00hs</span></h3></br>
+						<h3 class="text-color-skin-blue"><span id="apiom_ciudad_desde_seleccionada"><i class="fa fa-plane text-color-skin-grey">&nbsp;</i>   S.C de Bariloche</span></h3>
+					</div>
+					
+				</div>
+				<div class="col-md-4">
+					<div class="panel panel-default text-center">
+						<div class="panel-body">
+							<h4 class="panel-title price text-color-skin-blue trn">Drop Off</h4>
+						</div>
+						<h3><span class="text-color-skin-grey trn"><span id="apiom_dia_hasta_seleccionada"> 6 </span>de <span id="apiom_mes_hasta_seleccionada"> Junio</span></span></h3>
+						<h3> <span id="apiom_hora_hasta_seleccionada" style="font-size: 0.7em; font-weight: 700;"> 11:00hs</span></h3></br>
+						<h3 class="text-color-skin-blue"><span id="apiom_ciudad_hasta_seleccionada"><i class="fa fa-plane text-color-skin-grey">&nbsp;</i>   S.C de Bariloche</span></h3>
+					</div>
+				</div>
+
+			
+			
+			</div>
+				
+		
+				<div class="col-md-8">
+				
+					
+					<div  id="apiom_container_result"  class="col-md-12">
+					<!-- AUTO -->
+					<article class="apiom_result_item mt-2">
+                        <h2 class="bg-auto trn"> <i class="fa fa-car"></i> &nbsp;	AUTO	</h2>
+                            <div class="row ">
+                            <div class="col-md-12 col-sm-12 ">
+                            
+                            </div>		
+                                <div class="col-md-4 col-sm-12">
+                                    <h2 id="apiom_model_name" class="trn">Clio 5P o Similar</h2>
+                                    
+                                    <img id="apiom_model_photo" src="images/flota/1.jpg" class="img-responsive img-hover apiom_result_photo" alt="">
+                                    
+                                        
+                                    
+                                </div>
+                                <div class="col-md-8 col-sm-12">
+                                
+                                    
+                                    <div class="row">
+                                    <div class="col-md-12 col-xs-12" id="content-desktop">
+                                    &nbsp;</br>&nbsp;
+                                    </div>
+                                    <div class="col-md-7 col-xs-12">
+                                    
+                                    <h4 class="apiom_result_name trn">CATEGORIA:  <span id="apiom_model_category" class="text-color-skin-blue font-bold">Compacto</span></h4>
+                                    <div class="blog-meta"><i class="ti-user"></i><span id="apiom_model_capacity" class="text-color-skin-blue"> 5</span><i class="ti-car"></i><span id="apiom_model_tanktype" class="text-color-skin-blue trn"> Nafta</span> <i class="ti-panel"></i><span id="apiom_model_transmission" class="text-color-skin-blue trn"> Manual </span><img src="images/puertas.png"><span id="apiom_model_doors" class="text-color-skin-blue" > 5 </span></div>
+                                    <p id="apiom_model_kmtype" style="font-size:1.2em; margin-bottom:0px;"><input type="checkbox" checked="checked" disabled="disabled" class="free-benefits-title2" style="width: 10px;">
+          1400km  </p>
+                                </div>
+                                <div class="col-md-5 col-xs-12 text-right franquicia-mobile">
+                                <ul class="list-unstyled" style="margin-top:10px;margin-bottom:10px; ">
+                                               <li style="padding-bottom: 5px;" class="text-color-skin-blue trn">FRANQUICIA </li>  <div id="faq-collapse2"  role="tabpanel" aria-labelledby="faq-heading2">           
+                                            <li><p style="font-size:0.8em; margin-bottom:0px;"><input type="checkbox" checked="checked" disabled="disabled" class="free-benefits-title2 trn" style="width: 10px;">
+          Protección Total (LDW)  <i class="ti-info-alt text-color-skin-blue" title="Protección contra robo, hurto, incendio y perdida total del vehículo, daños y averías causados al vehículo por colisión o accidente, causando que el Locatario deba abonar el arreglo del vehículo hasta el valor de la franquicia establecida en el contrato." alt="Protección contra robo, hurto, incendio y perdida total del vehículo, daños y averías causados al vehículo por colisión o accidente, causando que el Locatario deba abonar el arreglo del vehículo hasta el valor de la franquicia establecida en el contrato." style="width: 15px;"></i> </p>
+                                        </li> 
+                                        <li>
+                                            <p style="font-size:0.8em; margin-bottom:0px;"><input type="checkbox" checked="checked" disabled="disabled" class="free-benefits-title2 trn" style="width: 10px;">
+         Protección a Tercer. (ALI)  <i class="ti-info-alt text-color-skin-blue" title="Prote&#231;&#227;o contra danos materiais e pessoais causados a terceiros em raz&#227;o de acidentes com o VE&#205;CULO locado com participa&#231;&#227;o do LOCAT&#193;RIO em franquia at&#233; os valores estabelecidos no CONTRATO DE LOCA&#199;&#195;O." alt="Prote&#231;&#227;o contra danos materiais e pessoais causados a terceiros em raz&#227;o de acidentes com o VE&#205;CULO locado com participa&#231;&#227;o do LOCAT&#193;RIO em franquia at&#233; os valores estabelecidos no CONTRATO DE LOCA&#199;&#195;O." style="width: 15px;"></i></p>
+                                        </li> 
+                                        <li>
+                                            <p style="font-size:0.8em; margin-bottom:0px;"><input type="checkbox" checked="checked" disabled="disabled" class="free-benefits-title2 trn" style="width: 10px;">
+       Franquicia por Accidente <span class="currencies"> <span class="money_price">
+                                <abbr class="unit">AR$</abbr>
+                                <span class="amount apiom_price_crash"> 13000.00</span>
+                                <abbr class="currency" title="ARS"></abbr>
+                                </span></span><i class="ti-info-alt text-color-skin-blue" title="Al momento de retirar el vehículo se efectuará un bloqueo de su tarjeta de crédito por el monto de la &quot;Franquicia por Accidente&quot;, de ser necesario se le pedirá más de una tarjeta, el cual se retorna al momento de la devolución del vehículo " alt="Al momento de retirar el vehículo se efectuará un bloqueo de su tarjeta de crédito por el monto de la &quot;Franquicia por Accidente&quot;, de ser necesario se le pedirá más de una tarjeta, el cual se retorna al momento de la devolución del vehículo " style="width: 15px;"></i></p>
+       <p id="apiom_price_exceededkm" style="font-size:0.8em; margin-bottom:0px;"><input type="checkbox" checked="checked" disabled="disabled" class="free-benefits-title2" style="width: 10px;">
+       KM Adic. <span class="currencies"> <span class="money_price">
+                                <abbr class="unit">AR$</abbr>
+                                <span class="amount Clase_del_espacio"> 6.00</span>
+                                <abbr class="currency" title="ARS"></abbr>
+                                </span></span> </i></p>
+                                        </li> 
+                                           </div>             
+                                                    </ul>
+                                
+                                </div>
+                                <div class="col-md-12 col-xs-12">
+                                
+                                <p class="trn"><strong class="text-color-skin-blue ">BENEFICIOS INCLUIDOS GRATIS</strong></br>
+                                        <i class="ti-check text-color-skin-blue" ></i>  Cancelación GRATIS hasta 72 horas hábiles de anticipación sin cargo.</br>
+    
+                                        <i class="ti-check text-color-skin-blue"></i>  Cambios en la reserva hasta 72 horas hábiles de anticipación.</p>
+                                    
+                                    
+                                
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                            
+                        </article>
+					<!-- AUTO -->
+					<article class=" mt-2">
+                        <h2 class="bg-auto trn"> <i class="fa fa-plus"></i>	&nbsp; SEGUROS RECOMENDADOS	</h2>
+                       
+                              
+                            <div class="row apiom_extras">
+                                <div class="col-md-12 col-sm-12 ">
+                            
+                                
+                                <div class="col-md-4 col-xs-4">
+                                    <div class="insurance-list">
+                                        <h4 class="title text-center">
+                                            &nbsp; <br>&nbsp;
+                                        </h4>
+                                    </div>
+                                    <ul class="insurance-list" >
+                                        <li class="d-flex align-items-center justify-content-between">Monto de Franquicia</li>
+                                        <li class="d-flex align-items-center justify-content-between">
+                                            <div class="text">CDW</div>
+                                            <div class="info" data-toggle="popover" data-trigger="hover" title="Anti-robo" data-content="Detalles y especificaciones del seguro dentro de este popover" data-original-title="Anti-robo"><i class="fa fa-info-circle fa-w-16" aria-hidden="true" focusable="false" data-prefix="fad" data-icon="info-circle" role="img" ></i></div>
+                                        </li>
+                                        <li class="d-flex align-items-center justify-content-between">
+                                            <div class="nombre">THW</div>
+                                            <div class="info" data-toggle="popover" data-trigger="hover" title="Choques & Accidentes" data-content="Detalles y especificaciones del seguro dentro de este popover" data-original-title="Anti-robo"><i class="fa fa-info-circle fa-w-16" aria-hidden="true" focusable="false" data-prefix="fad" data-icon="info-circle" role="img" ></i></div>
+                                        </li>
+                                        <li class="d-flex align-items-center justify-content-between">
+                                            <div class="nombre">Cerradura</div>
+                                            
+                                        </li>
+                                        <li class="d-flex align-items-center justify-content-between">
+                                            <div class="nombre">Granizo</div>
+                                            
+                                        </li>
+                                        <li class="d-flex align-items-center justify-content-between">
+                                            <div class="nombre">Cubiertas</div>
+                                            
+                                        </li>
+                                        <li class="d-flex align-items-center justify-content-between">
+                                            <div class="nombre">Cristales</div>
+                                            
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-8  col-xs-8">
+                                    <div class="row ">
+                                        <div class="col-md-4  col-xs-4 text-center">									
+                                            <div class="insurance padding-right-10px" >
+                                                <h4 class="title text-center seguro">
+                                                    Básico <br> <i class="fa fa-star yellow-text2" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img"></i>
+                                                </h4>
+                                                <ul class="insurance-comparison-list text-center">
+                                                    <li class="text-center mt-3 mb-3" style="max-height:24px"><span class="currencies">
+                                                        <span class="money price" style="font-size: 12px;">
+                                                        <abbr class="unit"><small>ARS</small></abbr>
+                                                        <span class="amount   apiom_franquicia_monto_basico">72.000</span>
+                                                        <abbr class="currency" title="ARS"></abbr>
+                                                        </span>	</span> </li>
+                                                    <li class="green-text2 espacio-lista "><i class="fa fa-check "  ></i></li>
+                                                    <li class="green-text2 espacio-lista "><i class="fa fa-check "  ></i></li>
+                                                    <li class="danger-text2 espacio-lista "><i class="fa fa-times" ></i></li>
+                                                    <li class="danger-text2 espacio-lista "><i class="fa fa-times" ></i></li>
+                                                    <li class="danger-text2 espacio-lista "><i class="fa fa-times" ></i></li>
+                                                    <li class="danger-text2 espacio-lista "><i class="fa fa-times" ></i></li>
+                                                   
+                                                </ul>
+                                                
+                                                <div class="price1 apiom_seguro_gratis">Gratis</div>
+                                                <div class="text-center content-desktop">
+                                             <a   class="apiom_seguro_basico_seleccionar btn btn-secondary btn-xs rmore  trn  "> Incluido</a>
+                                            </div>
+                                            
+                                            <div class="text-center content-mobile margin-top-30px">
+                                             <a   class="apiom_seguro_basico_seleccionar btn-sm    background-grey   text-dark trn   text-small margin-tb-10px"> <i class="fa fa-shopping-cart"></i></a>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4  col-xs-4 padding-lr-0px">
+                                            <div class="insurance padding-right-10px" >
+                                                <h4 class="title text-center  seguro">
+                                                    Medio <br> <i class="fa fa-star yellow-text2" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img"></i>
+                                                    <i class="fa fa-star yellow-text2" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img"></i>
+                                                </h4>
+                                                <ul class="insurance-comparison-list border-left-right text-center">
+                                                    <li class="text-center mt-3 mb-3" style="max-height:24px"><span class="currencies">
+                                    <span class="money price"  style="font-size: 12px;">
+                                    <abbr class="unit"><small>ARS</small></abbr>
+                                    <span class="amount   apiom_franquicia_monto_medio">50.400</span>
+                                    <abbr class="currency" title="ARS"></abbr>
+                                    </span>	</span> </li>
+                                                    <li class="green-text2 espacio-lista "><i class="fa fa-check "  ></i></li>
+                                                    <li class="green-text2 espacio-lista "><i class="fa fa-check "  ></i></li>
+                                                    <li class="green-text2 espacio-lista "><i class="fa fa-check "  ></i></li>
+                                                    <li class="green-text2 espacio-lista "><i class="fa fa-check "  ></i></li>
+                                                    <li class="danger-text2 espacio-lista "><i class="fa fa-times" ></i></li>
+                                                    <li class="danger-text2 espacio-lista "><i class="fa fa-times" ></i></li>
+                                                </ul>
+                                                <div class="price1">
+                                                    <span class="currencies">
+                                    <span class="money price"  style="font-size: 12px;">
+                                    <abbr class="unit">AR$</abbr>
+                                    <span class="amount   apiom_seguro_price_medio_dia">543</span>
+                                    <abbr class="currency" title="ARS"></abbr>
+                                    </span>	</span> <small> /día</small>
+                                                </div>
+                                    <div class="text-center content-desktop ">
+                                             <a   class="apiom_seguro_medio_seleccionar  btn btn-default btn-xs rmor trn "> Seleccionar</a>
+
+                                            </div>
+                                            <div class="text-center content-mobile margin-top-30px">
+                                                <a   class="apiom_seguro_medio_seleccionar btn-sm    background-second-color   text-dark trn   text-small margin-tb-10px"> <i class="fa fa-shopping-cart"></i></a>
+                                               </div>
+                                            
+                                            <div class="text-center content-mobile margin-top-30px">
+                                             <a   class="apiom_seguro_premium_seleccionar  btn btn-default btn-xs rmor  trn"> </a>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4  col-xs-4 padding-lr-0px">
+                                            <div class="insurance padding-right-10px" >
+                                                <h4 class="title text-center  seguro">
+                                                    Premium <br> <i class="fa fa-star yellow-text2" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img"></i>
+                                                    <i class="fa fa-star yellow-text2" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img"></i>
+                                                    <i class="fa fa-star yellow-text2" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img"></i>
+                                                </h4>
+                                                <ul class="insurance-comparison-list text-center">
+                                                    <li class="text-center mt-3 mb-3" style="max-height:24px"><span class="currencies">
+                                    <span class="money price"  style="font-size: 12px;">
+                                    <abbr class="unit"><small>ARS</small></abbr>
+                                    <span class="amount   apiom_franquicia_monto_premium">28.000</span>
+                                    <abbr class="currency" title="ARS"></abbr>
+                                    </span>	</span> </li>
+                                                    <li class="green-text2 espacio-lista "><i class="fa fa-check"  ></i></li>
+                                                    <li class="green-text2 espacio-lista "><i class="fa fa-check"  ></i></li>
+                                                    <li class="green-text2 espacio-lista "><i class="fa fa-check"  ></i></li>
+                                                    <li class="green-text2 espacio-lista "><i class="fa fa-check"  ></i></li>
+                                                    <li class="green-text2 espacio-lista "><i class="fa fa-check"  ></i></li>
+                                                    <li class="green-text2 espacio-lista "><i class="fa fa-check"  ></i></li>
+                                                </ul>
+                                                <div class="price1">
+                                                    <span class="currencies">
+                                    <span class="money price"  style="font-size: 12px;">
+                                    <abbr class="unit">AR$</abbr>
+                                    <span class="amount    apiom_seguro_price_premium_dia">1088</span>
+                                    <abbr class="currency" title="ARS"></abbr>
+                                    </span>	</span> <small> /día</small>
+                                                </div>
+                                                <div class="text-center content-desktop">
+                                             <a   class="apiom_seguro_premium_seleccionar  btn btn-default btn-xs rmor trn"> Seleccionar</a>
+                                            </div>
+                                            
+                                            <div class="text-center content-mobile margin-top-30px">
+                                             <a   class="apiom_seguro_premium_seleccionar btn-sm    background-second-color   text-dark trn   text-small margin-tb-10px"> <i class="fa fa-shopping-cart"></i></a>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            
+						
+					</article>
+					<!-- AUTO -->
+					
+					<!-- ADICIONALES -->
+					<article class="apiom_result_item mt-2" id="content-desktop">
+					<h2 class="bg-auto trn"> <i class="fa fa-plus"></i>	&nbsp; ADICIONALES	</h2>
+						<div class="row ">
+						<div class="col-md-12 col-sm-12 ">
+						<div style="overflow-x:auto;">
+				  <table class="table table-responsive">
+				   
+					<tr class="apiom_item_addon">
+					  
+					  <td class="trn"><i class="ti-plus text-color-skin-blue"></i>  <span class="apiom_addon_name">Silla de Bebe 0-12 Meses <span class="currencies"> <span class="money price">
+                        <abbr class="unit">AR$</abbr>
+                        <span class="amount apiom_price_singleday"> 437</span>
+                        <abbr class="currency" title="ARS"></abbr>
+                        </span></span> x <span id="apiom_day_amount">7 </span> días</span><span class="apiom_ addon_price currencies"> <span class="money_price">
+							<abbr class="unit">AR$</abbr>
+							<span class="amount apiom_addon_price"> 3060</span>
+							<abbr class="currency" title="ARS"></abbr>
+							</span></span></td>
+					  <td><select class="form-control apiom_addon_input" style="width: 70px; float:right;">
+					  <option class="form-group">0</option>
+					  <option class="form-group">1</option>
+					  <option class="form-group">2</option>
+					  </select>
+					  
+					  </td>
+					
+					</tr>
+					<tr class="apiom_item_addon">
+					  
+					  <td class="trn"><i class="ti-plus text-color-skin-blue"></i><span class="apiom_addon_name">Silla de Bebe 1 - 3 años <span class="currencies"> <span class="money price">
+                        <abbr class="unit">AR$</abbr>
+                        <span class="amount apiom_price_singleday"> 437</span>
+                        <abbr class="currency" title="ARS"></abbr>
+                        </span></span> x <span id="apiom_day_amount">7 </span> días</span><span class="apiom_ addon_price currencies"> <span class="money_price">
+							<abbr class="unit">AR$</abbr>
+							<span class="amount apiom_addon_price"> 3060</span>
+							<abbr class="currency" title="ARS"></abbr>
+							</span></span></td>
+					  <td><select class="form-control apiom_addon_input" style="width: 70px; float:right;">
+					  <option class="form-group">0</option>
+					  <option class="form-group">1</option>
+					  <option class="form-group">2</option>
+					  </select>
+					  
+					  </td>
+					  
+					</tr>
+					<tr class="apiom_item_addon">
+					  
+					  <td class="trn"><i class="ti-plus text-color-skin-blue"></i> <span class="apiom_addon_name">GPS <span class="currencies"> <span class="money price">
+                        <abbr class="unit">AR$</abbr>
+                        <span class="amount apiom_price_singleday"> 437</span>
+                        <abbr class="currency" title="ARS"></abbr>
+                        </span></span> x <span id="apiom_day_amount">7 </span> días</span><span class="apiom_ addon_price currencies"> <span class="money_price">
+							<abbr class="unit">AR$</abbr>
+							<span class="amount apiom_addon_price"> 3060</span>
+							<abbr class="currency" title="ARS"></abbr>
+							</span></span></td>
+					  <td><select class="form-control apiom_addon_input" style="width: 70px; float:right;">
+					  <option class="form-group">0</option>
+					  <option class="form-group">1</option>
+					  
+					  </select>
+					  
+					  </td>
+					
+					  
+					</tr>
+				  </table>
+				</div>
+				</div>	
+					</div>
+					</article>
+					<!-- Post / Article -->
+					
+					
+					
+					<!-- ADICIONALES -->
+					<article class="apiom_result_item mt-2" id="content-mobile">
+					<h2 class="bg-auto collapsed trn" data-toggle="collapse" data-parent="#accordion" href="#collapse20" aria-expanded="false" aria-controls="collapse4" style="    cursor: pointer;"> <i class="fa fa-plus"></i>	&nbsp; ADICIONALES	<i class="fa fa-chevron-right"></i></h2>
+						<div class="row  panel-collapse collapse" id="collapse20" class="" role="tabpanel" aria-labelledby="heading4" aria-expanded="false">
+						<div class="col-md-12 col-sm-12 ">
+						<div style="overflow-x:auto;">
+				  <table class="table table-responsive">
+				   
+					<tr class="apiom_item_addon">
+					  
+					  <td class="trn"><i class="ti-plus text-color-skin-blue"></i> <span class="apiom_addon_name">Silla de Bebe 0-12 Meses <span class="currencies"> <span class="money price">
+                        <abbr class="unit">AR$</abbr>
+                        <span class="amount apiom_price_singleday"> 437</span>
+                        <abbr class="currency" title="ARS"></abbr>
+                        </span></span> x <span id="apiom_day_amount">7 </span> días</span><span class="apiom_ addon_price currencies"> <span class="money_price">
+							<abbr class="unit">AR$</abbr>
+							<span class="amount apiom_addon_price"> 3060</span>
+							<abbr class="currency" title="ARS"></abbr>
+							</span></span></td>
+					  <td><select class="form-control apiom_addon_input" style="width: 70px; float:right;">
+					  <option class="form-group">0</option>
+					  <option class="form-group">1</option>
+					  <option class="form-group">2</option>
+					  </select>
+					  
+					  </td>
+					
+					</tr>
+					<tr class="apiom_item_addon">
+					  
+					  <td class="trn"><i class="ti-plus text-color-skin-blue"></i> <span class="apiom_addon_name">Silla de Bebe 1-3 años <span class="currencies"> <span class="money price">
+                        <abbr class="unit">AR$</abbr>
+                        <span class="amount apiom_price_singleday"> 437</span>
+                        <abbr class="currency" title="ARS"></abbr>
+                        </span></span> x <span id="apiom_day_amount">7 </span> días</span><span class="apiom_ addon_price currencies"> <span class="money_price">
+							<abbr class="unit">AR$</abbr>
+							<span class="amount apiom_addon_price"> 3060</span>
+							<abbr class="currency" title="ARS"></abbr>
+							</span></span></td>
+					  <td><select class="form-control apiom_addon_input" style="width: 70px; float:right;">
+					  <option class="form-group">0</option>
+					  <option class="form-group">1</option>
+					  <option class="form-group">2</option>
+					  </select>
+					  
+					  </td>
+					  
+					</tr>
+					<tr class="apiom_item_addon">
+					  
+					  <td class="trn"><i class="ti-plus text-color-skin-blue"></i> <span class="apiom_addon_name">GPS <span class="currencies"> <span class="money price">
+                        <abbr class="unit">AR$</abbr>
+                        <span class="amount apiom_price_singleday"> 437</span>
+                        <abbr class="currency" title="ARS"></abbr>
+                        </span></span> x <span id="apiom_day_amount">7 </span> días</span><span class="apiom_ addon_price currencies"> <span class="money_price">
+							<abbr class="unit">AR$</abbr>
+							<span class="amount apiom_addon_price"> 3060</span>
+							<abbr class="currency" title="ARS"></abbr>
+							</span></span></td>
+					  <td><select class="form-control apiom_addon_input" style="width: 70px; float:right;">
+					  <option class="form-group">0</option>
+					  <option class="form-group">1</option>
+					  
+					  </select>
+					  
+					  </td>
+					
+					  
+					</tr>
+				  </table>
+				</div>
+				</div>	
+					</div>
+					</article>
+					<!-- Post / Article -->
+					
+					<!-- Post / Article -->
+					<article class="apiom_result_item mt-2">
+					<h2 class="bg-auto trn"> <i class="fa fa-user"></i>	&nbsp; DATOS DEL CLIENTE	</h2>
+						<div class="row ">
+						<div class="col-md-12 col-sm-12 ">
+						<form name="sentMessage" id="contactForm" action="" method="post">
+						<div class="row">
+							<div class="col-md-6">
+								<input name="senderName" id="" type="text" class="form-control trn" placeholder="Nombre" required>
+								<input name="senderName" id="" type="text" class="form-control trn" placeholder="Email" required>
+								<input name="senderEmail" id="" type="email" class="form-control trn" placeholder="Teléfono" required>
+								<input name="senderEmail" id="" type="email" class="form-control trn" placeholder="Ciudad" required>
+							</div>
+							<div class="col-md-6">
+								<input name="senderEmail" id="" type="email" class="form-control trn" placeholder="Apellido" required>
+								<input name="senderEmail" id="" type="email" class="form-control trn" placeholder="Documento" required>
+								<input name="senderEmail" id="" type="email" class="form-control trn" placeholder="Domicilio" required>
+								<input name="senderEmail" id="" type="email" class="form-control trn" placeholder="País" required>
+							</div>
+						</div>
+
+					
+					</form>
+				</div>
+				</div>
+				</article>
+					<!-- Post / Article -->
+					
+				
+					
+					</div>
+					</div>
+					
+				
+				
+				
+				
+				
+				<!-- Sidebar -->
+				<div class="col-md-4 sticky">
+					<div class="side-widget">
+					<article>
+						<div class="bg-pagar">
+							<h2 class="trn" style="color:#ffffff;"><i class="fa fa-dollar"></i> &nbsp; TOTAL A PAGAR</h2>
+							
+						</div>
+						
+						 <table class="table table-responsive">
+						 
+						 <tr>
+					  
+					  <th colspan="2" class="collapsed trn" data-toggle="collapse" data-parent="#accordion" href="#collapse21" aria-expanded="false" aria-controls="collapse4" style="cursor: pointer; background-color: #e8e8e8;" >VER DETALLE  <i class="fa fa-chevron-down"></i></th>
+					  
+					
+					</tr>
+					</table>
+					
+					<div class="panel-collapse collapse" id="collapse21" class="" role="tabpanel" aria-labelledby="heading4" aria-expanded="false">
+					 <table class="table table-responsive ">
+				   <tr>
+					  
+					  <th class="trn">DETALLE</th>
+					  <th class="trn">TOTAL</td>
+					
+					</tr>
+					
+					
+					 
+					<tr>
+					  
+					  <td class="trn">Alquiler x <span id="apiom_day_amount">7</span> Días</td>
+					  <td><span id="apiom_price_tariff" class="currencies">
+                        <span class="money price">
+							<abbr class="unit">AR$</abbr>
+							<span id="apiom_price_tariff" class="amount">10.235</span>
+							<abbr class="currency" title="ARS"></abbr>
+							</span>	
+							</span>
+							</td>
+					
+					</tr>
+					<tr>
+					  
+					   <td class="trn">Protecciones</td>
+					  <td><span  class="currencies"> <span class="money price">
+                        <abbr class="unit">AR$</abbr>
+                        <span id="apiom_price_protections" class="amount"> 300</span>
+                        <abbr class="currency" title="ARS"></abbr>
+                        </span>	</span></td>
+					  
+					</tr>
+					<tr>
+					  
+                        <td class="trn">Tasas</td>
+                        <td><span  class="currencies"><span class="money price">
+                              <abbr class="unit">AR$</abbr>
+                              <span id="apiom_price_taxes" class="amount">Incluidas</span>
+                              <abbr class="currency" title="ARS"></abbr>
+                              </span>	</span></td>
+					
+					  
+					</tr>
+					<tr>
+					  
+                        <td class="trn">Adicionales</td>
+                        <td><span class="currencies"><span class="money price">
+                              <abbr class="unit">AR$</abbr>
+                              <span id="apiom_price_addons" class="amount"> 1050,00</span>
+                              <abbr class="currency" title="ARS"></abbr>
+                              </span>	</span></td>
+					  
+					</tr>
+					<tr>
+					  
+                        <td class="trn">Drop Off</td>
+                        <td><span  class="currencies"><span class="money price">
+                              <abbr class="unit">AR$</abbr>
+                              <span id="apiom_price_dropoff" class="amount">  0</span>
+                              <abbr class="currency" title="ARS"></abbr>
+                              </span>	</span></td>
+					  
+					</tr>
+					<tr>
+					  
+					    <td class="trn">Fuera de horario</td>
+					  <td><span class="currencies"><span class="money price">
+							<abbr class="unit">AR$</abbr>
+							<span id="apiom_price_outoftime" class="amount">  0</span>
+							<abbr class="currency" title="ARS"></abbr>
+							</span>	</span></td>
+					  
+					</tr>
+					<tr>
+					  
+                        <td class="trn">Descuento</td>
+                        <td><span class="currencies"><span class="money price">
+                              <abbr class="unit">AR$</abbr>
+                              <span id="apiom_price_discount" class="amount">   0</span>
+                              <abbr class="currency" title="ARS"></abbr>
+                              </span>	</span></td>
+					  
+					</tr>
+					<tr>
+					  
+					   <td class="text-color-skin-grey trn">Total sin descuento</td>
+					  <td class="text-color-skin-grey"><strike id="" class="currencies"><span class="money_price">
+							<abbr class="unit">AR$</abbr>
+							<span id="apiom_price_nodiscount" class="amount ">  1050,00</span>
+							<abbr class="currency" title="ARS"></abbr>
+							</span>	</strike></td>
+					  
+					</tr>
+
+					
+					
+					
+				  </table>
+				  					</div>
+				  
+				  
+				   <table class="table table-responsive">
+				  <tr>
+					  
+					   <td class="text-color-skin-blue font-bold trn">Total con Descuento</td>
+					  <td class="text-color-skin-blue font-bold"><span class="currencies"> <span class="money price">
+                        <abbr class="unit">AR$</abbr>
+                        <span id="apiom_price_withdiscount" class="amount"> 19.990</span>
+                        <abbr class="currency" title="ARS"></abbr>
+                        </span></span></td>
+					  
+					</tr>
+					
+					<tr>
+					  
+					   <td class="text-color-skin-green font-bold trn">A pagar en destino</td>
+					  <td class="text-color-skin-green font-bold"><span class="currencies"> <span class="money price">
+                        <abbr class="unit">AR$</abbr>
+                        <span id=" apiom_price_onarrival" class="amount"> 17.990</span>
+                        <abbr class="currency" title="ARS"></abbr>
+                        </span></span></td>
+					  
+					</tr>
+					<tr>
+					  
+					   <td class="text-color-skin-red font-bold trn">A pagar ahora</td>
+					  <td class="text-color-skin-red font-bold"><span class="currencies"> <span class="money price">
+                        <abbr class="unit">AR$</abbr>
+                        <span id="apiom_price_now" class="amount"> 2.000</span>
+                        <abbr class="currency" title="ARS"></abbr>
+                        </span></span></td>
+					  
+					</tr>
+					
+				  </table>
+				 
+					</div>
+					</article>
+					
+					<article id="apiom_container_methods" style="padding-bottom:20px;">
+					<h2 class="bg-pagar trn"> <i class="fa fa-user"></i>	&nbsp; MÉTODO DE PAGO	</h2>
+						<div class="">
+				<div class="panel-group payments-options" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel radio panel-default">
+                               
+                            <div class="panel panel-default apiom_item_method">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed apiom_method_check trn" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapseTwo">
+                                             <i class="fa fa-chevron-right"></i> <span class="apiom_method_description">Promo Hot Sale</span>
+                                        </a>
+										
+                                    </h4>
+                                </div>
+                                <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2" aria-expanded="false" style="height: 0px;">
+                                    
+                                    <form id="contactForm" class="form-search" action="#">
+									 <div class="row" style="margin-top:10px;">
+									 <div class="col-md-12">
+
+                                        <div class="form-group">
+                                          
+                                            <input type="text" class="form-control apiom_method_username trn" id="formSearchUpLocation3" placeholder="Nombre como figura en la tarjeta">
+                                          
+                                        </div>
+										 <div class="form-group  has-label">
+                                            
+                                            <input type="text" class="form-control apiom_method_dni trn" id="formSearchUpLocation3" placeholder="DNI">
+                                          
+                                        </div>
+										 <div class="form-group  has-label">
+                                            
+                                            <input type="text" class="form-control apiom_method_cardnumber trn" id="formSearchUpLocation3" placeholder="Número de tarjeta">
+                                          
+                                        </div>
+										<div class="row">
+									 <div class="col-md-4">
+                                        <div class="form-group has-icon has-label">
+                                       
+                                            <input type="text" class="form-control apiom_method_month trn" id="formSearchOffLocation3" placeholder="Vto. Mes">
+                                           
+                                        </div>
+										</div>
+										 <div class="col-md-4">
+                                        <div class="form-group has-icon has-label">
+                                       
+                                            <input type="text" class="form-control apiom_method_year trn" id="formSearchOffLocation3" placeholder="Vto. Año">
+                                           
+                                        </div>
+										</div>
+										 <div class="col-md-4">
+
+                                        <div class="form-group has-icon has-label">
+                                           <input type="text" class="form-control apiom_method_securitycode trn " id="formSearchUpDate" placeholder="Cod. Seg.">
+                                            
+                                        </div>
+										</div>
+										</div>
+										 </div>
+										  </div>
+										</form>
+                               
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingThree">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed trn" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapseThree">
+                                            <i class="fa fa-chevron-right"></i> Tarjeta de Credito
+                                        </a>
+                               
+                                    </h4>
+                                </div>
+                                <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3" aria-expanded="false" style="height: 0px;">
+								  
+								   
+								    <form id="contactForm" class="form-search" action="#">
+									 <div class="row" style="margin-top:10px;">
+									 <div class="col-md-12">
+
+                                        <div class="form-group">
+                                          
+                                            <input type="text" class="form-control apiom_method_username" id="formSearchUpLocation3 trn" placeholder="Nombre como figura en la tarjeta">
+                                          
+                                        </div>
+										 <div class="form-group  has-label">
+                                            
+                                            <input type="text" class="form-control apiom_method_dni" id="formSearchUpLocation3 trn" placeholder="DNI">
+                                          
+                                        </div>
+										 <div class="form-group  has-label">
+                                            
+                                            <input type="text" class="form-control apiom_method_cardnumber" id="formSearchUpLocation3 trn" placeholder="Número de tarjeta">
+                                          
+                                        </div>
+										<div class="row">
+									 <div class="col-md-4">
+                                        <div class="form-group has-icon has-label">
+                                       
+                                            <input type="text" class="form-control apiom_method_month" id="formSearchOffLocation3 trn" placeholder="Vto. Mes">
+                                           
+                                        </div>
+										</div>
+										 <div class="col-md-4">
+                                        <div class="form-group has-icon has-label">
+                                       
+                                            <input type="text" class="form-control apiom_method_year" id="formSearchOffLocation3 trn" placeholder="Vto. Año">
+                                           
+                                        </div>
+										</div>
+										 <div class="col-md-4">
+
+                                        <div class="form-group has-icon has-label">
+                                           <input type="text" class="form-control apiom_method_securitycode trn " id="formSearchUpDate" placeholder="Cod. Seg.">
+                                            
+                                        </div>
+										</div>
+										</div>
+										 </div>
+										  </div>
+										</form>
+								
+								</div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="heading4">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed trn" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                             <i class="fa fa-chevron-right"></i> 18 Cuotas sin Interés
+                                        </a>
+                                        <span class="overflowed pull-right" id="content-desktop">
+                                    <span style="font-size: 1.2em;color:#b2b2b2;"> <img src="assets/img/preview/payments/ahora.png" alt=""></span>
+                                    
+                                </span>
+                                    </h4>
+                                </div>
+                                <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4" aria-expanded="false">
+							 <form id="contactForm" class="form-search" action="#">
+									 <div class="row" style="margin-top:10px;">
+									 <div class="col-md-12">
+
+                                        <div class="form-group">
+                                          
+                                            <input type="text" class="form-control apiom_method_username trn" id="formSearchUpLocation3" placeholder="Nombre como figura en la tarjeta">
+                                          
+                                        </div>
+										 <div class="form-group  has-label">
+                                            
+                                            <input type="text" class="form-control apiom_method_dni trn" id="formSearchUpLocation3" placeholder="DNI">
+                                          
+                                        </div>
+										 <div class="form-group  has-label">
+                                            
+                                            <input type="text" class="form-control apiom_method_cardnumber trn" id="formSearchUpLocation3" placeholder="Número de tarjeta">
+                                          
+                                        </div>
+										<div class="row">
+									 <div class="col-md-4">
+                                        <div class="form-group has-icon has-label">
+                                       
+                                            <input type="text" class="form-control apiom_method_month trn" id="formSearchOffLocation3" placeholder="Vto. Mes">
+                                           
+                                        </div>
+										</div>
+										 <div class="col-md-4">
+                                        <div class="form-group has-icon has-label">
+                                       
+                                            <input type="text" class="form-control apiom_method_year trn" id="formSearchOffLocation3" placeholder="Vto. Año">
+                                           
+                                        </div>
+										</div>
+										 <div class="col-md-4">
+
+                                        <div class="form-group has-icon has-label">
+                                           <input type="text" class="form-control apiom_method_securitycode trn " id="formSearchUpDate" placeholder="Cod. Seg.">
+                                            
+                                        </div>
+										</div>
+										</div>
+										 </div>
+										  </div>
+										</form>
+								</div>
+                            </div>
+                        </div>
+						</div>
+						 <div class="row">
+					<div class="col-md-12" >
+				 <div class="col-md-12 checkbox " >
+                                <input class="apiom_check_terms" id="accept" type="checkbox" name="fd-name" title="" style="margin-left: 0px;" >
+                                <label for="accept" class="trn">Acepto Términos &amp; Condiciones</label>
+								
+                            </div>
+							<div class=" col-md-12 checkbox " >
+                                <input class="apiom_check_minmaxage" id="accept" type="checkbox" name="fd-name" title="" style="margin-left: 0px;">
+                                <label for="accept" class="trn">Soy mayor de 21 años, menor de 70 años y cuento con registro de conducir vigente.</label>
+								
+                            </div>
+							<div class="col-md-12" >
+							<p class="trn" style="font-style:italic;"><i class="ti-info-alt"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tellus mi, cursus vel laoreet eu, auctor nec tellus. </p>
+							</div>
+							</div>
+						</div>
+						
+						</div>
+						
+				</article>
+					
+					
+					<div class="text-right" style="margin-top: 50px;">
+					
+								
+							<a class="btn btn-default btn-lg rmore apiom_submit_rent trn" href="#" style="margin-top:5px;">Reservar <i class="fa fa-check"></i></a></br>
+							
+							</div>
+					
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- BLOG CONTENT -->
+
+	
+
+	<!-- FOOTER -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<h1 class="footer-logo"><a href="index.html">Renta Facil</a></h1>
+					<p class="trn">La rentadora número uno del mercado</p>
+					<ul class="footer-social">
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<h4 class="trn">Menú</h4>
+					<div class="row">
+						<div class="col-md-6">
+							<ul class="footer-list">
+								<li><a class="trn" href="empresa.html">Nuestra Empresa</a></li>
+								<li><a class="trn" href="oficinas.html">Otras Oficinas</a></li>
+								<li><a class="trn" href="flota.html">Nuestra Flota</a></li>
+								
+							</ul>
+						</div>
+						<div class="col-md-6">
+							<ul class="footer-list">
+							<li><a class="trn" href="preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
+								<li><a class="trn" href="resultado-de-busqueda.html">{{Pagina de Resultado}}</a></li>
+								<li><a class="trn" href="reserva.html"> {{Reserva}}</a></li>
+								<li><a class="trn" href="sucursal.html">{{Sucursal}}</a></li>
+								<li><a class="trn" href="mis-reservas.html">{{Mis Reservas}}</a></li>
+								<li><a class="trn" href="confirmacion.html">{{Confirmación}}</a></li>
+								<li><a class="trn" href="datos-personales.html">{{Datos Personales}}</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<h4 class="trn">Contactanos</h4>
+					<a class="text-color-skin-blue" href="#" style="font-size: 1.8em;"><i class="fa fa-whatsapp"></i> &nbsp;(+54)02568 456-7890</a>
+					<br><br>
+					<p class="trn">&copy; 2021. Rentafacil. Todos los derechos reservados.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- FOOTER -->
+</div>
+
+
+<!-- JAVASCRIPT =============================-->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/vendors/flexslider/flexslider.js"></script>
+<script src="js/vendors/slick/slick.min.js"></script>
+<script src="js/vendors/jquery.placeholder.js"></script>
+<script src="js/vendors/jquery.easing.min.js"></script>
+<script src="js/vendors/mc/jquery.ketchup.all.min.js"></script>
+<script src="js/vendors/mc/main.js"></script>
+<script src="js/vendors/jquery.countdown.min.js"></script>
+<script src="js/vendors/swipebox/js/jquery.swipebox.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

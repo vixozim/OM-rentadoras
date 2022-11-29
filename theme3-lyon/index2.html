@@ -1,0 +1,1594 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Specific Meta
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="" />
+    <meta name="author" content="">
+
+    <!-- Titles
+    ================================================== -->
+    <title>Theme 3 | Lyon</title>
+
+    <!-- Favicons
+    ================================================== -->
+    
+
+    <!-- Custom Font
+    ================================================== -->
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="assets/css/plugins.min.css">
+    <link rel="stylesheet" href="assets/css/icons.min.css">
+    <link rel="stylesheet" href="assets/css/style-sticky.css">
+    <link rel="stylesheet" href="assets/css/color-schemer.css">
+
+    <!-- RS5.4 Main Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="assets/revolution/css/settings.css">
+    <!-- RS5.4 Layers and Navigation Styles -->
+    <link rel="stylesheet" type="text/css" href="assets/revolution/css/layers.css">
+    <link rel="stylesheet" type="text/css" href="assets/revolution/css/navigation.css">
+    
+	
+	
+	
+	
+	
+</head>
+
+<body>
+
+
+	 <!-- MODAL LOGINS -->
+	
+	<div id="reservas" class="modal fade">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+          
+            <div class="modal-body">
+			 <button type="button" class="bootbox-close-button close" data-dismiss="modal" aria-hidden="true">×</button>
+			<div class="modal-header row form-group">
+                                   
+                                    <h5 class="text-uppercase italic text-medium font-weight-600 trn">Mis Reservas </h5>
+                                </div>
+               
+              <div class="row justify-content-md-center">
+
+                <div class="col-lg-6">
+                    <div class="padding-30px background-white border-1 border-grey-1">
+                       <form   method="get" class="advance-search-query input-night-rider yellow-theme">
+                            <div class="form-group">
+                                <label style="color: #333;"><strong class="trn">Correo Electrónico</strong></label>
+                              <div class="input">
+                                        <i class="fa fa-envelope"></i>
+                                        <input  type="text" class="budget-fields form-controller apiom_email trn" >
+                                    </div>
+                            </div>
+                            <div class="form-group">
+                                <label style="color: #333;"><strong class="trn">Numero de Confirmación</strong></label>
+                              
+								 <div class="input">
+                                        <i class="fa fa-check"></i>
+                                        <input id="apiom_confirmation_number" type="text" class="budget-fields form-controller  trn" >
+                                    </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <button id="apiom_submit_mis_reservas" class="button red-bg trn">Ir a la reserva</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 ">
+                    <div class="check-content">
+                        <h4 class="top-subtitle trn">¿No sabes cual es tu Nº de confirmación?</h4>
+                        <p style="margin-bottom:0px;" class=" discription trn">Te enviaremos tu Nº de reserva al mail registrado en nuestro sistema</p>
+						<a  class=" collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse1"><strong class="trn">ENVIAR EMAIL</strong<i class="fa fa-chevron-down"></i></a>
+							<div class="  panel-collapse collapse" id="collapse3"  role="tabpanel" aria-labelledby="heading4" aria-expanded="false">
+						 <div class="form-group  yellow-theme">
+                                
+                                 <div class="input">
+                                      
+                                        <input type="text" class="budget-fields form-controller apiom_email trn" >
+                                    </div>
+                            </div>
+							 <div class="form-group">
+                                <button class="button red-bg trn">Enviar</button>
+                            </div>
+                    </div>
+					 </div>
+
+                   
+                   
+                </div>
+				
+				
+
+            </div>
+            </div>
+        </div>
+    </div>
+	 </div>
+	 
+	 
+	 
+	 
+	 <div id="iniciar-sesion" class="modal fade">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+          
+            <div class="modal-body">
+			 <button type="button" class="bootbox-close-button close" data-dismiss="modal" aria-hidden="true">×</button>
+			<div class="modal-header row form-group">
+                                   
+                                    <h5 class="text-uppercase italic text-medium font-weight-600">Iniciar Sesión </h5>
+                                </div>
+               
+              <div class="row justify-content-md-center">
+
+                <div class="col-lg-6">
+                    <div class="padding-30px background-white border-1 border-grey-1">
+                          <form   method="get" class="advance-search-query input-night-rider yellow-theme">
+                            <div class="form-group">
+                                <label for="" class="col-form-label"><strong class="trn">Correo Electrónico</strong></label>
+								 <div class="input">
+                                        <i class="fa fa-envelope"></i>
+                                <input type="email" class="budget-fields form-controller apiom_email" id="" placeholder="Email">
+                            </div>
+							 </div>
+                            <div class="form-group">
+                                <label for="" class="col-form-label"><strong class="trn">Contraseña</strong></label>
+								 <div class="input">
+                                      
+                                <input type="password" class="budget-fields form-controller" id="apiom_password" placeholder="Contraseña">
+                            </div>
+							 </div>
+                            
+                            <div class="form-group">
+                                 <button class="button red-bg trn" id="apiom_submit_login" >Ingresar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="check-content">
+                        <h4 class="top-subtitle trn">¿Olvidó su contraseña?</h4>
+                        <p style="margin-bottom:0px;" class="discription trn">Te enviaremos tu contraseña al mail registrado en nuestro sistema.</p>
+						<a  class="trn collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="false" aria-controls="collapse1">ENVIAR EMAIL</a>
+							<div class="  panel-collapse collapse" id="collapse1"  role="tabpanel" aria-labelledby="heading4" aria-expanded="false">
+						 <div class="form-group">
+                                	 <div class="input">
+                                <input type="text" class="budget-fields form-controller"   placeholder="Email">
+                            </div> </div>
+							 <div class="form-group">
+                                <button class="button red-bg trn">Enviar</button>
+                            </div>
+                    </div>
+					 </div>
+
+                    <div class="margin-bottom-15px padding-bottom-15px border-bottom-1 border-grey-2">
+                        <i class="fa fa-user margin-right-10px" aria-hidden="true"></i> <strong class="text-uppercase collapsed trn" >¿Primera vez? </strong>
+                        <span class="d-block"><a data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse1" class="text-grey-2">REGISTRATE</a></span>
+                    </div>
+                   
+                </div>
+				
+				 <div class="col-lg-6 col-md-6 panel-collapse collapse" id="collapse2"  role="tabpanel" aria-labelledby="heading4" aria-expanded="false">
+                     <div class="">
+					  <form   method="get" class="advance-search-query input-night-rider yellow-theme">
+				
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                               	 <div class="input">
+                                <input type="text" id="apiom_registro_nombre" class="budget-fields form-controller trn" placeholder="Nombre">
+                            </div></div>
+                            <div class="form-group col-md-6">
+                                	 <div class="input">
+                                <input type="email" id="apiom_registro_apellido" class="budget-fields form-controller trn" placeholder="Apellido">
+                            </div>
+                        </div></div>
+                        <div class="form-group">
+                         	 <div class="input">
+                            <input type="text" id="apiom_registro_email" class="budget-fields form-controller trn" placeholder="Email">
+                        </div></div>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                               	 <div class="input">
+                                <input type="password" id="apiom_registro_contraseña" class="budget-fields form-controller trn" placeholder="Contraseña">
+                            </div></div>
+                            <div class="form-group col-md-6">
+                               	 <div class="input">
+                                <input type="password" id="apiom_registro_contraseña_ok" class="budget-fields form-controller trn" placeholder="Contraseña">
+                            </div></div>
+                        </div>
+                     <button id="apiom_registro_submit" class="button red-bg trn">Enviar</button>
+                    </form>
+					 </div>
+                </div>
+
+            </div>
+            </div>
+        </div>
+    </div>
+	 </div>
+	 
+	 
+	 
+<!-- END MODAL LOGINS -->
+
+
+
+    <!-- ====== Header Top Area ====== --> 
+    <header class="header-top-area bg-nero">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-xs-8 ">
+                    <div class="header-content-left">
+                        <ul class="header-top-menu">
+                            <li>
+                                <button href="#reservas" data-toggle="modal" data-target="#reservas" class="top-left-menu">
+                                    <i class="fa fa-user"></i>
+                                    <span class="hidden-xs trn">Mis Reservas</span>
+									<span class="hidden-lg hidden-md trn">Reservas</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button data-toggle="modal" data-target="#iniciar-sesion"  class="top-left-menu">
+                                    <i class="fa fa-lock"></i>
+                                    <span class="hidden-xs trn">Iniciar Sesión</span>
+									<span class="hidden-lg hidden-md trn">Login</span>
+                                </button>                                 
+                            </li>
+                        </ul><!-- /.header-top-menu -->
+                    </div><!-- /.header-content-left -->
+                </div><!-- /.col-md-9 -->
+
+                <div class="col-md-6 col-xs-4">
+                    <div class="header-content-right">
+                        <ul class="header-top-menu">
+                            <li>
+                                <a href="#" class="language" id="idiomaSelector">
+                                    <i class="fa fa-language"></i>
+                                    <span class="hidden-xs trn">Idiomas</span>
+                                </a>
+                                <ul class="sub-menu" role="menu">
+                                      <li><a class="lang_selector" id="idiomaEN" data-value="en"
+                onclick="setIdioma('EN', true);$('#idiomaSelector').html(getIdiomaCompleto())"> Inglés</a></li>
+        <li><a class="lang_selector" id="idiomaPT" data-value="pt"
+                onclick="setIdioma('PT', true);$('#idiomaSelector').html(getIdiomaCompleto())"> Portugués</a></li>
+        <li><a class="lang_selector" id="idiomaES" data-value="es"
+                onclick="setIdioma('ES', true);$('#idiomaSelector').html(getIdiomaCompleto())"> Español</a></li>
+
+                                </ul><!-- /.sub-menu -->
+                            </li>
+                        </ul>
+                       
+                    </div><!-- /.left-content -->
+                </div><!-- /.col-md-3 -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </header><!-- /.head-area -->
+
+    
+
+    <!-- ====== Header Nav Area ====== --> 
+	<div  id="navbar">
+    <header class="header-nav-area">
+        <div class="container">        
+            <div class="row">
+                <div class="col-md-3 col-sm-10 col-xs-10">
+                    <div class="site-logo">
+                        <a href="index.html"><img src="assets/images/logo-color.png" alt="logo" /></a>
+                    </div><!-- /.logo -->
+                </div><!-- /.col-md-3 -->
+                <div class="col-md-9 col-sm-2 col-xs-2 pd-right-0">
+                    <nav class="site-navigation top-navigation nav-style-one">
+                        <div class="menu-wrapper">
+                            <div class="menu-content">
+                                <ul class="menu-list">
+                                   <li><a href="empresa.html"><span class="trn">Empresa</span></a></li>
+						<li><a href="oficinas.html" ><span class="trn">Oficinas</span></a></li>
+						<li><a href="flota.html" ><span class="trn">Flota</span></a></li>
+						<li><a  href="#" data-toggle="modal" data-target="#reservas" ><span class="trn">Mis Reservas</span></a></li>
+                                    <li>
+                                         <a class="apiom_ul_monedas"  href="#"  >$ARS</a>
+                                        <ul id="apiom_ulMonedaUsuario" class="sub-menu" role="menu">
+								<li class="convert" data-to-currency="ARS" id="ARS"><a href="#">$ (ARS)</a></li>
+								<li class="convert" data-to-currency="USD" id="USD"><a href="#">US$ (USD)</a></li>
+								<li class="convert" data-to-currency="EUR" value="EUR" id="EUR"><a href="#">€ (EUR)</a></li>
+								<li class="convert" data-to-currency="BRL" value="BRL" id="BRL"><a href="#">R$ (BRL)</a></li>
+								<li class="convert" data-to-currency="UYU" value="UYU" id="UYU"><a href="#">$ (UYU)</a></li>
+								
+							</ul>
+                                    </li>
+                                    
+                                   
+                                   
+                                </ul> <!-- /.menu-list -->
+                            </div> <!-- /.menu-content-->
+                        </div> <!-- /.menu-wrapper --> 
+                    </nav><!-- /.site-navigation -->
+                    <!--Mobile Main Menu-->
+                    <div class="mobile-menu-main hidden-md hidden-lg">
+                        <div class="menucontent overlaybg"> </div>
+                        <div class="menuexpandermain slideRight">
+                            <a id="navtoggole-main" class="animated-arrow slideLeft menuclose">
+                                <span></span>
+                            </a>
+                        </div><!--/.menuexpandermain-->
+
+                        <div id="mobile-main-nav" class="mb-navigation slideLeft">
+                            <div class="menu-wrapper">
+                                <div id="main-mobile-container" class="menu-content clearfix"></div>
+                            </div>
+                        </div><!--/#mobile-main-nav-->
+                    </div><!--/.mobile-menu-main-->
+                </div><!-- /.col-md-9 -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </header><!-- /.header-bottom-area -->
+
+    
+
+    <!-- ====== Section divider ====== --> 
+    <div class="vehicle-section-divider night-rider">
+        <div class="contoiner-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-divider-content">
+                        <div class="vehicle-border">
+                            <img src="assets/images/auto01.png" alt="car-item" />
+                        </div><!-- /.car-border -->
+                    </div><!-- /.section-divider-content -->
+                </div><!-- /.col-md-12 -->
+				 <div class="container">
+                <div class="col-md-12">
+                    <form   method="get" class="advance-search-query input-night-rider yellow-theme">
+                        <div class="regular-search">                        
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label class="trn">Ciudad desde</label>
+                                   
+                                       <div class="input">
+                                        <select id="apiom_ciudad_desde"   >
+                                            <option value="0" selected="selected">-</option>
+                                            <option class="trn" value="Bariloche">Bariloche</option>
+                                            <option class="trn" value="Salta">Salta</option>
+                                            <option class="trn" value="Buenos Aires">Buenos Aires</option>
+											</select>
+                                   </div><!--/.input-->
+                                </div><!--/.col-md-4-->
+								
+                                <div class="col-md-3 col-xs-6">
+                                    <label class="trn">Fecha desde</label>
+                                    <div class="input">
+                                        <i class="fa fa-calendar"></i>
+                                        <input id="apiom_fecha_desde"  type="text" class="date-start date-selector form-controller" value="2021-06-21" placeholder="dd/mm/yy">
+                                    </div><!--/.input-->
+                                </div><!--/.col-md-4-->
+
+                                <div class="col-md-3 col-xs-6">
+                                    <label class="trn">Hora desde</label>
+                                    <div class="input">
+                                        <i class="fa fa-clock-o"></i>
+                                        <input id="apiom_hora_desde" type="text" class="time-selector form-controller" value="10:00hs"  placeholder="15:00 am">
+                                      </div><!--/.input-->
+                                </div><!--/.col-md-4-->
+								
+                                <div class="col-md-3 col-xs-6 hidden-xs">
+                                    <div class=" ">
+								  <div class="hidden-xs" style="height: 30px;">&nbsp;</div>
+                                     <button id="apiom_submit_search" type="submit" class="button trn btn-2" data-toggle="collapse" data-parent="#accordion" href="#collapse-form" aria-expanded="true" aria-controls="collapse4"> <i class="fa fa-plus"></i> Más Campos</button>
+                                    </div>
+                                </div><!--/.col-md-4-->
+								
+                                <div class="clearfix hidden-xs"></div><!-- /.clearfix -->
+							   	<div class=" panel-collapse collapse show-mobile " id="collapse-form" role="tabpanel" aria-labelledby="heading4" aria-expanded="false" >
+                                <div class="col-md-2">
+                                    <label class="trn">Ciudad hasta</label>
+                                   <div class="input">
+                                        <select id="apiom_ciudad_hasta">
+                                            <option class="trn" value="0" selected="selected">-</option>
+                                            <option class="trn" value="Bariloche">Bariloche</option>
+                                            <option  class="trn" value="Salta">Salta</option>
+                                            <option class="trn" value="Buenos Aires">Buenos Aires</option>
+                                         
+                                        </select>
+                                   
+                                    </div><!--/.input-->
+                                </div><!--/.col-md-4-->
+
+                                <div class="col-md-2 col-xs-6">
+                                    <label class="trn">Fecha hasta</label>
+                                    <div class="input">
+                                        <i class="fa fa-calendar"></i>
+                                        <input id="apiom_fecha_hasta" type="text" class="date-end date-selector form-controller" value="2021-06-21" placeholder="dd/mm/yy">
+                                    </div><!--/.input-->
+                                </div><!--/.col-md-4-->
+
+                                <div class="col-md-2 col-xs-6">
+                                    <label class="trn">Hora hasta</label>
+                                    <div class="input">
+                                        <i class="fa fa-clock-o"></i>
+                                        <input id="apiom_hora_hasta" type="text" class="time-selector form-controller" value="10:00hs" placeholder="12:00 am">
+                                    </div><!--/.input-->
+                                </div><!--/.col-md-4-->
+							
+								   <div class="col-md-2 col-xs-12">
+                                     <label class="trn">Código de tarifa</label>
+                                    <div class="input">
+                                        <i class="fa fa-money"></i>
+                                        <input id="apiom_codigo_tarifa" type="text" class="budget-fields form-controller trn" placeholder="">
+                                    </div><!--/.input-->
+                                </div><!--/.col-md-4-->
+								 
+								 
+								  <div class="col-md-3 check-vehicle-footer ">
+								  <div class="hidden-xs" style="height: 25px;">&nbsp;</div>
+                                     <button id="apiom_submit_search" type="submit" class="button trn">Buscar Auto</button>
+                                </div><!--/.col-md-4-->
+								</div>
+                            </div><!-- /.row -->
+                        </div><!-- /.regular-search -->
+
+                        
+
+                      
+                    </form><!-- /.advance_search_query -->
+                </div><!-- /.col-md-12 -->
+				</div>
+				
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div><!-- /.section-divider -->
+	 </div>
+
+    <!-- ====== Check Vehicle Area ====== --> 
+    <div class="check-vehicle-block gray-20 hidden-xs" >
+        <div class="container">
+            <div class="row">
+               
+
+				
+				 <div class="col-md-12 " >
+                    <div class="check-content" style="text-align:center;">
+                        <h4 class="top-subtitle"><span class="trn">Alquiler de autos</span></h4>
+                        <h3 class="title yellow-color "><span class="trn">Los mejores precios & </span></br><span class="trn">autos.</span></h3>
+						<div class="flotante1 hidden-xs">
+						<img src="assets/images/auto02.png" />
+                        </div>
+                    </div><!-- /.check-content -->
+                </div><!-- col-md-4 -->
+            </div><!-- /.row -->
+        </div><!--/.container -->
+    </div><!-- /.check-vehicle-block-->
+
+  
+           
+   
+
+    <!-- ======fun facts block======= -->
+    <div class="fun-facts-block ">
+        <div class="container">
+            <div class="stat">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="milestone-counter">
+                        <h3 class="stat-count highlight" data-form="0" data-to="110" data-speed="2500">110</h3>
+                        <div class="milestone-details trn">Autos para Alquilar</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="milestone-counter">
+                        <h3 class="stat-count highlight" data-form="0" data-to="12564" data-speed="2500">12564</h3>
+                        <div class="milestone-details trn">Clientes Felices</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="milestone-counter">
+                        <h3 class="stat-count highlight" data-form="0" data-to="14" data-speed="2500">14</h3>
+                        <div class="milestone-details trn">Destinos</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="milestone-counter">
+                        <h3 class="stat-count highlight" data-form="0" data-to="15" data-speed="2500">15</h3>
+                        <div class="milestone-details trn">Años en mercado</div>
+                    </div>
+                </div>
+            </div><!-- stat -->
+        </div><!-- /.container -->
+    </div><!-- /.fun-facts-block -->
+
+   
+   <div class="about-us-block pd-75">
+        <div class="container">
+           
+
+            <div class="about-us  owl-carousel owl-loaded " >
+                <!-- /.item --> 
+
+                <!-- /.item --> 
+          
+                   
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6 col-xs-6 pd-10">
+                                    <img src="assets/images/promo.jpg" alt="car-item">
+                                </div><!-- /.col-md-6 -->
+                                <div class="col-md-6 col-sm-6 col-xs-6 pd-10">
+                                    <img src="assets/images/promo.jpg" alt="car-item">
+                                </div><!-- /.col-md-6 -->
+                            </div><!-- /.row -->
+                        </div><!-- /.col-md-6 -->
+
+                        <div class="col-md-6">
+                            <div class="about-service-details">
+                                <h2 class="service-title trn">Conocenos!</h2>
+                                <p class="discription trn">Ut pretium est turpis, nec maximus libero sollicitudin non. Vestibulum facilisis ipsum sit amet risus rutrum faucibus. Suspendisse at enim a velit venenatis iaculis eget a justo. Quisque aliquam mi eu aliquam ornare. In vel hendrerit sapien, a blandit erat. Curabitur euismod laoreet dolor, quis dignissim enim. Integer eu elementum erat. Maecenas libero turpis, vulputate eget laoreet sed, vehicula eu sapien. Quisque maximus neque eget nunc pharetra malesuada.</p>
+                            </div><!-- /.about-service-details -->
+                        </div><!-- /.col-md-6 -->
+                    </div><!-- /.row -->
+               
+    </div>
+	</div>
+	</div>
+   
+   
+   <div class="testimonial-block bg-blue-color ex-pdb-130">
+        <div class="container">
+            <div class="row tb default-margin-bottom theme-blue">
+                <div class="col-md-9 block-title-area tb-cell">
+                    <div class="heading-content style-one border">
+                      
+                        <h2 class="title "><span class="trn"  style="color:#88c425 !important;">Comentarios de clientes</span></h2>
+                    </div><!-- /.heading-content-one -->
+                </div><!-- /.col-md-10 -->
+
+                <div class="col-md-3 block-navigation-area hidden-xs tb-cell">
+                    <div class="pull-right">                    
+                        <div class="item-navigation nav-right">
+                            <a href="#" class="previous-item">
+                                <i class="fa fa-angle-left"></i> 
+                            </a>
+                            <a href="#" class="next-item">
+                                <i class="fa fa-angle-right"></i> 
+                            </a>
+                        </div><!-- /.item-navigation -->
+                    </div><!-- /.pull-right -->
+                </div><!-- /.col-md-2 -->
+            </div><!-- /.row --> 
+
+            <div class="testimonial-slider slider-style-two owl-carousel" data-item="[3,2,1,1]">
+                <div class="item">
+                    <div class="client-image">
+                        <img src="assets/images/testimonial-image.png" alt="testimonial" />
+                    </div><!-- /.client-image -->
+                    <div class="client-detales">                            
+                        <h3 class="client-title">Miguel Rodriguez</h3>
+                       
+                        <p class="discription trn">Amorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae nibh nisl. Cras etitikis mauris eget lorem ultricies ferme ntum a inti diam.</p>
+                        
+                    </div><!-- /.client-detales -->
+                </div><!-- /.item -->
+
+                <div class="item">
+                    <div class="client-image">
+                        <img src="assets/images/testimonial-image.png" alt="testimonial" />
+                    </div><!-- /.client-image -->
+                    <div class="client-detales">                            
+                        <h3 class="client-title">Roberto Montoya</h3>
+                     
+                        <p class="discription trn">Amorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae nibh nisl. Cras etitikis mauris eget lorem ultricies ferme ntum a inti diam.</p>
+                       
+                    </div><!-- /.client-detales -->
+                </div><!-- /.item -->
+
+                <div class="item">
+                    <div class="client-image">
+                        <img src="assets/images/testimonial-image.png" alt="testimonial" />
+                    </div><!-- /.client-image -->
+                    <div class="client-detales">                            
+                        <h3 class="client-title">Carla Fabre</h3>
+                       
+                        <p class="discription trn">Amorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae nibh nisl. Cras etitikis mauris eget lorem ultricies ferme ntum a inti diam.</p>
+                        
+                    </div><!-- /.client-detales -->
+                </div><!-- /.item -->
+
+                <div class="item">
+                    <div class="client-image">
+                        <img src="assets/images/testimonial-image.png" alt="testimonial" />
+                    </div><!-- /.client-image -->
+                    <div class="client-detales">                            
+                        <h3 class="client-title">Roberto Montoya</h3>
+                        
+                        <p class="discription trn">Amorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae nibh nisl. Cras etitikis mauris eget lorem ultricies ferme ntum a inti diam.</p>
+                      
+                    </div><!-- /.client-detales -->
+                </div><!-- /.item -->
+
+                <div class="item">
+                    <div class="client-image">
+                        <img src="assets/images/testimonial-image.png" alt="testimonial" />
+                    </div><!-- /.client-image -->
+                    <div class="client-detales">                            
+                        <h3 class="client-title">Carla Fabreb</h3>
+                       
+                        <p class="discription trn">Amorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae nibh nisl. Cras etitikis mauris eget lorem ultricies ferme ntum a inti diam.</p>
+                        
+                    </div><!-- /.client-detales -->
+                </div><!-- /.item -->
+            </div><!-- /.testimonial-slider -->            
+        </div><!-- /.container -->
+    </div>
+   
+
+
+    <!-- ======Faq Block======= -->
+    <div class="faq-bolck pd-90 ex-pdt-102">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="faq-accordion">
+                       
+                        <h3 class="faq-subtitle trn">Preguntas Frecuentes</h3>
+                        <div class="accordion">
+                            <div class="panel-group" id="accordion">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading theme-blue">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                                <i class="fa fa-plus"></i>
+                                                <span class="trn">¿Es indispensable la tarjeta de credito para garantia?</span>
+                                            </a>
+                                        </h4>
+                                    </div>
+
+                                    <div id="collapseOne" class="panel-collapse collapse in">
+                                        <div class="panel-body">
+                                            <p class="accordion-details show trn">Si es indispensable ya que con ella se constituye el deposito en garantia para cubrir novedades como partes de transito o daños al vehiculo.</p>
+                                        </div>
+                                    </div> 
+                                </div>   
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading theme-blue">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                                <i class="fa fa-plus" aria-hidden="true"></i>
+                                                <span class="trn">¿La tarjeta de credito debe ser del tutular de la reserva?</span>
+                                            </a>
+                                        </h4>
+                                    </div>
+
+                                    <div id="collapseTwo" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p class="accordion-details trn">No es posible presentar otra tarjeta siempre y cuendo el tituar de la misma este presente al recoger el vehiculo para firmar el contrato.</p>
+                                        </div>
+                                    </div> 
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading theme-blue">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                                <i class="fa fa-plus" aria-hidden="true"></i>
+                                                <span class="trn">¿Que tipo de tarjetas de credito se reciben?</span>
+                                            </a>
+                                        </h4>
+                                    </div>
+
+                                    <div id="collapseThree" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p class="accordion-details trn">Visa, Marter, Aamex y Diners expedidas por banco, fisicas y  con relieve, no se adminten tarjetas debito, recargables, virtuales o planas.</p>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading theme-blue">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                                                <i class="fa fa-plus" aria-hidden="true"></i>
+                                                <span class="trn">¿El vehiculo que se entrega es exactamente el elegido?</span>
+                                            </a>
+                                        </h4>
+                                    </div>
+
+                                    <div id="collapseFour" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p class="accordion-details trn">Lo que se elige es una gama por lo cual se entregara un vehiculo perteneciente a la gama elegida.</p>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading theme-blue">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+                                                <i class="fa fa-plus" aria-hidden="true"></i>
+                                                <span class="trn">¿Que incluye el costo de la renta?</span>
+                                            </a>
+                                        </h4>
+                                    </div>
+
+                                    <div id="collapseFive" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p class="accordion-details trn">Incluye dias de renta pactados, kilometraje inimitado, transito a nivel nacional, asistencia 24/7 y seguros de accidentes, responsabilidad civil, perdida total y perdida parcial con deducubles. </p>
+                                        </div>
+                                    </div> 
+                                </div>
+                               
+                            </div><!-- /.panel-group -->
+                        </div><!-- /.accordion -->
+                    </div><!-- /.faq-accordion -->
+                </div><!-- /.col-md-6 -->
+
+                <div class="col-md-6">
+                    <div class="row tb default-margin-bottom theme-blue">
+                       	<div  class="flotante2 hidden-xs">
+						<img src="assets/images/faq.png" />
+                        </div>
+                    </div><!-- /.row -->
+
+                    
+                </div><!-- /.col-md-6 -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </div><!-- /.faq-bolck -->
+
+    <!-- ======footer area======= -->
+    <div class="container footer-top-border">
+        <div class="vehicle-multi-border bg-blue-color2"></div><!-- /.vehicle-multi-border -->
+    </div><!-- /.container -->
+
+    <footer class="footer-block bg-blue-color2">
+        <div class="container">
+            <!-- footer-top-block -->
+            <div class="footer-top-block bg-blue-color2">            
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="widget widget_hot_contact">
+                            <h2 class="title "  style="color:#88c425;">
+                                <span class="trn">Contacto</span>
+                            </h2><!-- /.widget-title -->
+                            <ul>
+                                <li><a href="#"><i class="fa fa-envelope"></i>info@carrentals.com</a></li>
+                                <li><a href="#"><i class="fa fa-phone"></i>(+54)0239-85471</a></li>
+                                <li><a href="#"><i class="fa fa-map-marker"></i>Cafayate 1234, Bariloche</a></li>
+                            </ul> 
+							 <div class="social-profile">
+                                <span class="social-profole-title trn">Seguinos:</span>
+                                <a href="#"><i class="fa fa-instagram" style="color: #c9f42d;"></i></a>
+                                <a href="#"><i class="fa fa-heart" style="color: #c9f42d;"></i></a>
+                                <a href="#"><i class="fa fa-facebook"style="color: #c9f42d;"></i></a>
+                                <a href="#"><i class="fa fa-twitter" style="color: #c9f42d;"></i></a>
+                            </div><!-- /.social-profile -->
+                        </div><!-- /.widget -->
+                       
+                    </div><!-- /.col-md-3 -->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="widget widget_menu">
+                             <h2 class="title trn"  style="color:#88c425;">
+                                Links
+                            </h2><!-- /.widget-title -->
+                            <ul>
+                                	<li><a class="trn" href="empresa.html">Nuestra Empresa</a></li>
+								<li><a class="trn" href="oficinas.html">Otras Oficinas</a></li>
+								<li><a class="trn" href="flota.html">Nuestra Flota</a></li>
+								<li><a class="trn" href="preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
+                            </ul> 
+                        </div><!-- /.widget -->
+                    </div><!-- /.col-md-3 -->
+
+                    <div class="col-md-4 col-sm-6">
+                        <div class="widget widget_menu">
+                             <h2 class="title trn"  style="color:#88c425;">
+                                &nbsp;
+                            </h2><!-- /.widget-title -->
+                            <ul>
+                               <li><a class="trn" href="resultado-de-busqueda.html">{{Pagina de Resultado}}</a></li>
+								<li><a class="trn" href="reserva.html"> {{Reserva}}</a></li>
+								<li><a class="trn" href="sucursal.html">{{Sucursal}}</a></li>
+								<li><a class="trn" href="mis-reservas.html">{{Mis Reservas}}</a></li>
+								<li><a class="trn" href="confirmacion.html">{{Confirmación}}</a></li>
+								<li><a class="trn" href="datos-personales.html">{{Datos Personales}}</a></li>
+                            </ul> 
+                        </div><!-- /.widget -->
+                       
+                    </div><!-- /.col-md-3 -->
+
+                   
+                </div><!-- /.row -->
+            </div><!-- /.footer-top-block -->
+
+            <!-- footer-bottom-block -->
+            <div class="footer-bottom-block">            
+                <div class="row">
+                     <div class="col-md-9">
+                        <div class="bottom-content-left">
+                            <p class="copyright">Copyright &copy; 2021  -  <span class="trn">Todos los derechos reservados</span></p>
+                        </div><!-- /.bottom-top-content -->
+                     </div><!-- /.col-md-9 -->
+                    
+                </div><!-- /.row -->
+            </div><!-- /.footer-bottom-block -->
+        </div><!-- /.container -->
+    </footer><!-- /.footer-block -->
+	
+	
+	
+       
+    <!-- All The JS Files
+    ================================================== --> 
+    <script src="assets/js/plugins.min.js"></script>
+    <script src="assets/js/carrent.min.js"></script> <!-- main-js -->
+
+    <!-- RS5.4 Core JS Files -->
+    <script src="assets/revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script src="assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
+  
+    <script>
+        jQuery(document).ready(function() {
+            var $sliderSelector = jQuery(".carrent-slider");
+            $sliderSelector.revolution({
+                sliderType: "standard",
+                sliderLayout: "fullwidth",
+                delay: 9000,
+                navigation: {
+                    keyboardNavigation: "on",
+                    keyboard_direction: "horizontal",
+                    mouseScrollNavigation: "off",
+                    onHoverStop: "on",
+                    touch: {
+                        touchenabled: "on",
+                        swipe_threshold: 75,
+                        swipe_min_touches: 1,
+                        swipe_direction: "horizontal",
+                        drag_block_vertical: false
+                    },
+                    arrows: {
+                        style: "gyges",
+                        enable: true,
+                        hide_onmobile: false,
+                        hide_onleave: true,
+                        tmp: '',
+                        left: {
+                            h_align: "left",
+                            v_align: "center",
+                            h_offset: 10,
+                            v_offset: 0
+                        },
+                        right: {
+                            h_align: "right",
+                            v_align: "center",
+                            h_offset: 10,
+                            v_offset: 0
+                        }
+                    }
+                },
+                responsiveLevels:[1400,1368,992,480],
+                visibilityLevels:[1400,1368,992,480],
+                gridwidth:[1400,1368,992,480],
+                gridheight:[600,600,500,380],
+                disableProgressBar:"on"
+            });
+        });
+    </script>
+
+    <!-- SLIDER REVOLUTION 5.4 EXTENSIONS  (Load Extensions only on Local File Systems! The following part can be removed on Server for On Demand Loading) -->
+    <script src="assets/revolution/js/extensions/revolution.extension.video.min.js"></script>
+    <script src="assets/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script src="assets/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+    <script src="assets/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script src="assets/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script src="assets/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script src="assets/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+    <script src="assets/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+	 
+	 
+	 <script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+
+<script>
+
+var ComboboxList = function (domNode) {
+
+  this.domNode  = domNode;
+  this.listbox  = false;
+  this.option   = false;
+
+  this.hasFocus = false;
+  this.hasHover = false;
+  this.filter   = '';
+  this.isNone = false;
+  this.isList = false;
+  this.isBoth = false;
+
+  this.keyCode = Object.freeze({
+    'BACKSPACE': 8,
+    'TAB': 9,
+    'RETURN': 13,
+    'ESC': 27,
+    'SPACE': 32,
+    'PAGEUP': 33,
+    'PAGEDOWN': 34,
+    'END': 35,
+    'HOME': 36,
+    'LEFT': 37,
+    'UP': 38,
+    'RIGHT': 39,
+    'DOWN': 40
+  });
+};
+
+ComboboxList.prototype.init = function () {
+
+  this.domNode.setAttribute('aria-haspopup', 'true');
+
+  var autocomplete = this.domNode.getAttribute('aria-autocomplete');
+
+  if (typeof autocomplete === 'string') {
+    autocomplete = autocomplete.toLowerCase();
+    this.isNone  = autocomplete === 'none';
+    this.isList  = autocomplete === 'list';
+    this.isBoth  = autocomplete === 'both';
+  }
+  else {
+    // default value of autocomplete
+    this.isNone = true;
+  }
+
+  this.domNode.addEventListener('keydown', this.handleKeydown.bind(this));
+  this.domNode.addEventListener('keyup',   this.handleKeyup.bind(this));
+  this.domNode.addEventListener('click',   this.handleClick.bind(this));
+  this.domNode.addEventListener('focus',   this.handleFocus.bind(this));
+  this.domNode.addEventListener('blur',    this.handleBlur.bind(this));
+
+  // initialize pop up menus
+
+  var listbox = document.getElementById(this.domNode.getAttribute('aria-controls'));
+
+  if (listbox) {
+    this.listbox = new Listbox(listbox, this);
+    this.listbox.init();
+  }
+
+  // Open Button
+
+  var button = this.domNode.nextElementSibling;
+
+  if (button && button.tagName === 'BUTTON') {
+    button.addEventListener('click',   this.handleButtonClick.bind(this));
+  }
+
+};
+
+ComboboxList.prototype.setActiveDescendant = function (option) {
+  if (option && this.listbox.hasFocus) {
+    this.domNode.setAttribute('aria-activedescendant', option.domNode.id);
+  }
+  else {
+    this.domNode.setAttribute('aria-activedescendant', '');
+  }
+};
+
+ComboboxList.prototype.setValue = function (value) {
+  this.filter = value;
+  this.domNode.value = this.filter;
+  this.domNode.setSelectionRange(this.filter.length,this.filter.length);
+  if (this.isList || this.isBoth) {
+    this.listbox.filterOptions(this.filter, this.option);
+  }
+};
+
+ComboboxList.prototype.setOption = function (option, flag) {
+  if (typeof flag !== 'boolean') {
+    flag = false;
+  }
+
+  if (option) {
+    this.option = option;
+    this.listbox.setCurrentOptionStyle(this.option);
+    this.setActiveDescendant(this.option);
+
+    if (this.isBoth) {
+      this.domNode.value = this.option.textContent;
+      if (flag) {
+        this.domNode.setSelectionRange(this.option.textContent.length,this.option.textContent.length);
+      }
+      else {
+        this.domNode.setSelectionRange(this.filter.length,this.option.textContent.length);
+      }
+    }
+  }
+};
+
+ComboboxList.prototype.setVisualFocusTextbox = function () {
+  this.listbox.domNode.classList.remove('focus');
+  this.listbox.hasFocus = false;
+  this.domNode.parentNode.classList.add('focus'); // set the focus class to the parent for easier styling
+  this.hasFocus = true;
+  this.setActiveDescendant(false);
+};
+
+ComboboxList.prototype.setVisualFocusListbox = function () {
+  this.domNode.parentNode.classList.remove('focus');
+  this.hasFocus = false;
+  this.listbox.domNode.classList.add('focus');
+  this.listbox.hasFocus = true;
+  this.setActiveDescendant(this.option);
+};
+
+ComboboxList.prototype.removeVisualFocusAll = function () {
+  this.domNode.parentNode.classList.remove('focus');
+  this.hasFocus = false;
+  this.listbox.domNode.classList.remove('focus');
+  this.listbox.hasFocus = true;
+  this.option = false;
+  this.setActiveDescendant(false);
+};
+
+/* Event Handlers */
+
+ComboboxList.prototype.handleKeydown = function (event) {
+  var tgt = event.currentTarget,
+    flag = false,
+    char = event.key,
+    shiftKey = event.shiftKey,
+    ctrlKey  = event.ctrlKey,
+    altKey   = event.altKey;
+
+  switch (event.keyCode) {
+
+    case this.keyCode.RETURN:
+      if ((this.listbox.hasFocus || this.isBoth) && this.option) {
+        this.setValue(this.option.textContent);
+      }
+      this.listbox.close(true);
+      flag = true;
+      break;
+
+    case this.keyCode.DOWN:
+
+      if (this.listbox.hasOptions()) {
+        if (this.listbox.hasFocus || (this.isBoth && this.option)) {
+          this.setOption(this.listbox.getNextItem(this.option), true);
+        }
+        else {
+          this.listbox.open();
+          if (!altKey) {
+            this.setOption(this.listbox.getFirstItem(), true);
+          }
+        }
+        this.setVisualFocusListbox();
+      }
+      flag = true;
+      break;
+
+    case this.keyCode.UP:
+
+      if (this.listbox.hasOptions()) {
+        if (this.listbox.hasFocus || (this.isBoth && this.option)) {
+          this.setOption(this.listbox.getPreviousItem(this.option), true);
+        }
+        else {
+          this.listbox.open();
+          if (!altKey) {
+            this.setOption(this.listbox.getLastItem(), true);
+          }
+        }
+        this.setVisualFocusListbox();
+      }
+      flag = true;
+      break;
+
+    case this.keyCode.ESC:
+      this.listbox.close(true);
+      this.setVisualFocusTextbox();
+      this.setValue('');
+      this.option = false;
+      flag = true;
+      break;
+
+    case this.keyCode.TAB:
+      this.listbox.close(true);
+      if (this.listbox.hasFocus) {
+        if (this.option) {
+          this.setValue(this.option.textContent);
+        }
+      }
+      break;
+
+    default:
+      break;
+  }
+
+  if (flag) {
+    event.stopPropagation();
+    event.preventDefault();
+  }
+
+};
+
+ComboboxList.prototype.handleKeyup = function (event) {
+  var flag = false,
+    option = false,
+    char = event.key;
+
+  function isPrintableCharacter (str) {
+    return str.length === 1 && str.match(/\S/);
+  }
+
+  if (isPrintableCharacter(char)) {
+    this.filter += char;
+  }
+
+  // this is for the case when a selection in the textbox has been deleted
+  if (this.domNode.value.length < this.filter.length) {
+    this.filter = this.domNode.value;
+    this.option = false;
+  }
+
+  if (event.keyCode === this.keyCode.ESC) {
+    return;
+  }
+
+  switch (event.keyCode) {
+
+    case this.keyCode.BACKSPACE:
+      this.setValue(this.domNode.value);
+      this.setVisualFocusTextbox();
+      this.listbox.setCurrentOptionStyle(false);
+      this.option = false;
+      flag = true;
+      break;
+
+    case this.keyCode.LEFT:
+    case this.keyCode.RIGHT:
+    case this.keyCode.HOME:
+    case this.keyCode.END:
+      if (this.isBoth) {
+        this.filter = this.domNode.value;
+      }
+      else {
+        this.option = false;
+        this.listbox.setCurrentOptionStyle(false);
+      }
+
+      this.setVisualFocusTextbox();
+      flag = true;
+      break;
+
+    default:
+      if (isPrintableCharacter(char)) {
+        this.setVisualFocusTextbox();
+        this.listbox.setCurrentOptionStyle(false);
+        flag = true;
+
+        if (this.isList || this.isBoth) {
+          option = this.listbox.filterOptions(this.filter, this.option);
+          if (option) {
+            if (this.listbox.isClosed() && this.domNode.value.length) {
+              this.listbox.open();
+            }
+    
+            if (option.textComparison.indexOf(this.domNode.value.toLowerCase()) === 0) {
+              this.option = option;
+              if (this.isBoth || this.listbox.hasFocus) {
+                this.listbox.setCurrentOptionStyle(option);
+                if (this.isBoth && isPrintableCharacter(char)) {
+                  this.setOption(option);
+                }
+              }
+            }
+            else {
+              this.option = false;
+              this.listbox.setCurrentOptionStyle(false);
+            }
+          }
+          else {
+            this.listbox.close();
+            this.option = false;
+            this.setActiveDescendant(false);
+          }
+        }
+        else if (this.domNode.value.length) {
+          this.listbox.open();
+        }
+      }
+
+      break;
+  }
+
+  // if (event.keyCode !== this.keyCode.RETURN) {
+
+  //   if (this.isList || this.isBoth) {
+  //     option = this.listbox.filterOptions(this.filter, this.option);
+  //     if (option) {
+  //       if (this.listbox.isClosed() && this.domNode.value.length) {
+  //         this.listbox.open();
+  //       }
+
+  //       if (option.textComparison.indexOf(this.domNode.value.toLowerCase()) === 0) {
+  //         this.option = option;
+  //         if (this.isBoth || this.listbox.hasFocus) {
+  //           this.listbox.setCurrentOptionStyle(option);
+  //           if (this.isBoth && isPrintableCharacter(char)) {
+  //             this.setOption(option);
+  //           }
+  //         }
+  //       }
+  //       else {
+  //         this.option = false;
+  //         this.listbox.setCurrentOptionStyle(false);
+  //       }
+  //     }
+  //     else {
+  //       this.listbox.close();
+  //       this.option = false;
+  //       this.setActiveDescendant(false);
+  //     }
+  //   }
+  //   else if (this.domNode.value.length) {
+  //     this.listbox.open();
+  //   }
+
+  // }
+
+
+  if (flag) {
+    event.stopPropagation();
+    event.preventDefault();
+  }
+
+};
+
+ComboboxList.prototype.handleClick = function (event) {
+  if (this.listbox.isOpen()) {
+    this.listbox.close(true);
+  }
+  else {
+    this.listbox.open();
+  }
+};
+
+ComboboxList.prototype.handleFocus = function (event) {
+  this.setVisualFocusTextbox();
+  this.option = false;
+  this.listbox.setCurrentOptionStyle(null);
+};
+
+ComboboxList.prototype.handleBlur = function (event) {
+  this.listbox.hasFocus = false;
+  this.listbox.setCurrentOptionStyle(null);
+  this.removeVisualFocusAll();
+  setTimeout(this.listbox.close.bind(this.listbox, false), 300);
+
+};
+
+ComboboxList.prototype.handleButtonClick = function (event) {
+  if (this.listbox.isOpen()) {
+    this.listbox.close(true);
+  }
+  else {
+    this.listbox.open();
+  }
+  this.domNode.focus();
+  this.setVisualFocusTextbox();
+};
+
+
+// Initialize comboboxes
+
+window.addEventListener('load', function () {
+
+  var comboboxes = document.querySelectorAll('.combobox-list [role="combobox"]');
+
+  for (var i = 0; i < comboboxes.length; i++) {
+    var combobox = new ComboboxList(comboboxes[i]);
+    combobox.init();
+  }
+
+});
+
+
+/*
+*   This content is licensed according to the W3C Software License at
+*   https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document
+*/
+var Listbox = function (domNode, comboboxObj) {
+  var elementChildren,
+    msgPrefix = 'Listbox constructor argument domNode ';
+
+  // Check whether domNode is a DOM element
+  if (!(domNode instanceof Element)) {
+    throw new TypeError(msgPrefix + 'is not a DOM Element.');
+  }
+
+  // Check whether domNode has child elements
+  if (domNode.childElementCount === 0) {
+    throw new Error(msgPrefix + 'has no element children.');
+  }
+
+  // Check whether domNode child elements are A elements
+  var childElement = domNode.firstElementChild;
+  while (childElement) {
+    var option = childElement.firstElementChild;
+    childElement = childElement.nextElementSibling;
+  }
+
+  this.domNode = domNode;
+  this.combobox = comboboxObj;
+
+  this.allOptions = [];
+
+  this.options    = [];      // see PopupMenu init method
+
+  this.firstOption  = null;    // see PopupMenu init method
+  this.lastOption   = null;    // see PopupMenu init method
+
+  this.hasFocus   = false;   // see MenuItem handleFocus, handleBlur
+  this.hasHover   = false;   // see PopupMenu handleMouseover, handleMouseout
+};
+
+/*
+*   @method Listbox.prototype.init
+*
+*   @desc
+*       Add domNode event listeners for mouseover and mouseout. Traverse
+*       domNode children to configure each option and populate.options
+*       array. Initialize firstOption and lastOption properties.
+*/
+Listbox.prototype.init = function () {
+  var childElement, optionElement, optionElements, firstChildElement, option, textContent, numItems;
+
+  // Configure the domNode itself
+  this.domNode.tabIndex = -1;
+
+  this.domNode.setAttribute('role', 'listbox');
+
+  this.domNode.addEventListener('mouseover', this.handleMouseover.bind(this));
+  this.domNode.addEventListener('mouseout',  this.handleMouseout.bind(this));
+
+  // Traverse the element children of domNode: configure each with
+  // option role behavior and store reference in.options array.
+  optionElements = this.domNode.getElementsByTagName('LI');
+
+  for (var i = 0; i < optionElements.length; i++) {
+
+    optionElement = optionElements[i];
+
+    if (!optionElement.firstElementChild && optionElement.getAttribute('role') != 'separator') {
+      option = new ListboxOption(optionElement, this);
+      option.init();
+      this.allOptions.push(option);
+    }
+  }
+
+  this.filterOptions('');
+
+};
+
+Listbox.prototype.filterOptions = function (filter, currentOption) {
+
+  if (typeof filter !== 'string') {
+    filter = '';
+  }
+
+  var i,
+    option,
+    textContent,
+    numItems;
+
+  filter = filter.toLowerCase();
+
+  this.options    = [];
+  this.firstChars = [];
+  this.domNode.innerHTML = '';
+
+  for (i = 0; i < this.allOptions.length; i++) {
+    option = this.allOptions[i];
+    if (filter.length === 0 || option.textComparison.indexOf(filter) === 0) {
+      this.options.push(option);
+      textContent = option.textContent.trim();
+      this.firstChars.push(textContent.substring(0, 1).toLowerCase());
+      this.domNode.appendChild(option.domNode);
+    }
+  }
+
+  // Use populated.options array to initialize firstOption and lastOption.
+  numItems = this.options.length;
+  if (numItems > 0) {
+    this.firstOption = this.options[0];
+    this.lastOption  = this.options[numItems - 1];
+
+    if (currentOption && this.options.indexOf(currentOption) >= 0) {
+      option = currentOption;
+    }
+    else {
+      option = this.firstOption;
+    }
+  }
+  else {
+    this.firstOption = false;
+    option = false;
+    this.lastOption  = false;
+  }
+
+  return option;
+};
+
+Listbox.prototype.setCurrentOptionStyle = function (option) {
+
+  for (var i = 0; i < this.options.length; i++) {
+    var opt = this.options[i];
+    if (opt === option) {
+      opt.domNode.setAttribute('aria-selected', 'true');
+      this.domNode.scrollTop = opt.domNode.offsetTop;
+    }
+    else {
+      opt.domNode.removeAttribute('aria-selected');
+    }
+  }
+};
+
+Listbox.prototype.setOption = function (option) {
+  if (option) {
+    this.combobox.setOption(option);
+    this.combobox.setValue(option.textContent);
+  }
+};
+
+/* EVENT HANDLERS */
+
+Listbox.prototype.handleMouseover = function (event) {
+  this.hasHover = true;
+};
+
+Listbox.prototype.handleMouseout = function (event) {
+  this.hasHover = false;
+  setTimeout(this.close.bind(this, false), 300);
+};
+
+/* FOCUS MANAGEMENT METHODS */
+
+
+Listbox.prototype.getFirstItem = function () {
+  return this.firstOption;
+};
+
+Listbox.prototype.getLastItem = function () {
+  return this.lastOption;
+};
+
+Listbox.prototype.getPreviousItem = function (currentOption) {
+  var index;
+
+  if (currentOption !== this.firstOption) {
+    index = this.options.indexOf(currentOption);
+    return this.options[index - 1];
+  }
+  return this.lastOption;
+};
+
+Listbox.prototype.getNextItem = function (currentOption) {
+  var index;
+
+  if (currentOption !== this.lastOption) {
+    index = this.options.indexOf(currentOption);
+    return this.options[index + 1];
+  }
+  return this.firstOption;
+};
+
+/* MENU DISPLAY METHODS */
+
+Listbox.prototype.isOpen = function () {
+  return this.domNode.style.display === 'block';
+};
+
+Listbox.prototype.isClosed = function () {
+  return this.domNode.style.display !== 'block';
+};
+
+Listbox.prototype.hasOptions = function () {
+  return this.options.length;
+};
+
+Listbox.prototype.open = function () {
+  // set CSS properties
+  this.domNode.style.display = 'block';
+
+  // set aria-expanded attribute
+  this.combobox.domNode.setAttribute('aria-expanded', 'true');
+};
+
+Listbox.prototype.close = function (force) {
+  if (typeof force !== 'boolean') {
+    force = false;
+  }
+
+  if (force || (!this.hasFocus && !this.hasHover && !this.combobox.hasHover)) {
+    this.setCurrentOptionStyle(false);
+    this.domNode.style.display = 'none';
+    this.combobox.domNode.setAttribute('aria-expanded', 'false');
+    this.combobox.setActiveDescendant(false);
+  }
+};
+
+/*
+*   This content is licensed according to the W3C Software License at
+*   https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document
+*/
+var ListboxOption = function (domNode, listboxObj) {
+
+  this.domNode = domNode;
+  this.listbox = listboxObj;
+  this.textContent    = domNode.textContent;
+  this.textComparison = domNode.textContent.toLowerCase();
+
+};
+
+ListboxOption.prototype.init = function () {
+
+  if (!this.domNode.getAttribute('role')) {
+    this.domNode.setAttribute('role', 'option');
+  }
+
+  this.domNode.addEventListener('click',      this.handleClick.bind(this));
+  this.domNode.addEventListener('mouseover',  this.handleMouseover.bind(this));
+  this.domNode.addEventListener('mouseout',   this.handleMouseout.bind(this));
+
+};
+
+/* EVENT HANDLERS */
+
+ListboxOption.prototype.handleClick = function (event) {
+  this.listbox.setOption(this);
+  this.listbox.close(true);
+};
+
+ListboxOption.prototype.handleMouseover = function (event) {
+  this.listbox.hasHover = true;
+  this.listbox.open();
+
+};
+
+ListboxOption.prototype.handleMouseout = function (event) {
+  this.listbox.hasHover = false;
+  setTimeout(this.listbox.close.bind(this.listbox, false), 300);
+};
+
+</script>
+	 
+	 
+	 
+</body>
+</html>

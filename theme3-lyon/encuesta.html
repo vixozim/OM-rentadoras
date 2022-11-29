@@ -1,0 +1,721 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Specific Meta
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="" />
+    <meta name="author" content="">
+
+    <!-- Titles
+    ================================================== -->
+    <title>Encuesta | Theme 3 Lyon</title>
+
+    <!-- Favicons
+    ================================================== -->
+
+
+    <!-- Custom Font
+    ================================================== -->
+    <link href="https://fonts.googleapis.com/css?family=Exo:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i%7cRoboto+Slab:400,700" rel="stylesheet">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="assets/css/plugins.min.css">
+    <link rel="stylesheet" href="assets/css/icons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/color-schemer.css">   
+	<link href="assets/css/star-rating.css" rel="stylesheet">
+</head>
+
+<body class="single">
+  <!-- MODAL LOGINS -->
+	
+	<div id="reservas" class="modal fade">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+          
+            <div class="modal-body">
+			 <button type="button" class="bootbox-close-button close" data-dismiss="modal" aria-hidden="true">×</button>
+			<div class="modal-header row form-group">
+                                   
+                                    <h5 class="text-uppercase italic text-medium font-weight-600 trn">Mis Reservas </h5>
+                                </div>
+               
+              <div class="row justify-content-md-center">
+
+                <div class="col-lg-6">
+                    <div class="padding-30px background-white border-1 border-grey-1">
+                       <form   method="get" class="advance-search-query input-night-rider yellow-theme">
+                            <div class="form-group">
+                                <label style="color: #333;"><strong class="trn">Correo Electrónico</strong></label>
+                              <div class="input">
+                                        <i class="fa fa-envelope"></i>
+                                        <input  type="text" class="budget-fields form-controller apiom_email trn" >
+                                    </div>
+                            </div>
+                            <div class="form-group">
+                                <label style="color: #333;"><strong class="trn">Numero de Confirmación</strong></label>
+                              
+								 <div class="input">
+                                        <i class="fa fa-check"></i>
+                                        <input id="apiom_confirmation_number" type="text" class="budget-fields form-controller  trn" >
+                                    </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <button id="apiom_submit_mis_reservas" class="button red-bg trn">Ir a la reserva</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 ">
+                    <div class="check-content">
+                        <h4 class="top-subtitle trn">¿No sabes cual es tu Nº de confirmación?</h4>
+                        <p style="margin-bottom:0px;" class=" discription trn">Te enviaremos tu Nº de reserva al mail registrado en nuestro sistema</p>
+						<a  class=" collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse1"><strong class="trn">ENVIAR EMAIL</strong<i class="fa fa-chevron-down"></i></a>
+							<div class="  panel-collapse collapse" id="collapse3"  role="tabpanel" aria-labelledby="heading4" aria-expanded="false">
+						 <div class="form-group  yellow-theme">
+                                
+                                 <div class="input">
+                                      
+                                        <input type="text" class="budget-fields form-controller apiom_email trn" >
+                                    </div>
+                            </div>
+							 <div class="form-group">
+                                <button class="button red-bg trn">Enviar</button>
+                            </div>
+                    </div>
+					 </div>
+
+                   
+                   
+                </div>
+				
+				
+
+            </div>
+            </div>
+        </div>
+    </div>
+	 </div>
+	 
+	 
+	 
+	 
+	 <div id="iniciar-sesion" class="modal fade">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+          
+            <div class="modal-body">
+			 <button type="button" class="bootbox-close-button close" data-dismiss="modal" aria-hidden="true">×</button>
+			<div class="modal-header row form-group">
+                                   
+                                    <h5 class="text-uppercase italic text-medium font-weight-600">Iniciar Sesión </h5>
+                                </div>
+               
+              <div class="row justify-content-md-center">
+
+                <div class="col-lg-6">
+                    <div class="padding-30px background-white border-1 border-grey-1">
+                          <form   method="get" class="advance-search-query input-night-rider yellow-theme">
+                            <div class="form-group">
+                                <label for="" class="col-form-label"><strong class="trn">Correo Electrónico</strong></label>
+								 <div class="input">
+                                        <i class="fa fa-envelope"></i>
+                                <input type="email" class="budget-fields form-controller apiom_email" id="" placeholder="Email">
+                            </div>
+							 </div>
+                            <div class="form-group">
+                                <label for="" class="col-form-label"><strong class="trn">Contraseña</strong></label>
+								 <div class="input">
+                                      
+                                <input type="password" class="budget-fields form-controller" id="apiom_password" placeholder="Contraseña">
+                            </div>
+							 </div>
+                            
+                            <div class="form-group">
+                                 <button class="button red-bg trn" id="apiom_submit_login" >Ingresar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="check-content">
+                        <h4 class="top-subtitle trn">¿Olvidó su contraseña?</h4>
+                        <p style="margin-bottom:0px;" class="discription trn">Te enviaremos tu contraseña al mail registrado en nuestro sistema.</p>
+						<a  class="trn collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="false" aria-controls="collapse1">ENVIAR EMAIL</a>
+							<div class="  panel-collapse collapse" id="collapse1"  role="tabpanel" aria-labelledby="heading4" aria-expanded="false">
+						 <div class="form-group">
+                                	 <div class="input">
+                                <input type="text" class="budget-fields form-controller"   placeholder="Email">
+                            </div> </div>
+							 <div class="form-group">
+                                <button class="button red-bg trn">Enviar</button>
+                            </div>
+                    </div>
+					 </div>
+
+                    <div class="margin-bottom-15px padding-bottom-15px border-bottom-1 border-grey-2">
+                        <i class="fa fa-user margin-right-10px" aria-hidden="true"></i> <strong class="text-uppercase collapsed trn" >¿Primera vez? </strong>
+                        <span class="d-block"><a data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse1" class="text-grey-2">REGISTRATE</a></span>
+                    </div>
+                   
+                </div>
+				
+				 <div class="col-lg-6 col-md-6 panel-collapse collapse" id="collapse2"  role="tabpanel" aria-labelledby="heading4" aria-expanded="false">
+                     <div class="">
+					  <form   method="get" class="advance-search-query input-night-rider yellow-theme">
+				
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                               	 <div class="input">
+                                <input type="text" id="apiom_registro_nombre" class="budget-fields form-controller trn" placeholder="Nombre">
+                            </div></div>
+                            <div class="form-group col-md-6">
+                                	 <div class="input">
+                                <input type="email" id="apiom_registro_apellido" class="budget-fields form-controller trn" placeholder="Apellido">
+                            </div>
+                        </div></div>
+                        <div class="form-group">
+                         	 <div class="input">
+                            <input type="text" id="apiom_registro_email" class="budget-fields form-controller trn" placeholder="Email">
+                        </div></div>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                               	 <div class="input">
+                                <input type="password" id="apiom_registro_contraseña" class="budget-fields form-controller trn" placeholder="Contraseña">
+                            </div></div>
+                            <div class="form-group col-md-6">
+                               	 <div class="input">
+                                <input type="password" id="apiom_registro_contraseña_ok" class="budget-fields form-controller trn" placeholder="Contraseña">
+                            </div></div>
+                        </div>
+                     <button id="apiom_registro_submit" class="button red-bg trn">Enviar</button>
+                    </form>
+					 </div>
+                </div>
+
+            </div>
+            </div>
+        </div>
+    </div>
+	 </div>
+	 
+	 
+	 
+<!-- END MODAL LOGINS -->
+
+
+    <!-- ====== Header Top Area ====== --> 
+    <header class="header-top-area bg-nero">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-xs-8 ">
+                    <div class="header-content-left">
+                        <ul class="header-top-menu">
+                            <li>
+                                <button href="#reservas" data-toggle="modal" data-target="#reservas" class="top-left-menu">
+                                    <i class="fa fa-user"></i>
+                                    <span class="hidden-xs trn">Mis Reservas</span>
+									<span class="hidden-lg hidden-md trn">Reservas</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button data-toggle="modal" data-target="#iniciar-sesion"  class="top-left-menu">
+                                    <i class="fa fa-lock"></i>
+                                    <span class="hidden-xs trn">Iniciar Sesión</span>
+									<span class="hidden-lg hidden-md trn">Login</span>
+                                </button>                                 
+                            </li>
+                        </ul><!-- /.header-top-menu -->
+                    </div><!-- /.header-content-left -->
+                </div><!-- /.col-md-9 -->
+
+                <div class="col-md-6 col-xs-4">
+                    <div class="header-content-right">
+                        <ul class="header-top-menu">
+                            <li>
+                                <a href="#" class="language" id="idiomaSelector">
+                                    <i class="fa fa-language"></i>
+                                    <span class="hidden-xs trn">Idiomas</span>
+                                </a>
+                                <ul class="sub-menu" role="menu">
+                                      <li><a class="lang_selector" id="idiomaEN" data-value="en"
+                onclick="setIdioma('EN', true);$('#idiomaSelector').html(getIdiomaCompleto())"> Inglés</a></li>
+        <li><a class="lang_selector" id="idiomaPT" data-value="pt"
+                onclick="setIdioma('PT', true);$('#idiomaSelector').html(getIdiomaCompleto())"> Portugués</a></li>
+        <li><a class="lang_selector" id="idiomaES" data-value="es"
+                onclick="setIdioma('ES', true);$('#idiomaSelector').html(getIdiomaCompleto())"> Español</a></li>
+
+                                </ul><!-- /.sub-menu -->
+                            </li>
+                        </ul>
+                       
+                    </div><!-- /.left-content -->
+                </div><!-- /.col-md-3 -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </header><!-- /.head-area -->
+
+    
+
+    <!-- ====== Header Nav Area ====== --> 
+    <header class="header-nav-area">
+        <div class="container">        
+            <div class="row">
+                <div class="col-md-3 col-sm-10 col-xs-10">
+                    <div class="site-logo">
+                        <a href="index.html"><img src="assets/images/logo-color.png" alt="logo" /></a>
+                    </div><!-- /.logo -->
+                </div><!-- /.col-md-3 -->
+                <div class="col-md-9 col-sm-2 col-xs-2 pd-right-0">
+                    <nav class="site-navigation top-navigation nav-style-one">
+                        <div class="menu-wrapper">
+                            <div class="menu-content">
+                                <ul class="menu-list">
+                                   <li><a href="empresa.html"><span class="trn">Empresa</span></a></li>
+						<li><a href="oficinas.html" ><span class="trn">Oficinas</span></a></li>
+						<li><a href="flota.html" ><span class="trn">Flota</span></a></li>
+						<li><a  href="#" data-toggle="modal" data-target="#reservas" ><span class="trn">Mis Reservas</span></a></li>
+						
+                                    <li>
+                                         <a class="apiom_ul_monedas"  href="#"  >$ARS</a>
+                                        <ul id="apiom_ulMonedaUsuario" class="sub-menu" role="menu">
+								<li class="convert" data-to-currency="ARS" id="ARS"><a href="#">$ (ARS)</a></li>
+								<li class="convert" data-to-currency="USD" id="USD"><a href="#">US$ (USD)</a></li>
+								<li class="convert" data-to-currency="EUR" value="EUR" id="EUR"><a href="#">€ (EUR)</a></li>
+								<li class="convert" data-to-currency="BRL" value="BRL" id="BRL"><a href="#">R$ (BRL)</a></li>
+								<li class="convert" data-to-currency="UYU" value="UYU" id="UYU"><a href="#">$ (UYU)</a></li>
+								
+							</ul>
+                                    </li>
+									<li style="display: none;"><a href="#" id="apiom_logout" ><span class="trn">Cerrar Sesión</span></a></li>
+                                    
+                                   
+                                   
+                                </ul> <!-- /.menu-list -->
+                            </div> <!-- /.menu-content-->
+                        </div> <!-- /.menu-wrapper --> 
+                    </nav><!-- /.site-navigation -->
+                    <!--Mobile Main Menu-->
+                    <div class="mobile-menu-main hidden-md hidden-lg">
+                        <div class="menucontent overlaybg"> </div>
+                        <div class="menuexpandermain slideRight">
+                            <a id="navtoggole-main" class="animated-arrow slideLeft menuclose">
+                                <span></span>
+                            </a>
+                        </div><!--/.menuexpandermain-->
+
+                        <div id="mobile-main-nav" class="mb-navigation slideLeft">
+                            <div class="menu-wrapper">
+                                <div id="main-mobile-container" class="menu-content clearfix"></div>
+                            </div>
+                        </div><!--/#mobile-main-nav-->
+                    </div><!--/.mobile-menu-main-->
+                </div><!-- /.col-md-9 -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </header><!-- /.header-bottom-area -->
+
+ <!-- ====== Section divider ====== --> 
+    <div class="vehicle-section-divider night-rider">
+        <div class="contoiner-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-divider-content">
+                        <div class="vehicle-border">
+                            <img src="assets/images/auto01.png" alt="car-item" />
+                        </div><!-- /.car-border -->
+                    </div><!-- /.section-divider-content -->
+                </div><!-- /.col-md-12 -->
+            </div><!-- /.row -->
+			 <div class="container">
+            <div class="row">
+                <div class="col-md-12">                
+                    <h2 class="page-title trn">Encuesta de reserva </h2>
+                   
+                </div><!-- /.col-md-12 -->
+            </div><!-- /.row-->
+        </div><!-- /.container-fluid -->      
+        </div><!-- /.container-fluid -->
+    </div><!-- /.section-divider -->
+   
+
+    <!-- ======Block Single Block====== --> 
+    <div class="blog-single-block red-bg ">
+        <div class="container">
+            <div class="row">
+			
+							
+                <!-- Blog single Content -->
+                <div class="col-md-12">
+                    <div class="  single-main-content resultado" style="padding: 20px; margin-top: 30px; margin-bottom: 20px;">
+					 <h3 id=" " class="trn">ENCUESTA DE RESERVA <span id="apiom_confirmation_number">#12345678</span> </h3>
+                        <div class="col-md-3">
+                            <div class=" style-two category">
+                                <div class="pricing-image pd-t-15">
+								   <h3 id="apiom_confirmation_model"  class="mr-top-0 trn ">Spin   </h3>
+                                    <a href="#"><img id="apiom_model_photo" src="assets/images/auto.jpg" alt="" /></a>
+                                </div>
+								
+									
+								</div>
+								</div>
+								
+								 <div class="col-md-9">
+								 
+								 <div class="col-md-6">
+								  
+								
+								  
+								 	<article class="post">
+                               
+                                <div class="post-content">  
+                                    <div class="entry-meta">
+									<h5 class="text-uppercase" style="margin-top: 0px; color:#333;">
+                                        <span class="trn">pick up</span>
+                                    </h2>
+                                        <span class="entry-date nevy-bg ">
+                                           <span id="apiom_confirmation_dia_desde"> 25 </span> <span class="trn"> de </span><span id="apiom_confirmation_mes_desde" class="trn"> Julio</span>
+                                        </span>
+                                        <span class="entry-author red-bg">
+                                            <i class="fa fa-user"></i>
+                                           <span id="apiom_confirmation_hora_desde"> 10:00hs</span>
+                                        </span>
+										 <h2 class="entry-title">
+                                        <span id="apiom_confirmation_ciudad_desde">Puerto Iguazu</span>  <span class="entry-view"><i id="apiom_confirmation_pickup" class="fa fa-building" style="color: #333;"></i></span>
+                                    </h2><!-- /.entry-title -->
+                                    </div><!-- /.entry-meta -->
+                                   
+                                   
+                                </div><!-- /.post-content -->
+                            </article>
+								</div>
+								
+								
+								 
+								  <div class="col-md-6">
+								   	<article class="post">
+                               
+                                <div class="post-content">  
+                                    <div class="entry-meta">
+									<h5 class="text-uppercase" style="margin-top: 0px; color:#333;">
+                                        <span class="trn">Drop Off</span>
+                                    </h2>
+									
+                                          <span class="entry-date nevy-bg ">
+                                           <span id="apiom_confirmation_dia_hasta"> 25 </span> <span class="trn"> de </span><span id="apiom_confirmation_mes_hasta" class="trn"> Julio</span>
+                                        </span>
+                                        <span class="entry-author red-bg">
+                                            <i class="fa fa-user"></i>
+                                            <span id="apiom_confirmation_hora_hasta"> 10:00hs</span>
+                                        </span>
+										 <h2 class="entry-title">
+                                         <span id="apiom_confirmation_ciudad_hasta">Puerto Iguazu</span>   <span class="entry-view"><i class="fa fa-plane" style="color: #333;"></i></span>
+                                    </h2><!-- /.entry-title -->
+                                    </div><!-- /.entry-meta -->
+                                   
+                                   
+                                </div><!-- /.post-content -->
+                            </article>
+								  
+								  
+                            </div><!-- /.pricing-table-item -->
+							 </div>
+							
+							
+							
+							<div class="col-md-12">
+								 
+								 <div class="col-md-4">
+								  
+								 
+								  
+								   <h4> <span  style="font-size: 0.8em; font-weight: 700;"> Estado del Vehículo</span></h4>
+<div class="rate">
+	<input type="radio" id="star10" name="rate" value="10" />
+    <label for="star10" title="text">10 stars</label>
+    <input type="radio" id="star9" name="rate" value="9" />
+    <label for="star9" title="text">9 stars</label>
+    <input type="radio" id="star8" name="rate" value="8" />
+    <label for="star8" title="text">8 stars</label>
+    <input type="radio" id="star7" name="rate" value="7" />
+    <label for="star7" title="text">7 stars</label>
+    <input type="radio" id="star6" name="rate" value="6" />
+    <label for="star6" title="text">6 star</label>
+    <input type="radio" id="star5" name="rate" value="5" />
+    <label for="star5" title="text">5 stars</label>
+    <input type="radio" id="star4" name="rate" value="4" />
+    <label for="star4" title="text">4 stars</label>
+    <input type="radio" id="star3" name="rate" value="3" />
+    <label for="star3" title="text">3 stars</label>
+    <input type="radio" id="star2" name="rate" value="2" />
+    <label for="star2" title="text">2 stars</label>
+    <input type="radio" id="star1" name="rate" value="1" />
+    <label for="star1" title="text">1 star</label>
+  </div>
+   
+   </br>
+  
+    <h4> <span  style="font-size: 0.8em; font-weight: 700;"> Limpieza del Vehículo</span></h4>
+  <div class="rate">
+	<input type="radio" id="star10" name="rate" value="10" />
+    <label for="star10" title="text">10 stars</label>
+    <input type="radio" id="star9" name="rate" value="9" />
+    <label for="star9" title="text">9 stars</label>
+    <input type="radio" id="star8" name="rate" value="8" />
+    <label for="star8" title="text">8 stars</label>
+    <input type="radio" id="star7" name="rate" value="7" />
+    <label for="star7" title="text">7 stars</label>
+    <input type="radio" id="star6" name="rate" value="6" />
+    <label for="star6" title="text">6 star</label>
+    <input type="radio" id="star5" name="rate" value="5" />
+    <label for="star5" title="text">5 stars</label>
+    <input type="radio" id="star4" name="rate" value="4" />
+    <label for="star4" title="text">4 stars</label>
+    <input type="radio" id="star3" name="rate" value="3" />
+    <label for="star3" title="text">3 stars</label>
+    <input type="radio" id="star2" name="rate" value="2" />
+    <label for="star2" title="text">2 stars</label>
+    <input type="radio" id="star1" name="rate" value="1" />
+    <label for="star1" title="text">1 star</label>
+  </div>
+
+</br>
+ 
+  <h4> <span style="font-size: 0.8em; font-weight: 700;"> Price quality ratio</span></h4>
+  <div class="rate">
+	<input type="radio" id="star10" name="rate" value="10" />
+    <label for="star10" title="text">10 stars</label>
+    <input type="radio" id="star9" name="rate" value="9" />
+    <label for="star9" title="text">9 stars</label>
+    <input type="radio" id="star8" name="rate" value="8" />
+    <label for="star8" title="text">8 stars</label>
+    <input type="radio" id="star7" name="rate" value="7" />
+    <label for="star7" title="text">7 stars</label>
+    <input type="radio" id="star6" name="rate" value="6" />
+    <label for="star6" title="text">6 star</label>
+    <input type="radio" id="star5" name="rate" value="5" />
+    <label for="star5" title="text">5 stars</label>
+    <input type="radio" id="star4" name="rate" value="4" />
+    <label for="star4" title="text">4 stars</label>
+    <input type="radio" id="star3" name="rate" value="3" />
+    <label for="star3" title="text">3 stars</label>
+    <input type="radio" id="star2" name="rate" value="2" />
+    <label for="star2" title="text">2 stars</label>
+    <input type="radio" id="star1" name="rate" value="1" />
+    <label for="star1" title="text">1 star</label>
+  </div>
+								</div>
+								
+								 
+								  <div class="col-md-4">
+								   <h4> <span  style="font-size: 0.8em; font-weight: 700;"> Atención personal</span></h4>
+  <div class="rate">
+	<input type="radio" id="star10" name="rate" value="10" />
+    <label for="star10" title="text">10 stars</label>
+    <input type="radio" id="star9" name="rate" value="9" />
+    <label for="star9" title="text">9 stars</label>
+    <input type="radio" id="star8" name="rate" value="8" />
+    <label for="star8" title="text">8 stars</label>
+    <input type="radio" id="star7" name="rate" value="7" />
+    <label for="star7" title="text">7 stars</label>
+    <input type="radio" id="star6" name="rate" value="6" />
+    <label for="star6" title="text">6 star</label>
+    <input type="radio" id="star5" name="rate" value="5" />
+    <label for="star5" title="text">5 stars</label>
+    <input type="radio" id="star4" name="rate" value="4" />
+    <label for="star4" title="text">4 stars</label>
+    <input type="radio" id="star3" name="rate" value="3" />
+    <label for="star3" title="text">3 stars</label>
+    <input type="radio" id="star2" name="rate" value="2" />
+    <label for="star2" title="text">2 stars</label>
+    <input type="radio" id="star1" name="rate" value="1" />
+    <label for="star1" title="text">1 star</label>
+  </div>
+
+</br>
+  
+   <h4> <span  style="font-size: 0.8em; font-weight: 700;"> Tiempo de entrega y devolución</span></h4>
+  <div class="rate">
+	<input type="radio" id="star10" name="rate" value="10" />
+    <label for="star10" title="text">10 stars</label>
+    <input type="radio" id="star9" name="rate" value="9" />
+    <label for="star9" title="text">9 stars</label>
+    <input type="radio" id="star8" name="rate" value="8" />
+    <label for="star8" title="text">8 stars</label>
+    <input type="radio" id="star7" name="rate" value="7" />
+    <label for="star7" title="text">7 stars</label>
+    <input type="radio" id="star6" name="rate" value="6" />
+    <label for="star6" title="text">6 star</label>
+    <input type="radio" id="star5" name="rate" value="5" />
+    <label for="star5" title="text">5 stars</label>
+    <input type="radio" id="star4" name="rate" value="4" />
+    <label for="star4" title="text">4 stars</label>
+    <input type="radio" id="star3" name="rate" value="3" />
+    <label for="star3" title="text">3 stars</label>
+    <input type="radio" id="star2" name="rate" value="2" />
+    <label for="star2" title="text">2 stars</label>
+    <input type="radio" id="star1" name="rate" value="1" />
+    <label for="star1" title="text">1 star</label>
+  </div>
+
+</br>
+  
+    <h4> <span  style="font-size: 0.8em; font-weight: 700;"> Nivel de satisfacción</span></h4>
+ <div class="rate">
+	<input type="radio" id="star10" name="rate" value="10" />
+    <label for="star10" title="text">10 stars</label>
+    <input type="radio" id="star9" name="rate" value="9" />
+    <label for="star9" title="text">9 stars</label>
+    <input type="radio" id="star8" name="rate" value="8" />
+    <label for="star8" title="text">8 stars</label>
+    <input type="radio" id="star7" name="rate" value="7" />
+    <label for="star7" title="text">7 stars</label>
+    <input type="radio" id="star6" name="rate" value="6" />
+    <label for="star6" title="text">6 star</label>
+    <input type="radio" id="star5" name="rate" value="5" />
+    <label for="star5" title="text">5 stars</label>
+    <input type="radio" id="star4" name="rate" value="4" />
+    <label for="star4" title="text">4 stars</label>
+    <input type="radio" id="star3" name="rate" value="3" />
+    <label for="star3" title="text">3 stars</label>
+    <input type="radio" id="star2" name="rate" value="2" />
+    <label for="star2" title="text">2 stars</label>
+    <input type="radio" id="star1" name="rate" value="1" />
+    <label for="star1" title="text">1 star</label>
+  </div>
+								  
+								  
+                            </div><!-- /.pricing-table-item -->
+							
+							<div class="col-md-4" >
+								
+								<div class="form-group">
+<label for="exampleInputEmail1" class="trn" data-trn-key="Volvería a utlizar nuestros servicios:">Volvería a utlizar nuestros servicios:</label></br>
+<input type="radio" name="volveria" value="1" required="required"><span class="trn " data-trn-key="Si">Si</span>
+<input type="radio" name="volveria" value="0"><span class="trn" data-trn-key="No">No</span>
+</div>
+								<div class="form-group ">
+									<label for="exampleInputEmail1" class="trn" data-trn-key="Volvería a utlizar nuestros servicios:">Comentario positivos:</label>			 
+												  <textarea type="text" class="form-control trn"   name="" value="" required=""></textarea>
+												</div>
+												<div class="form-group ">
+									<label for="exampleInputEmail1" class="trn" data-trn-key="Volvería a utlizar nuestros servicios:">¿Que podemos mejorar?:</label>			 
+												  <textarea type="text" class="form-control trn"   name="" value="" required=""></textarea>
+												</div>
+							</div>
+							
+							
+							
+							 </div>
+							
+						
+				
+                    </div><!-- /.single-main -->
+
+                  
+                </div><!-- /.col-md-8 -->
+                
+				 <!-- Blog Sidebar Content -->
+                
+               
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </div><!-- /.blog-main-content -->
+    
+    <!-- ======footer area======= -->
+    <div class="container footer-top-border">
+        <div class="vehicle-multi-border bg-blue-color2"></div><!-- /.vehicle-multi-border -->
+    </div><!-- /.container -->
+
+    <footer class="footer-block bg-blue-color2">
+        <div class="container">
+            <!-- footer-top-block -->
+            <div class="footer-top-block bg-blue-color2">            
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="widget widget_hot_contact">
+                            <h2 class="title "  style="color:#88c425;">
+                                <span class="trn">Contacto</span>
+                            </h2><!-- /.widget-title -->
+                            <ul>
+                                <li><a href="#"><i class="fa fa-envelope"></i>info@carrentals.com</a></li>
+                                <li><a href="#"><i class="fa fa-phone"></i>(+54)0239-85471</a></li>
+                                <li><a href="#"><i class="fa fa-map-marker"></i>Cafayate 1234, Bariloche</a></li>
+                            </ul> 
+							 <div class="social-profile">
+                                <span class="social-profole-title trn">Seguinos:</span>
+                                <a href="#"><i class="fa fa-instagram" style="color: #c9f42d;"></i></a>
+                                <a href="#"><i class="fa fa-heart" style="color: #c9f42d;"></i></a>
+                                <a href="#"><i class="fa fa-facebook"style="color: #c9f42d;"></i></a>
+                                <a href="#"><i class="fa fa-twitter" style="color: #c9f42d;"></i></a>
+                            </div><!-- /.social-profile -->
+                        </div><!-- /.widget -->
+                       
+                    </div><!-- /.col-md-3 -->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="widget widget_menu">
+                             <h2 class="title trn"  style="color:#88c425;">
+                                Links
+                            </h2><!-- /.widget-title -->
+                            <ul>
+                                	<li><a class="trn" href="empresa.html">Nuestra Empresa</a></li>
+								<li><a class="trn" href="oficinas.html">Otras Oficinas</a></li>
+								<li><a class="trn" href="flota.html">Nuestra Flota</a></li>
+								<li><a class="trn" href="preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
+                            </ul> 
+                        </div><!-- /.widget -->
+                    </div><!-- /.col-md-3 -->
+
+                    <div class="col-md-4 col-sm-6">
+                        <div class="widget widget_menu">
+                             <h2 class="title trn"  style="color:#88c425;">
+                                &nbsp;
+                            </h2><!-- /.widget-title -->
+                            <ul>
+                               <li><a class="trn" href="resultado-de-busqueda.html">{{Pagina de Resultado}}</a></li>
+								<li><a class="trn" href="reserva.html"> {{Reserva}}</a></li>
+								<li><a class="trn" href="sucursal.html">{{Sucursal}}</a></li>
+								<li><a class="trn" href="mis-reservas.html">{{Mis Reservas}}</a></li>
+								<li><a class="trn" href="confirmacion.html">{{Confirmación}}</a></li>
+								<li><a class="trn" href="datos-personales.html">{{Datos Personales}}</a></li>
+                            </ul> 
+                        </div><!-- /.widget -->
+                       
+                    </div><!-- /.col-md-3 -->
+
+                   
+                </div><!-- /.row -->
+            </div><!-- /.footer-top-block -->
+
+            <!-- footer-bottom-block -->
+            <div class="footer-bottom-block">            
+                <div class="row">
+                     <div class="col-md-9">
+                        <div class="bottom-content-left">
+                            <p class="copyright">Copyright &copy; 2021  -  <span class="trn">Todos los derechos reservados</span></p>
+                        </div><!-- /.bottom-top-content -->
+                     </div><!-- /.col-md-9 -->
+                    
+                </div><!-- /.row -->
+            </div><!-- /.footer-bottom-block -->
+        </div><!-- /.container -->
+    </footer><!-- /.footer-block -->
+       
+    <!-- All The JS Files
+    ================================================== --> 
+    <script src="assets/js/plugins.min.js"></script>
+    <script src="assets/js/carrent.min.js"></script> <!-- main-js -->
+</body>
+</html>

@@ -1,0 +1,799 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Specific Meta
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="" />
+    <meta name="author" content="">
+
+    <!-- Titles
+    ================================================== -->
+    <title>Datos Personales | Theme 3 Lyon</title>
+
+    <!-- Favicons
+    ================================================== -->
+    
+
+    <!-- Custom Font
+    ================================================== -->
+    <link href="https://fonts.googleapis.com/css?family=Exo:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i%7cRoboto+Slab:400,700" rel="stylesheet">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="assets/css/plugins.min.css">
+    <link rel="stylesheet" href="assets/css/icons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/color-schemer.css">   
+</head>
+
+<body>
+    <!-- MODAL LOGINS -->
+	
+	<div id="reservas" class="modal fade">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+          
+            <div class="modal-body">
+			 <button type="button" class="bootbox-close-button close" data-dismiss="modal" aria-hidden="true">×</button>
+			<div class="modal-header row form-group">
+                                   
+                                    <h5 class="text-uppercase italic text-medium font-weight-600 trn">Mis Reservas </h5>
+                                </div>
+               
+              <div class="row justify-content-md-center">
+
+                <div class="col-lg-6">
+                    <div class="padding-30px background-white border-1 border-grey-1">
+                       <form   method="get" class="advance-search-query input-night-rider yellow-theme">
+                            <div class="form-group">
+                                <label style="color: #333;"><strong class="trn">Correo Electrónico</strong></label>
+                              <div class="input">
+                                        <i class="fa fa-envelope"></i>
+                                        <input  type="text" class="budget-fields form-controller apiom_email trn" >
+                                    </div>
+                            </div>
+                            <div class="form-group">
+                                <label style="color: #333;"><strong class="trn">Numero de Confirmación</strong></label>
+                              
+								 <div class="input">
+                                        <i class="fa fa-check"></i>
+                                        <input id="apiom_confirmation_number" type="text" class="budget-fields form-controller  trn" >
+                                    </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <button id="apiom_submit_mis_reservas" class="button red-bg trn">Ir a la reserva</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 ">
+                    <div class="check-content">
+                        <h4 class="top-subtitle trn">¿No sabes cual es tu Nº de confirmación?</h4>
+                        <p style="margin-bottom:0px;" class=" discription trn">Te enviaremos tu Nº de reserva al mail registrado en nuestro sistema</p>
+						<a  class=" collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse1"><strong class="trn">ENVIAR EMAIL</strong<i class="fa fa-chevron-down"></i></a>
+							<div class="  panel-collapse collapse" id="collapse3"  role="tabpanel" aria-labelledby="heading4" aria-expanded="false">
+						 <div class="form-group  yellow-theme">
+                                
+                                 <div class="input">
+                                      
+                                        <input type="text" class="budget-fields form-controller apiom_email trn" >
+                                    </div>
+                            </div>
+							 <div class="form-group">
+                                <button class="button red-bg trn">Enviar</button>
+                            </div>
+                    </div>
+					 </div>
+
+                   
+                   
+                </div>
+				
+				
+
+            </div>
+            </div>
+        </div>
+    </div>
+	 </div>
+	 
+	 
+	 
+	 
+	 <div id="iniciar-sesion" class="modal fade">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+          
+            <div class="modal-body">
+			 <button type="button" class="bootbox-close-button close" data-dismiss="modal" aria-hidden="true">×</button>
+			<div class="modal-header row form-group">
+                                   
+                                    <h5 class="text-uppercase italic text-medium font-weight-600">Iniciar Sesión </h5>
+                                </div>
+               
+              <div class="row justify-content-md-center">
+
+                <div class="col-lg-6">
+                    <div class="padding-30px background-white border-1 border-grey-1">
+                          <form   method="get" class="advance-search-query input-night-rider yellow-theme">
+                            <div class="form-group">
+                                <label for="" class="col-form-label"><strong class="trn">Correo Electrónico</strong></label>
+								 <div class="input">
+                                        <i class="fa fa-envelope"></i>
+                                <input type="email" class="budget-fields form-controller apiom_email" id="" placeholder="Email">
+                            </div>
+							 </div>
+                            <div class="form-group">
+                                <label for="" class="col-form-label"><strong class="trn">Contraseña</strong></label>
+								 <div class="input">
+                                      
+                                <input type="password" class="budget-fields form-controller" id="apiom_password" placeholder="Contraseña">
+                            </div>
+							 </div>
+                            
+                            <div class="form-group">
+                                 <button class="button red-bg trn" id="apiom_submit_login" >Ingresar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="check-content">
+                        <h4 class="top-subtitle trn">¿Olvidó su contraseña?</h4>
+                        <p style="margin-bottom:0px;" class="discription trn">Te enviaremos tu contraseña al mail registrado en nuestro sistema.</p>
+						<a  class="trn collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="false" aria-controls="collapse1">ENVIAR EMAIL</a>
+							<div class="  panel-collapse collapse" id="collapse1"  role="tabpanel" aria-labelledby="heading4" aria-expanded="false">
+						 <div class="form-group">
+                                	 <div class="input">
+                                <input type="text" class="budget-fields form-controller"   placeholder="Email">
+                            </div> </div>
+							 <div class="form-group">
+                                <button class="button red-bg trn">Enviar</button>
+                            </div>
+                    </div>
+					 </div>
+
+                    <div class="margin-bottom-15px padding-bottom-15px border-bottom-1 border-grey-2">
+                        <i class="fa fa-user margin-right-10px" aria-hidden="true"></i> <strong class="text-uppercase collapsed trn" >¿Primera vez? </strong>
+                        <span class="d-block"><a data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse1" class="text-grey-2">REGISTRATE</a></span>
+                    </div>
+                   
+                </div>
+				
+				 <div class="col-lg-6 col-md-6 panel-collapse collapse" id="collapse2"  role="tabpanel" aria-labelledby="heading4" aria-expanded="false">
+                     <div class="">
+					  <form   method="get" class="advance-search-query input-night-rider yellow-theme">
+				
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                               	 <div class="input">
+                                <input type="text" id="apiom_registro_nombre" class="budget-fields form-controller trn" placeholder="Nombre">
+                            </div></div>
+                            <div class="form-group col-md-6">
+                                	 <div class="input">
+                                <input type="email" id="apiom_registro_apellido" class="budget-fields form-controller trn" placeholder="Apellido">
+                            </div>
+                        </div></div>
+                        <div class="form-group">
+                         	 <div class="input">
+                            <input type="text" id="apiom_registro_email" class="budget-fields form-controller trn" placeholder="Email">
+                        </div></div>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                               	 <div class="input">
+                                <input type="password" id="apiom_registro_contraseña" class="budget-fields form-controller trn" placeholder="Contraseña">
+                            </div></div>
+                            <div class="form-group col-md-6">
+                               	 <div class="input">
+                                <input type="password" id="apiom_registro_contraseña_ok" class="budget-fields form-controller trn" placeholder="Contraseña">
+                            </div></div>
+                        </div>
+                     <button id="apiom_registro_submit" class="button red-bg trn">Enviar</button>
+                    </form>
+					 </div>
+                </div>
+
+            </div>
+            </div>
+        </div>
+    </div>
+	 </div>
+	 
+	 
+	 
+<!-- END MODAL LOGINS -->
+
+
+    <!-- ====== Header Top Area ====== --> 
+    <header class="header-top-area bg-nero">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-xs-8 ">
+                    <div class="header-content-left">
+                        <ul class="header-top-menu">
+                            <li>
+                                <button href="#reservas" data-toggle="modal" data-target="#reservas" class="top-left-menu">
+                                    <i class="fa fa-user"></i>
+                                    <span class="hidden-xs trn">Mis Reservas</span>
+									<span class="hidden-lg hidden-md trn">Reservas</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button data-toggle="modal" data-target="#iniciar-sesion"  class="top-left-menu">
+                                    <i class="fa fa-lock"></i>
+                                    <span class="hidden-xs trn">Iniciar Sesión</span>
+									<span class="hidden-lg hidden-md trn">Login</span>
+                                </button>                                 
+                            </li>
+                        </ul><!-- /.header-top-menu -->
+                    </div><!-- /.header-content-left -->
+                </div><!-- /.col-md-9 -->
+
+                <div class="col-md-6 col-xs-4">
+                    <div class="header-content-right">
+                        <ul class="header-top-menu">
+                            <li>
+                                <a href="#" class="language" id="idiomaSelector">
+                                    <i class="fa fa-language"></i>
+                                    <span class="hidden-xs trn">Idiomas</span>
+                                </a>
+                                <ul class="sub-menu" role="menu">
+                                      <li><a class="lang_selector" id="idiomaEN" data-value="en"
+                onclick="setIdioma('EN', true);$('#idiomaSelector').html(getIdiomaCompleto())"> Inglés</a></li>
+        <li><a class="lang_selector" id="idiomaPT" data-value="pt"
+                onclick="setIdioma('PT', true);$('#idiomaSelector').html(getIdiomaCompleto())"> Portugués</a></li>
+        <li><a class="lang_selector" id="idiomaES" data-value="es"
+                onclick="setIdioma('ES', true);$('#idiomaSelector').html(getIdiomaCompleto())"> Español</a></li>
+
+                                </ul><!-- /.sub-menu -->
+                            </li>
+                        </ul>
+                       
+                    </div><!-- /.left-content -->
+                </div><!-- /.col-md-3 -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </header><!-- /.head-area -->
+
+    
+
+    <!-- ====== Header Nav Area ====== --> 
+    <header class="header-nav-area">
+        <div class="container">        
+            <div class="row">
+                <div class="col-md-3 col-sm-10 col-xs-10">
+                    <div class="site-logo">
+                        <a href="index.html"><img src="assets/images/logo-color.png" alt="logo" /></a>
+                    </div><!-- /.logo -->
+                </div><!-- /.col-md-3 -->
+                <div class="col-md-9 col-sm-2 col-xs-2 pd-right-0">
+                    <nav class="site-navigation top-navigation nav-style-one">
+                        <div class="menu-wrapper">
+                            <div class="menu-content">
+                                <ul class="menu-list">
+                                   <li><a href="empresa.html"><span class="trn">Empresa</span></a></li>
+						<li><a href="oficinas.html" ><span class="trn">Oficinas</span></a></li>
+						<li><a href="flota.html" ><span class="trn">Flota</span></a></li>
+						<li><a  href="#" data-toggle="modal" data-target="#reservas" ><span class="trn">Mis Reservas</span></a></li>
+                                    <li>
+                                         <a class="apiom_ul_monedas"  href="#"  >$ARS</a>
+                                        <ul id="apiom_ulMonedaUsuario" class="sub-menu" role="menu">
+								<li class="convert" data-to-currency="ARS" id="ARS"><a href="#">$ (ARS)</a></li>
+								<li class="convert" data-to-currency="USD" id="USD"><a href="#">US$ (USD)</a></li>
+								<li class="convert" data-to-currency="EUR" value="EUR" id="EUR"><a href="#">€ (EUR)</a></li>
+								<li class="convert" data-to-currency="BRL" value="BRL" id="BRL"><a href="#">R$ (BRL)</a></li>
+								<li class="convert" data-to-currency="UYU" value="UYU" id="UYU"><a href="#">$ (UYU)</a></li>
+								
+							</ul>
+                                    </li>
+                                  <li style="display: none;"><a href="#" id="apiom_logout" ><span class="trn">Cerrar Sesión</span></a></li>  
+                                   
+                                   
+                                </ul> <!-- /.menu-list -->
+                            </div> <!-- /.menu-content-->
+                        </div> <!-- /.menu-wrapper --> 
+                    </nav><!-- /.site-navigation -->
+                    <!--Mobile Main Menu-->
+                    <div class="mobile-menu-main hidden-md hidden-lg">
+                        <div class="menucontent overlaybg"> </div>
+                        <div class="menuexpandermain slideRight">
+                            <a id="navtoggole-main" class="animated-arrow slideLeft menuclose">
+                                <span></span>
+                            </a>
+                        </div><!--/.menuexpandermain-->
+
+                        <div id="mobile-main-nav" class="mb-navigation slideLeft">
+                            <div class="menu-wrapper">
+                                <div id="main-mobile-container" class="menu-content clearfix"></div>
+                            </div>
+                        </div><!--/#mobile-main-nav-->
+                    </div><!--/.mobile-menu-main-->
+                </div><!-- /.col-md-9 -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </header><!-- /.header-bottom-area -->
+
+      <div class="vehicle-section-divider night-rider">
+        <div class="contoiner-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-divider-content">
+                        <div class="vehicle-border">
+                            <img src="assets/images/auto01.png" alt="car-item" />
+                        </div><!-- /.car-border -->
+                    </div><!-- /.section-divider-content -->
+                </div><!-- /.col-md-12 -->
+            </div><!-- /.row -->
+			 <div class="container">
+            <div class="row">
+                <div class="col-md-12">                
+                    <h2 class="page-title trn">Datos Personales</h2>
+                   
+                </div><!-- /.col-md-12 -->
+            </div><!-- /.row-->
+        </div><!-- /.container-fluid -->      
+        </div><!-- /.container-fluid -->
+    </div><!-- /.section-divider -->
+
+   
+
+    <!-- ======driver block======= --> 
+    <div class="driver-block pd-t-54 pd-btm-72 red-bg">
+        <div class="container">
+           
+
+             <div class="row">
+                <div class="col-md-12">
+                  <form   method="get" class="advance-search-query search-query-two input-night-rider yellow-theme">
+			<div class="col-lg-6" >
+              
+			<div class="input">
+												  
+												  <input type="text" class=" trn" id="apiom_nombre"  placeholder="Nombre">
+												</div>
+												<div class="input">
+												  
+												  <input type="Nombreyapellido" class="input-text full-width trn" id="apiom_apellido"  placeholder="Apellido">
+												</div>
+												<div class="row">
+												
+												
+												<div class="col-md-4 col-xs-4">
+												<div class="input ">
+												  <select id="apiom_tipo_documento"  class="input-text full-width trn">
+                                                         <option value="DU" class="trn">DU</option>
+                                                        <option value="DNI" class="trn">DNI</option>
+                                                        <option value="Pas" class="trn">Pas</option>
+                                                        
+                                                        </select>
+														
+														 </div>
+														  </div>
+														<div class="col-md-8 col-xs-8" >
+												<div class="input">
+												<input type="text" class="input-text full-width trn" id="apiom_numero_documento"  name="documento" value="" placeholder="Nº de Documento">
+											  </div>
+											   </div>
+											    </div>
+											   
+											   <div class="row">
+												
+												
+												<div class="col-md-3 col-xs-3">
+												<div class="input ">
+												  <input type="text" class="input-text full-width trn" id="apiom_ddn"  name="DDN" value="DDN" placeholder="DDN">
+														
+														 </div>
+														  </div>
+														  <div class="col-md-3 col-xs-3">
+												<div class="input ">
+												  <input type="text" class="input-text full-width trn" id="apiom_ddi"  name="DDI" value="DDI" placeholder="DDI">
+														
+														 </div>
+														  </div>
+														<div class="col-md-6 col-xs-6" >
+												<div class="input">
+												 
+												  <input type="text" class="input-text full-width trn" id="apiom_telefono" name="telefono" value="" placeholder="Teléfono">
+												</div>
+											   </div>
+											    </div>
+												
+												<div class="input ">
+												  
+												  <input type="email" class="input-text full-width trn" id="apiom_email" name="mail" value="" placeholder="Email">
+												</div>
+												<div class="input ">
+												 
+												  <select id="apiom_tipo_cliente" class="input-text full-width trn" >
+                                                         <option value="Tipo de Cliente" class="trn">Tipo de Cliente</option>
+														  <option value="Consumidor Final" class="trn">Consumidor Final</option>
+                                                        <option value="Responsable Inscripto" class="trn">Responsable Inscripto</option>
+                                                        <option value="Monoitributista" class="trn">Monoitributista</option>
+                                                        
+                                                        </select>
+												</div>
+												
+												<div class="input">
+												 
+												  <input type="text" class="input-text full-width trn" placeholder="Domicilio" id="apiom_domicilio" name="" value="" required="">
+												</div>
+												<div class="row">
+												
+												
+												<div class="col-md-6 col-xs-6">
+												<div class="input">
+												
+												   <input type="text" class="input-text full-width trn" placeholder="Ciudad" id="apiom_ciudad" name="" value="" required="">
+														 </div>
+														 	 </div>
+														<div class="col-md-6 col-xs-6" >
+												<div class="input">
+												
+												   <input type="text" class="input-text full-width trn" placeholder="Provincia" id="apiom_provincia" name="" value="" required="">
+														 </div>
+											   </div>
+											   </div>
+												<div class="input">
+												 
+												   <select id="apiom_pais" name="apiom_pais" required="" class="input-text full-width trn" >
+                                                         <option value="" class="trn">País</option>
+														 <option value="">Argentina</option>
+                                                        <option value="">Afganistán</option>
+                                                        <option value="">Albania</option>
+                                                        
+                                                        </select>
+												</div>
+											 
+											 <!-- <div class="input "> -->
+											<!-- <div class="custom-file"> -->
+												
+												  <!-- <label class="form-group trn " for="customFileLang">Constancia de AFIP</label> -->
+												    <!-- <input type="file"  id="apiom_constancia_afip" class="input-text full-width "> -->
+												<!-- </div> -->
+											  <!-- </div> -->
+											 
+			
+						
+
+			</div>
+			
+			<div class="col-lg-6" >
+            
+			
+												
+												<div class="row">
+												
+												
+												<div class="col-md-6 col-xs-6">
+												<div class="input">
+												
+												   <input type="text" class="input-text full-width trn"  id="apiom_licencia" name="" value="" placeholder="Nº de Licencia">
+														 </div>
+														  </div>
+														<div class="col-md-6 col-xs-6" >
+												<div class="input">
+												
+												   <input type="text" class="input-text full-width trn" placeholder="Categoría" id="apiom_categoria" name="" value="" required="">
+														
+														 </div> </div>
+											   </div>
+												<div class=" row">
+												<div class=" col-md-6 col-xs-6" >
+												<div class="input">
+												
+												   <div class="date-input"><input id="apiom_fecha_vencimiento_licencia" type="text" class="input-text datepicker full-width trn" placeholder="Vto Licencia"></div>
+														 </div>
+														  </div>
+														<div class=" col-md-6 col-xs-6" >
+														<div class="input">
+												
+												    <select id="apiom_expedida"  class="input-text full-width trn">
+                                                         <option value="">Expedida</option>
+														  <option value="1">CABA</option>
+                                                        <option value="2">Prov. Bs As</option>
+                                                        <option value="3">Alemania</option>
+                                                        
+                                                        </select>
+														 </div>
+														  </div>
+											   </div>
+													<div class="input ">
+												  
+												  <input type="text" class="input-text full-width trn" placeholder="Número de Tarjeta" id="apiom_numero_tarjeta" name="" value="" required="">
+												</div>
+												<div class="input ">
+												 
+												  <input type="text" class="input-text full-width trn" placeholder="Nombre del Titular" id="apiom_nombre_titular" name="" value="" required="">
+												</div>
+												<div class="row">
+												<div class="col-md-3 col-xs-4" >
+												<div class="input">
+												
+												   <input type="text" class="input-text full-width trn" placeholder="Vto Mes" id="apiom_vencimiento_tarjeta_mes" name="" value="" required="">
+														 </div>
+														  </div>
+												
+												<div class="col-md-3 col-xs-4" >
+												<div class="input">
+												
+												   <input type="text" class="input-text full-width trn" placeholder="Vto Año" id="apiom_vencimiento_tarjeta_año" name="" value="" required="">
+														 </div>
+														  </div>
+														<div class="col-md-6 col-xs-4">
+												<div class="input">
+												
+												   <input type="text" class="input-text full-width trn" placeholder="Cod Seg" id="apiom_cod_seg" name="" value="" required="">
+														
+														 </div> </div>
+											   </div>
+												
+												<div class="row">
+												<div class="col-md-12">
+												 <button  class="collapsed trn button " style="margin-top: 10px; color: #333;" data-toggle="collapse" data-parent="#accordion" href="#collapse13" aria-expanded="false" aria-controls="collapse4">Conductor Adicional <i class="fa fa-plus"></i></button>
+												 
+												 
+												 <div class="margin-top-10px  panel-collapse collapse" id="collapse13"  role="tabpanel" aria-labelledby="heading4" aria-expanded="false">
+												 
+												 <div class="input">
+												  
+												  <input type="text" class="input-text full-width trn" placeholder="Nombre completo" id="apiom_nombre_conductor_adicional" name="" value="" required="">
+												</div>
+												<div class="row">
+												
+													
+												<div class="col-md-6" >
+												<div class="input">
+												
+												   <input type="text" class="input-text full-width trn"  id="apiom_licencia_adicional" name="" value="" placeholder="Nº de Licencia">
+														 </div>
+														  </div>
+														<div class="col-md-6" >
+												<div class="input">
+												
+												   <input type="text" class="input-text full-width trn" placeholder="Categoría" id="apiom_categoria_adicional" name="" value="" required="">
+														
+														 </div> </div>
+														 
+											   </div>
+												<div class=" row">
+												
+												<div class=" col-md-6  col-xs-6">
+												<div class="input">
+												
+												   <input type="text" class="input-text datepicker full-width" id="apiom_vencimiento_licencia_adicional" name="" placeholder="xx/xx/xxxx" required="">
+														 </div>
+														  </div>
+														<div class=" col-md-6  col-xs-6">
+														<div class="input">
+												
+												    <select id="apiom_expedida_adicional" name="ubicacion" required="" class="input-text full-width trn" >
+                                                         <option value="">Expedida</option>
+														  <option value="1">CABA</option>
+                                                        <option value="2">Prov. Bs As</option>
+                                                        <option value="3">Alemania</option>
+                                                        
+                                                        </select>
+														 </div>
+														  </div>
+														  
+											   </div>
+											   <div class="form-group ">
+												 <button id="apiom_conductor_adicional" type="submit" class="trn button" style="margin-top: 10px; color: #333;"  >Agregar <i class="fa fa-plus"></i></button>
+												  </div>
+												 </div>
+												  </div>
+												  
+												  
+												  
+												  
+												
+												<div class="col-md-12">
+												 <button  class="collapsed trn button " style="margin-top: 10px; color: #333;" data-toggle="collapse" data-parent="#accordion" href="#collapse14" aria-expanded="false" aria-controls="collapse4">Tarjeta Adicional <i class="fa fa-plus"></i></button>
+												 
+												 
+												 <div class="  panel-collapse collapse margin-top-10px" id="collapse14"  role="tabpanel" aria-labelledby="heading4" aria-expanded="false">
+												 
+												<div class="input ">
+												  
+												  <input type="text" class="input-text full-width trn" placeholder="Número de Tarjeta" id="apiom_numero_tarjeta_adicional" name="" value="" required="">
+												</div>
+												<div class="input ">
+												 
+												  <input type="text" class="input-text full-width trn" placeholder="Nombre del Titular" id="apiom_nombre_titular_adicional" name="" value="" required="">
+												</div>
+												<div class="row">
+												<div class="col-md-3 col-xs-4" >
+												<div class="input">
+												
+												   <input type="text" class="input-text full-width trn" placeholder="Vto Mes" id="apiom_vencimiento_tarjeta_mes_adicional" name="" value="" required="">
+														 </div>
+														  </div>
+												
+												<div class="col-md-3 col-xs-4" >
+												<div class="input">
+												
+												   <input type="text" class="input-text full-width trn" placeholder="Vto Año" id="apiom_vencimiento_tarjeta_año_adicional" name="" value="" required="">
+														 </div>
+														  </div>
+														<div class="col-md-6 col-xs-4">
+												<div class="input">
+												
+												   <input type="text" class="input-text full-width trn" placeholder="Cod Seg" id="apiom_cod_seg_adicional" name="" value="" required="">
+														
+														 </div> </div>
+											   </div>
+											   <div class="form-group ">
+												 <button id="apiom_tarjeta_adicional" type="submit" class="trn button"  style="color:#333;" >Agregar <i class="fa fa-plus"></i></button>
+												  </div>
+												 </div>
+												  </div>
+												   </div>
+			</div>
+			</form>
+			
+			
+                </div><!-- /.col-md-6 -->
+
+               
+            </div><!-- /.row -->
+			<div class="row">	
+			      <form   method="get" class="advance-search-query search-query-two input-night-rider yellow-theme">
+			<div class="col-md-3">
+					    	 <div class="form-group ">
+					    		<img src="assets/images/upload.png" id="apiom_foto_selfie_frame">
+					    		<button id="apiom_foto_selfie" type="file" class="button trn" style="color:#333;">Foto Selfie </button>
+
+								
+					    	</div>
+				    	
+					</div>
+			
+										<div class="col-md-3" >
+						
+							 <div class="form-group ">
+					    		<img src="assets/images/upload.png" id="apiom_foto_id_frame">
+					    		<button id="apiom_foto_id" type="file" class="button trn" style="color:#333;">Foto ID </button>
+
+								
+					    	</div>
+				    	
+					</div>			
+												
+						<div class="col-md-3" >
+						
+							 <div class="form-group ">
+					    		<img src="assets/images/upload.png" id="apiom_foto_licencia_frente_frame">
+					    		<button id="apiom_licencia_frente" type="file" class="button trn" style="color:#333;">Lic. Frente </button>
+
+								
+					    	</div>
+				    	
+					</div>		
+				<div class="col-md-3">
+						
+							 <div class="form-group ">
+					    		<img src="assets/images/upload.png" id="apiom_foto_licencia_reverso_frame">
+					    		<button id="apiom_licencia_reverso" type="file" class="button trn" style="color:#333;">Lic. Reverso </button>
+
+								
+					    	</div>
+				    	
+					</div>	
+					
+					
+					<div class="col-md-6 pull-right check-vehicle-footer">
+						
+							 <div class="form-group ">
+					    		
+					    		<button id="apiom_guardar" type="submit" class="button trn" style="color:#333;">Guardar </button>
+
+								
+					    	</div>
+				    	
+					</div>	
+</form>	
+</div>
+        </div><!-- /.container  -->
+    </div><!-- /.driver-area -->
+
+    <!-- ======footer area======= -->
+    <div class="container footer-top-border">
+        <div class="vehicle-multi-border"></div><!-- /.vehicle-multi-border -->
+    </div><!-- /.container -->
+
+   <!-- ======footer area======= -->
+    <div class="container footer-top-border">
+        <div class="vehicle-multi-border bg-blue-color2"></div><!-- /.vehicle-multi-border -->
+    </div><!-- /.container -->
+
+    <footer class="footer-block bg-blue-color2">
+        <div class="container">
+            <!-- footer-top-block -->
+            <div class="footer-top-block bg-blue-color2">            
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="widget widget_hot_contact">
+                            <h2 class="title "  style="color:#88c425;">
+                                <span class="trn">Contacto</span>
+                            </h2><!-- /.widget-title -->
+                            <ul>
+                                <li><a href="#"><i class="fa fa-envelope"></i>info@carrentals.com</a></li>
+                                <li><a href="#"><i class="fa fa-phone"></i>(+54)0239-85471</a></li>
+                                <li><a href="#"><i class="fa fa-map-marker"></i>Cafayate 1234, Bariloche</a></li>
+                            </ul> 
+							 <div class="social-profile">
+                                <span class="social-profole-title trn">Seguinos:</span>
+                                <a href="#"><i class="fa fa-instagram" style="color: #c9f42d;"></i></a>
+                                <a href="#"><i class="fa fa-heart" style="color: #c9f42d;"></i></a>
+                                <a href="#"><i class="fa fa-facebook"style="color: #c9f42d;"></i></a>
+                                <a href="#"><i class="fa fa-twitter" style="color: #c9f42d;"></i></a>
+                            </div><!-- /.social-profile -->
+                        </div><!-- /.widget -->
+                       
+                    </div><!-- /.col-md-3 -->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="widget widget_menu">
+                             <h2 class="title trn"  style="color:#88c425;">
+                                Links
+                            </h2><!-- /.widget-title -->
+                            <ul>
+                                	<li><a class="trn" href="empresa.html">Nuestra Empresa</a></li>
+								<li><a class="trn" href="oficinas.html">Otras Oficinas</a></li>
+								<li><a class="trn" href="flota.html">Nuestra Flota</a></li>
+								<li><a class="trn" href="preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
+                            </ul> 
+                        </div><!-- /.widget -->
+                    </div><!-- /.col-md-3 -->
+
+                    <div class="col-md-4 col-sm-6">
+                        <div class="widget widget_menu">
+                             <h2 class="title trn"  style="color:#88c425;">
+                                &nbsp;
+                            </h2><!-- /.widget-title -->
+                            <ul>
+                               <li><a class="trn" href="resultado-de-busqueda.html">{{Pagina de Resultado}}</a></li>
+								<li><a class="trn" href="reserva.html"> {{Reserva}}</a></li>
+								<li><a class="trn" href="sucursal.html">{{Sucursal}}</a></li>
+								<li><a class="trn" href="mis-reservas.html">{{Mis Reservas}}</a></li>
+								<li><a class="trn" href="confirmacion.html">{{Confirmación}}</a></li>
+								<li><a class="trn" href="datos-personales.html">{{Datos Personales}}</a></li>
+                            </ul> 
+                        </div><!-- /.widget -->
+                       
+                    </div><!-- /.col-md-3 -->
+
+                   
+                </div><!-- /.row -->
+            </div><!-- /.footer-top-block -->
+
+            <!-- footer-bottom-block -->
+            <div class="footer-bottom-block">            
+                <div class="row">
+                     <div class="col-md-9">
+                        <div class="bottom-content-left">
+                            <p class="copyright">Copyright &copy; 2021  -  <span class="trn">Todos los derechos reservados</span></p>
+                        </div><!-- /.bottom-top-content -->
+                     </div><!-- /.col-md-9 -->
+                    
+                </div><!-- /.row -->
+            </div><!-- /.footer-bottom-block -->
+        </div><!-- /.container -->
+    </footer><!-- /.footer-block -->
+    <!-- All The JS Files
+    ================================================== --> 
+    <script src="assets/js/plugins.min.js"></script>
+    <script src="assets/js/carrent.min.js"></script> <!-- main-js -->
+</body>
+</html>

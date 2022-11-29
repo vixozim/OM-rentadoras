@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+
+	<title>Mis Reserva | Theme 1 Paris</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+
+	<!-- FAVICON -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+
+	<!-- BOOTSTRAP -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<!-- ICONS -->
+	<link rel="stylesheet" href="css/icons/fontawesome/css/style.css">
+	<link rel="stylesheet" href="css/icons/themify/style.css">
+	<link rel="stylesheet" href="css/icons/ionicons/css/style.css">
+	<link rel="stylesheet" href="css/icons/icomoon/style.css">
+
+	<!-- THEME / PLUGIN CSS -->
+	<link rel="stylesheet" href="js/vendors/flexslider/flexslider.css">
+	<link rel="stylesheet" href="js/vendors/slick/slick.css">
+	<link rel="stylesheet" href="js/vendors/swipebox/css/swipebox.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- SKIN -->
+	<link rel="stylesheet" title="blue" href="css/skins/skin-blue.css"/>
+
+		<!-- DATEPICKER -->
+
+	
+<link rel="stylesheet" type="text/css" href="daterangepicker-master/daterangepicker.css" />
+
+    
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+
+<style>
+
+.price{
+ font-size: 15px;
+
+}
+
+</style>
+
+
+</head>
+<body>
+
+<!-- MODAL MODIFICAR RESERVA -->
+	
+	<div id="modificar" class="modal fade">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+          
+            <div class="modal-body">
+			 <button type="button" class="bootbox-close-button close" data-dismiss="modal" aria-hidden="true">×</button>
+			<div class="modal-header row form-group">
+                                   
+                                    <h3>Modificar Reserva </h3>
+                                </div></br>
+               
+              <div class="row">
+                    <div class="col-md-12" >
+						 <form>
+								<div class="row ">
+								<div class="col-md-6 col-sm-12">
+								
+								
+								<div class="" action="#" id="" method="POST">
+								 
+								   <div class="col-md-12">
+                                  
+                                   
+                                     <div class="form-group">
+                                        <select id="apiom_modify_pickup" class="form-control ">
+                                            <option value="0" selected="selected" class="trn">Ciudad Desde</option>
+                                            <option class="trn" value="Bariloche">Bariloche</option>
+                                            <option class="trn" value="Salta">Salta</option>
+                                            <option class="trn" value="Buenos Aires">Buenos Aires</option>
+                                         
+                                        </select>
+                                   
+                                    </div><!--/.input-->
+                                </div><!--/.col-md-4-->
+
+                               <div class="col-md-12">
+                                   
+                                    <div class="form-group">
+                                       
+                                        <input id="apiom_modify_fecha_desde" type="text" name="datefilter" class="form-control trn" value="2021-06-21" placeholder="Fecha desde">
+                                    </div><!--/.input-->
+                                </div><!--/.col-md-4-->
+
+                                 <div class="col-md-12">
+                                   
+                                   <div class="form-group">
+                                       
+                                        <input id="apiom_modify_hora_desde" type="time" class="form-control" value="10:00hs"  placeholder="Hora desde">
+                                      </div><!--/.input-->
+                                </div><!--/.col-md-4-->
+                                
+                                
+								
+								 <div class="col-md-12">
+                                   
+                                    <div class="form-group">
+                                        <select id="apiom_modify_category" class="form-control">
+                                           <option value="-"   class="trn">Categorías</option>
+                                    <option value="todos"   class="trn">Todos</option>
+                                    <option value="compacto"  class="trn">Compacto</option>
+                                    <option value="mediano"  class="trn">Mediano</option>
+									 <option value="sport-suv"  class="trn">Sport/Suv</option>
+									  <option value="familiar"   class="trn">Familiar</option>
+									   <option value="van"   class="trn">Van</option>
+									    <option value="pick-up"  class="trn">Pick Up</option>
+                                         
+                                        </select>
+                                   
+                                    </div><!--/.input-->
+                                </div><!--/.col-md-4-->
+
+                               
+								  </div>
+								 
+								 
+							</div>
+								 <div class="col-md-6">
+								  
+								  <div class="col-md-12">
+                                   
+                                    <div class="form-group">
+                                        <select id="apiom_modify_dropoff" class="form-control">
+                                            <option class="trn" value="0" selected="selected">Ciudad hasta</option>
+                                            <option class="trn" value="Bariloche">Bariloche</option>
+                                            <option  class="trn" value="Salta">Salta</option>
+                                            <option class="trn" value="Buenos Aires">Buenos Aires</option>
+                                         
+                                        </select>
+                                   
+                                    </div><!--/.input-->
+                                </div><!--/.col-md-4-->
+
+								
+                                <div class="col-md-12">
+                                   
+                                    <div class="form-group">
+                                       
+                                        <input id="apiom_modify_fecha_hasta" type="text" name="datefilter" class="form-control trn" value="2021-06-25"  placeholder="Fecha Hasta">
+                                    </div><!--/.input-->
+                                </div><!--/.col-md-4-->
+
+                                  <div class="col-md-12">
+                                   
+                                    <div class="form-group">
+                                        
+                                        <input id="apiom_modify_hora_hasta" type="time" class="form-control" value="11:00hs"  >
+                                    </div><!--/.input-->
+                                </div><!--/.col-md-4-->
+								
+								 <div class="col-md-12">
+                                   
+                                    
+								<div class="apiom_modify_container_km kms form-group">
+                               
+                                   <label style="color:#333;" class="trn">Kilometraje</label>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                      <input class="form-check-input trn" type="checkbox"> 400 Km
+                                    </label>
+                                </div>
+                           
+                               
+                                     
+                                <div class="form-check">
+                                    <label style="color:#333;" class="form-check-label">
+                                      <input class="form-check-input" type="checkbox"><span class="trn"> Ilimitado </span>
+									  <span class="currencies">  <span class="money price">
+							<abbr  class="unit"> AR$</abbr>
+							<span  class="amount  "> 1.500</span>
+							<abbr class="currency" title="ARS"></abbr>
+							</span></span>
+                                    </label>
+                                </div>
+                          
+                                
+								 </div>
+                               
+								 </div>
+								  </div>
+                    </div>
+					 </div>
+					  </form>
+					 
+					 <!-- ADICIONALES -->
+							
+							<article id="apiom_modify_container_addons" class="col-md-12  ">
+						<div class="border border-grey-1  margin-tb-30px">	 
+						 <div class="card background-red">
+						 <h3   type="submit"  data-toggle="collapse" data-parent="#accordion" href="#adicionales" class="bg-auto"><i class="fa fa-plus"></i>	&nbsp; <span class="trn ">Adicionales </span></h3>
+							  </div>
+                        <div  class=" panel-collapse collapse" id="adicionales" role="tabpanel" aria-labelledby="heading4" aria-expanded="true">
+						 <table  class="table table-striped table-bordered font-table" cellspacing="0" width="100%">
+            <thead>
+                <tr>
+                    <th class="trn">Adicional</th>
+                    <th class="trn">Precio Unitario</th>
+                    <th class="trn">Precio Total</th>
+                    <th class="trn">Agregar</th>
+                   
+                </tr>
+            </thead>
+           
+            <tbody>
+                <tr class="apiom_item_addon">
+                    <td class="trn apiom_addon_name">Silla de Bebe 0-12 Meses</td>
+                    <td><span class="currencies"> <span class="money price">
+							<abbr class="unit">AR$</abbr>
+							<span class="amount apiom_price_singleday"> 437</span>
+							<abbr class="currency" title="ARS"></abbr>
+							</span></span></td>
+                    <td>x<span id="apiom_day_amount">7 </span>días <span class="currencies"> <span class="money price">
+							<abbr class="unit">AR$</abbr>
+							<span class="amount apiom_addon_price"> 3.060</span>
+							<abbr class="currency" title="ARS"></abbr>
+							</span></span></td>
+                    <td><select class="form-control apiom_addon_input">
+					  <option class="form-group">0</option>
+					  <option class="form-group">1</option>
+					  <option class="form-group">2</option>
+					  </select></td>
+                    
+                </tr>
+				
+				 <tr class="apiom_item_addon">
+                    <td class="trn apiom_addon_name">Porta Equipajes</td>
+                    <td><span class="currencies"> <span class="money price">
+							<abbr class="unit">AR$</abbr>
+							<span class="amount apiom_price_singleday"> 150</span>
+							<abbr class="currency" title="ARS"></abbr>
+							</span></span></td>
+                    <td>x<span id="apiom_day_amount">7 </span>días <span class="currencies"> <span class="money price">
+							<abbr class="unit">AR$</abbr>
+							<span class="amount apiom_addon_price"> 1.050</span>
+							<abbr class="currency" title="ARS"></abbr>
+							</span></span></td>
+                    <td>
+					   <div class="form-check  apiom_addon_input">
+                                    <label class="form-check-label">
+                                      <input class="form-check-input trn" type="checkbox" > 
+                                    </label>
+                                </div></td>
+                    
+                </tr>
+				 </tbody>
+				</table>
+						 </div>
+						  </div>
+						
+						 </article>
+						  	<!-- /ADICIONALES -->
+                    
+					<div class="col-md-12 ">
+					<p>*Cambios sujetos a disponibilidad por parte de la oficina. Nos pondremos en contacto con usted a la brevedad para comunicarle cualquier cambio en los costos de su alquiler.</p>
+					 </div>
+					<div class="col-md-12 ">
+					
+					 <div class="form-group">
+                                  
+									
+									  <button id="apiom_modify_submit" class="btn btn-default btn-lg rmore apiom_submit_rent trn">Solicitar cambio </button>
+                                </div>
+					 </div>
+					
+                </div>
+            </div>
+        </div>
+    </div>
+	 </div>
+<!-- /END MODAL MODIFICAR RESERVA -->
+
+
+	<!--  MODALES LOGIN -->
+	
+<div id="reservas" class="modal fade">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+           
+            <div class="modal-body">
+                <div class="row">
+				
+				 <div class="col-md-12">
+                        <div class="tabs-wrapper content-tabs">
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a href="#item-description" data-toggle="tab" class="trn">Mis Reservas</a></li>
+                                <li><a href="#reviews" data-toggle="tab" class="trn">Iniciar Sesión</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane fade in active" id="item-description">
+                                  <div class="form-group">
+								<label class="form-group trn" >Correo Electrónico</label>
+                                    <div class="form-group"><input class="form-control apiom_email" type="text" ></div>
+                                </div>
+                                <div class="form-group">
+								<label class="form-group trn" >Nº de confirmación</label>
+                                    <div class="form-group"><input id="apiom_ confirmation_number" class="form-control " type="text" ></div>
+                                </div>
+                                
+                                <div class="text-center-lg">
+                                    <a class="forgot-password trn" href="#" data-toggle="modal" data-target="#numero">¿No sabes cual es tu Nº de confirmación?</a>
+                                </div></br>
+                                <div class="form-group">
+                                    <a id="apiom_ submit_mis_reserva" class="btn btn-default trn  text-center" href="#">IR A LA RESERVA</a>
+                                </div>
+                                </div>
+                                <div class="tab-pane fade" id="reviews">
+                                  
+                               
+							  
+                                <div class="form-group">
+								<label class="form-group trn" >Correo Electrónico</label>
+                                    <div class="form-group"><input class="form-control apiom_ email" type="text" ></div>
+                                </div>
+                                <div class="form-group">
+								<label class="form-group trn" >Contraseña</label>
+                                    <div class="form-group"><input id="apiom_ password" class="form-control" type="password" ></div>
+                                </div>
+                                
+                                <div class=" text-center-lg">
+                                    <a class="forgot-password" href="#" data-toggle="modal" data-target="#contraseña">¿Olvidaste tu contraseña?</a>
+                                </div>
+								  <div class=" text-center-lg">
+                                    <a class="forgot-password trn" href="#" data-toggle="modal" data-target="#registrarse">¿Primera vez? <span style="text-decoration:underline;">REGISTRATE</span></a>
+                                </div></br>
+                                <div class="form-group">
+                                    <a id="apiom_ submit_login" class="btn btn-default trn  text-center" href="#">INICIAR SESIÓN</a>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+ <div id="numero" class="modal fade">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          
+            <div class="modal-body">
+                <button type="button" class="bootbox-close-button close" data-dismiss="modal" aria-hidden="true">×</button>
+              <div class="row">
+                    <div class="col-md-12">
+						<div class="media-body text-center-lg trn">
+                                   
+                                    Te eviaremos tu Nº de reserva al mail registrado en nuestro sistema.
+                                </div></br>
+						 <div class="form-group">
+								<label class="form-group trn" >Email</label>
+                                    <div class="form-group trn"><input class="form-control" type="text" ></div>
+                                </div>
+                               
+                                <div class="form-group">
+                                    <a class="btn btn-default  trn text-center" href="#">Enviar</a>
+                                </div>
+                    </div>
+					 </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div id="contraseña" class="modal fade">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          
+            <div class="modal-body">
+                <button type="button" class="bootbox-close-button close" data-dismiss="modal" aria-hidden="true">×</button>
+              <div class="row">
+                    <div class="col-md-12">
+						<div class="media-body text-center-lg trn">Te eviaremos tu contraseña al mail registrado en nuestro sistema.</div></br>
+						 <div class="form-group">
+								<label class="form-group trn" >Email</label>
+                                    <div class="form-group"><input class="form-control" type="text" ></div>
+                                </div>
+                               
+                                <div class="form-group">
+                                    <a class="btn btn-default trn  text-center" href="#">Enviar</a>
+                                </div>
+                    </div>
+					 </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	
+	<div id="registrarse" class="modal fade">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+          
+            <div class="modal-body">
+			 <button type="button" class="bootbox-close-button close" data-dismiss="modal" aria-hidden="true">×</button>
+			<div class="modal-header row form-group">
+                                   
+                                    <h3 class="trn">Registrate </h3>
+                                </div></br>
+               
+              <div class="row">
+                    <div class="col-md-12" style="margin-top: 0px;">
+						
+								<div class="row">
+								 <div class="col-md-6" style="margin-top: 0px;">
+								<div class="form-group">
+								<label class="form-group trn" >Nombre</label>
+                                    <div class="form-group"><input class="form-control" type="text" ></div>
+                                </div>
+								 </div>
+								  <div class="col-md-6" style="margin-top: 0px;">
+								<div class="form-group">
+								<label class="form-group trn" >Apellido</label>
+                                    <div class="form-group"><input class="form-control" type="text" ></div>
+                                </div>
+								 </div>
+								 <div class="col-md-12" style="margin-top: 0px;">
+						 <div class="form-group">
+								<label class="form-group trn" >Email</label>
+                                    <div class="form-group"><input class="form-control" type="text" ></div>
+                                </div>
+								 </div>
+                                 <div class="col-md-6"style="margin-top: 0px;">
+                               <div class="form-group">
+								<label class="form-group  trn" >Contraseña</label>
+                                    <div class="form-group"><input class="form-control" type="password" ></div>
+                                </div>
+								 </div>
+								 <div class="col-md-6" style="margin-top: 0px;">
+								<div class="form-group">
+								<label class="form-group trn" >Repetir Contraseña</label>
+                                    <div class="form-group"><input class="form-control" type="password" ></div>
+                                </div>
+								 </div>
+								  </div>
+								  <div class="col-md-12 text-center" style="margin-top: 0px;">
+                                <div class="form-group">
+                                    <a class="btn btn-default trn  text-center" href="#" style="margin-left: auto;margin-right: auto;">Enviar</a>
+                                </div>
+								  </div>
+                    </div>
+					 </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	
+	<!-- END MODALES LOGIN -->
+	
+	
+	
+	
+
+<div id="page-top"></div>
+    
+<div id="wrapper">
+<!-- HEADER -->
+	<header>
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header pull-left">
+					<!-- Logo -->
+					<a class="navbar-brand" href="index.html">	<img  src="images/LOGO-rentafacil.png" alt=""></a>
+				</div>
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+				<!-- <div class="top-contact pull-right editContent"> -->
+					<!-- <i class="icon-phone"></i> <span class="trn">Llámenos</span>0810 1234 5678 -->
+				<!-- </div> -->
+				<!-- Navmenu -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="empresa.html" class="trn" >Empresa</a></li>
+						<li><a href="oficinas.html" class="trn" >Oficinas</a></li>
+						<li><a href="flota.html" class="trn" >Flota</a></li>
+						<li><a  href="#" data-toggle="modal" data-target="#reservas" class="trn">Mis Reservas</a></li>
+							
+						<li class="dropdown"><a class="apiom_ul_monedas"  href="#"  >$ARS</a>
+						<ul id="apiom_ulMonedaUsuario" class="dropdown-menu" role="menu">
+								<li class="" data-to-currency="ARS" id="ARS"><a href="#">$ (ARS)</a></li>
+								<li class="" data-to-currency="USD" id="USD"><a href="#">US$ (USD)</a></li>
+								<li class="" data-to-currency="EUR" value="EUR" id="EUR"><a href="#">€ (EUR)</a></li>
+								<li class="" data-to-currency="BRL" value="BRL" id="BRL"><a href="#">R$ (BRL)</a></li>
+								<li class="" data-to-currency="UYU" value="UYU" id="UYU"><a href="#">$ (UYU)</a></li>
+								
+							</ul>
+						
+						</li>
+						<li class="dropdown"><a class="lang_selector" id="idiomaES" data-value="es"
+							onclick="setIdioma('ES', true);$('#idiomaSelector').html(getIdiomaCompleto())"><img class="bg-esp"  src="images/flag.png" alt=""></a>
+					<ul class="dropdown-menu" role="menu">
+					
+				
+												<li><a   class="lang_selector" id="idiomaEN" data-value="en" onclick="setIdioma('EN', true);$('#idiomaSelector').html(getIdiomaCompleto())"  ><img class="bg-bra" src="images/flag-uk.png" alt="">&nbsp; <span  class="trn">Inglés</span></a></li>
+												<li><a   class="lang_selector" id="idiomaPT" data-value="pt" onclick="setIdioma('PT', true);$('#idiomaSelector').html(getIdiomaCompleto())"><img class="bg-ing trn" src="images/flag-br.png" alt="">&nbsp; <span  class="trn">Portugués</span></a></li>
+						</ul>
+						
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- HEADER -->
+
+	<!-- PAGE HEADER -->
+	<div class="page-head">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h1 class="page-header trn">Mis Reserva</h1>
+					
+				</div>
+			</div>
+        </div>	
+	</div>
+	<!-- PAGE HEADER -->
+
+	<!-- BLOG CONTENT -->
+	<div class="blog-content blog-classic-side">
+		<div class="container">
+			<div class="row">
+			
+			
+				
+		
+				<div class="col-md-12">
+				
+					
+					<div  id=""  class="col-md-12">
+					
+					<!-- AUTO -->
+					<article class="apiom_result_item mt-2">
+					<h2 class="bg-auto trn"> <i class="fa fa-check-circle"></i> &nbsp;	RESERVA	</h2>
+						<div class="row ">
+						<div class="col-md-12 col-sm-12 ">
+						
+						</div>		
+							<div class="col-md-3 col-sm-12">
+								
+								
+								<img id="apiom_rent_photo" src="images/flota/1.jpg" class="img-responsive img-hover apiom_result_photo" alt="">
+								
+									
+								
+							</div>
+							<div class="col-md-6 col-sm-12">
+							
+								
+								<div class="">
+								<div class="col-md-12 col-xs-12" id="content-desktop">
+								&nbsp;</br>&nbsp;
+								</div>
+								<div class="col-md-12 text-center">
+								
+								<h4 class="trn">CONFIRMACIÓN DE RESERVA:  <span id="apiom_rent_number" class="text-color-skin-blue font-bold" style="font-size:1.2em;">#12365487</span></h4>
+								
+							</div>
+							<div class="col-md-6">
+			
+					<div class="panel panel-default text-center">
+						<div class="panel-body">
+							<h4 class="panel-title price text-color-skin-blue trn">Pick Up</h4>
+						</div>
+						<h4><span class="text-color-skin-grey trn"><span id="apiom_confirmation_dia_desde"> 1 </span><span class="trn">de</span> <span id="apiom_confirmation_mes_desde"> Junio</span></span></h4>
+						<h4> <span id="apiom_confirmation_hora_desde" style="font-size: 0.7em; font-weight: 700;"> 10:00hs</span></h4></br>
+						<h4 class="text-color-skin-blue"><i class="fa fa-plane text-color-skin-grey  apiom_pickup_confirmation_place_icon">&nbsp;</i><span id="apiom_confirmation_ciudad_desde">  S.C de Bariloche</span></h4>
+					</div>
+					
+				</div>
+				<div class="col-md-6">
+					<div class="panel panel-default text-center">
+						<div class="panel-body">
+							<h4 class="panel-title price text-color-skin-blue trn">Drop Off</h4>
+						</div>
+						<h4><span class="text-color-skin-grey trn"><span id="apiom_confirmation_dia_hasta"> 6 </span><span class="trn">de</span> <span id="apiom_confirmation_mes_hasta"> Junio</span></span></h4>
+						<h4> <span id="apiom_confirmation_hora_hasta" style="font-size: 0.7em; font-weight: 700;"> 11:00hs</span></h4></br>
+						<h4 class="text-color-skin-blue"><i class="fa fa-plane text-color-skin-grey apiom_dropoff_confirmation_place_icon">&nbsp;</i> <span id="apiom_confirmation_ciudad_hasta">  S.C de Bariloche</span></h4>
+					</div>
+				</div>
+						</div>
+						</div>
+						
+						
+						<div class="col-md-2 col-sm-12 ">
+								<h2 id="content-desktop">&nbsp;</h2>
+								<h2 id="content-desktop">&nbsp;</h2>
+								
+								
+								<button id="" type="submit" class="btn btn-warning trn btn-xs  text-center" style="margin-top: 10px;">Reserva Finalizada <i class="fa fa-check"></i></button>
+							
+								
+								<button id="apiom_submit_webcheckin" type="submit" class="btn btn-default trn btn-md   text-center" style="margin-top: 10px;">Realizar Web Check in <i class="fa fa-chevron-right"></i></button>
+								
+								
+								<button id="" type="submit" class="collapsed trn btn btn-secondary trn btn-xs   text-center" style="margin-top: 10px;"  data-toggle="collapse" data-parent="#accordion" href="#collapse12" aria-expanded="false" aria-controls="collapse4">Voucher <i class="fa fa-chevron-down"></i></button>
+								
+								
+									
+								
+							</div>
+						
+						
+						</div>
+						
+						<div class="  panel-collapse collapse" id="collapse12"  role="tabpanel" aria-labelledby="heading4" aria-expanded="false">
+						<h2 class="bg-auto trn"> <i class="fa fa-ticket"></i> &nbsp;	VOUCHER	</h2>
+						<div class="row">
+						<div class="col-md-12 col-sm-12 ">
+						
+						</div>		
+							<div class="col-md-3 col-sm-12 text-center">
+								
+								<h4 id="content-desktop" >&nbsp;</h4>
+								<button id="apiom_download_pdf" type="submit" class="btn btn-default trn btn-xs   text-center" style="margin-top: 10px; margin-bottom:10px;">Realizar Descargar PDF <i class="fa fa-file"></i></button>
+								
+									
+								
+							</div>
+							<div class="col-md-6 col-sm-12">
+							
+								
+								
+								
+								<form name="sentMessage" id="contactForm" action="" method="post">
+							<div class="col-md-6">
+					<label class="form-group">Ingrese Aerolinea</label>
+					<input id="apiom_airline" type="text"  class="form-control trn" placeholder="American Airlines">
+					
+				</div>
+				<div class="col-md-6">
+				<label class="form-group">Ingrese Nº de vuelo</label>
+						<input id="apiom_fly_number" type="text"  class="form-control trn" placeholder="1234">
+						
+				</div>
+				<div class="col-md-12 col-sm-12 text-center">
+						<button id="apiom_modify_fly_number" type="submit" class="btn btn-warning trn btn-xs   text-center" style="margin-top: 10px;">Modificar Nº de vuelo </button>
+						</div>
+						</form>
+						</div>
+						
+						
+								
+								<div class="col-md-3 col-sm-12 text-center">
+								<button id="apiom_modify_rent" type="submit" data-toggle="modal" data-target="#modificar" class="btn btn-default trn btn-xs  text-center" style="margin-top: 10px;">Modificar Reserva <i class="fa fa-check"></i></button>
+							<button id="apiom_cancel_rent" type="submit" class=" trn btn btn-secondary trn btn-xs   text-center" style="margin-top: 10px;" >Cancelar Reserva <i class="fa fa-times-circle"></i></button>
+								
+								
+								</div>	
+								
+							</div>
+						
+					
+						</div>
+						
+					</article>
+					<!-- AUTO -->
+					
+					
+					
+				
+					
+					</div>
+					</div>
+					
+				
+				
+				
+				
+				
+				
+			</div>
+		</div>
+	</div>
+	<!-- BLOG CONTENT -->
+
+	
+
+	<!-- FOOTER -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<h1 class="footer-logo"><a href="index.html">Renta Facil</a></h1>
+					<p class="trn">La rentadora número uno del mercado</p>
+					<ul class="footer-social">
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<h4 class="trn">Menú</h4>
+					<div class="row">
+						<div class="col-md-6">
+							<ul class="footer-list">
+								<li><a class="trn" href="empresa.html">Nuestra Empresa</a></li>
+								<li><a class="trn" href="oficinas.html">Otras Oficinas</a></li>
+								<li><a class="trn" href="flota.html">Nuestra Flota</a></li>
+								
+							</ul>
+						</div>
+						<div class="col-md-6">
+							<ul class="footer-list">
+							<li><a class="trn" href="preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
+								<li><a class="trn" href="resultado-de-busqueda.html">{{Pagina de Resultado}}</a></li>
+								<li><a class="trn" href="reserva.html"> {{Reserva}}</a></li>
+								<li><a class="trn" href="sucursal.html">{{Sucursal}}</a></li>
+								<li><a class="trn" href="mis-reservas.html">{{Mis Reservas}}</a></li>
+								<li><a class="trn" href="confirmacion.html">{{Confirmación}}</a></li>
+								<li><a class="trn" href="datos-personales.html">{{Datos Personales}}</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<h4 class="trn">Contactanos</h4>
+					<a class="text-color-skin-blue" href="#" style="font-size: 1.8em;"><i class="fa fa-whatsapp"></i> &nbsp;(+54)02568 456-7890</a>
+					<br><br>
+					<p class="trn">&copy; 2021. Rentafacil. Todos los derechos reservados.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- FOOTER -->
+</div>
+
+
+<!-- JAVASCRIPT =============================-->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/vendors/flexslider/flexslider.js"></script>
+<script src="js/vendors/slick/slick.min.js"></script>
+<script src="js/vendors/jquery.placeholder.js"></script>
+<script src="js/vendors/jquery.easing.min.js"></script>
+<script src="js/vendors/mc/jquery.ketchup.all.min.js"></script>
+<script src="js/vendors/mc/main.js"></script>
+<script src="js/vendors/jquery.countdown.min.js"></script>
+<script src="js/vendors/swipebox/js/jquery.swipebox.min.js"></script>
+<script src="js/main.js"></script>
+
+
+
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+<script src="js/jquery-timepicker-1.3.5/jquery.timepicker.min.js"></script>
+
+<script type="text/javascript">
+	$(function() {
+	
+	  $('input[name="datefilter"]').daterangepicker({
+		  autoUpdateInput: false,
+		  locale: {
+			  cancelLabel: 'Clear'
+		  }
+	  });
+	
+	  $('input[name="datefilter"]').on('apply.daterangepicker', function(ev, picker) {
+		  $(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
+	  });
+	
+	  $('input[name="datefilter"]').on('cancel.daterangepicker', function(ev, picker) {
+		  $(this).val('');
+	  });
+	
+	});
+	</script>
+
+<script>
+	var inputEle = document.getElementById('.timeInput');
+
+
+function onTimeChange() {
+  var timeSplit = inputEle.value.split(':'),
+    hours,
+    minutes,
+    meridian;
+  hours = timeSplit[0];
+  minutes = timeSplit[1];
+  if (hours > 12) {
+    meridian = 'PM';
+    hours -= 12;
+  } else if (hours < 12) {
+    meridian = 'AM';
+    if (hours == 0) {
+      hours = 12;
+    }
+  } else {
+    meridian = 'PM';
+  }
+  alert(hours + ':' + minutes + ' ' + meridian);
+}
+	</script>
+</body>
+</html>
